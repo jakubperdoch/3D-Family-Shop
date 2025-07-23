@@ -2,6 +2,7 @@ import { Image } from "@heroui/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@heroui/react";
+import { itemVariants } from "@/utils/animations.ts";
 
 export default function FeaturedCarousel() {
   const [images] = useState<string[]>([
@@ -26,7 +27,7 @@ export default function FeaturedCarousel() {
   }, [userClicked]);
 
   return (
-    <div className="flex w-full relative">
+    <motion.div variants={itemVariants} className="flex w-full relative">
       <AnimatePresence mode="wait">
         <motion.div
           key={activeIndex}
@@ -79,6 +80,6 @@ export default function FeaturedCarousel() {
             ),
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
