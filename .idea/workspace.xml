@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor routes to use collections and products naming conventions; update components accordingly">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FeaturedCarousel placeholders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
       <workItem from="1753219722183" duration="3862000" />
       <workItem from="1753224229753" duration="1107000" />
       <workItem from="1753225346135" duration="9157000" />
-      <workItem from="1753260126992" duration="5354000" />
+      <workItem from="1753260126992" duration="5830000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -133,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753233796662</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add FeaturedCarousel component and update layout styles">
+      <option name="closed" value="true" />
+      <created>1753274012115</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753274012115</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add FeaturedCarousel placeholders">
+      <option name="closed" value="true" />
+      <created>1753274036283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753274036283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +156,8 @@
     <MESSAGE value="add navigation item for home and update workspace configuration" />
     <MESSAGE value="add cart and profile routes; implement navigation cart component" />
     <MESSAGE value="refactor routes to use collections and products naming conventions; update components accordingly" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor routes to use collections and products naming conventions; update components accordingly" />
+    <MESSAGE value="add FeaturedCarousel component and update layout styles" />
+    <MESSAGE value="add FeaturedCarousel placeholders" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FeaturedCarousel placeholders" />
   </component>
 </project>

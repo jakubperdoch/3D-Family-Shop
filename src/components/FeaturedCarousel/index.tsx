@@ -1,9 +1,10 @@
 import { Image } from "@heroui/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Button } from "@heroui/react";
 
 export default function FeaturedCarousel() {
-  const [images, setImages] = useState<string[]>([
+  const [images] = useState<string[]>([
     "../../public/placeholder.png",
     "../../public/placeholder--2.png",
     "../../public/placeholder--3.jpg",
@@ -44,6 +45,21 @@ export default function FeaturedCarousel() {
       </AnimatePresence>
 
       <div className="absolute bottom-0 z-[2] h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_31.12%,rgba(0,0,0,0.5)_66.06%)] rounded-b-xl"></div>
+
+      <div className="absolute z-[2] left-8 bottom-8 flex flex-col max-w-3xl">
+        <h4 className="text-7xl font-bold">1972 Datsun 240k GT</h4>
+        <span className="text-2xl max-w-lg ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          suscipit, dui quis
+        </span>
+
+        <Button
+          className="w-fit mt-6 px-8 py-2 text-white text-sm font-medium"
+          color={"primary"}
+        >
+          Pridať do Košíka
+        </Button>
+      </div>
 
       <div className="absolute right-8 bottom-8 flex flex-col gap-2">
         {images.map(
