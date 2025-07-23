@@ -13,6 +13,7 @@ import {
 } from "@heroui/react";
 
 const navigationItems = [
+  { label: "Domov", to: "/" },
   {
     label: "Produkty",
     enableDropdown: true,
