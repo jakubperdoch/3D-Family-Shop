@@ -12,17 +12,22 @@ const bestSellersCards = [
   {
     id: "1",
     image: "../../public/bestseller-card.png",
-    title: "Kreatívny dizajn",
+    title: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
     id: "2",
     image: "../../public/bestseller-card.png",
-    title: "Elegantné tlače",
+    title: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
     id: "3",
     image: "../../public/bestseller-card.png",
-    title: "Moderné štýly",
+    title: "Lorem ipsum dolor sit amet, consectetur",
+  },
+  {
+    id: "4",
+    image: "../../public/bestseller-card.png",
+    title: "Lorem ipsum dolor sit amet, consectetur",
   },
 ];
 
