@@ -9,38 +9,110 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TrainingsRouteImport } from './routes/trainings'
+import { Route as ModelingRouteImport } from './routes/modeling'
+import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductsCategoryRouteImport } from './routes/products/$category'
 
+const TrainingsRoute = TrainingsRouteImport.update({
+  id: '/trainings',
+  path: '/trainings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ModelingRoute = ModelingRouteImport.update({
+  id: '/modeling',
+  path: '/modeling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CalculatorRoute = CalculatorRouteImport.update({
+  id: '/calculator',
+  path: '/calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsCategoryRoute = ProductsCategoryRouteImport.update({
+  id: '/products/$category',
+  path: '/products/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/modeling': typeof ModelingRoute
+  '/trainings': typeof TrainingsRoute
+  '/products/$category': typeof ProductsCategoryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/modeling': typeof ModelingRoute
+  '/trainings': typeof TrainingsRoute
+  '/products/$category': typeof ProductsCategoryRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/calculator': typeof CalculatorRoute
+  '/modeling': typeof ModelingRoute
+  '/trainings': typeof TrainingsRoute
+  '/products/$category': typeof ProductsCategoryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/calculator'
+    | '/modeling'
+    | '/trainings'
+    | '/products/$category'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/calculator' | '/modeling' | '/trainings' | '/products/$category'
+  id:
+    | '__root__'
+    | '/'
+    | '/calculator'
+    | '/modeling'
+    | '/trainings'
+    | '/products/$category'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CalculatorRoute: typeof CalculatorRoute
+  ModelingRoute: typeof ModelingRoute
+  TrainingsRoute: typeof TrainingsRoute
+  ProductsCategoryRoute: typeof ProductsCategoryRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/trainings': {
+      id: '/trainings'
+      path: '/trainings'
+      fullPath: '/trainings'
+      preLoaderRoute: typeof TrainingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modeling': {
+      id: '/modeling'
+      path: '/modeling'
+      fullPath: '/modeling'
+      preLoaderRoute: typeof ModelingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/calculator': {
+      id: '/calculator'
+      path: '/calculator'
+      fullPath: '/calculator'
+      preLoaderRoute: typeof CalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +120,22 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/$category': {
+      id: '/products/$category'
+      path: '/products/$category'
+      fullPath: '/products/$category'
+      preLoaderRoute: typeof ProductsCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CalculatorRoute: CalculatorRoute,
+  ModelingRoute: ModelingRoute,
+  TrainingsRoute: TrainingsRoute,
+  ProductsCategoryRoute: ProductsCategoryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
