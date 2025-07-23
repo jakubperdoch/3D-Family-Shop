@@ -39,7 +39,7 @@ export default function NavigationBar() {
       <Navbar
         shouldHideOnScroll={true}
         maxWidth="full"
-        className="bg-[#0D0D0D] border border-[#FFFFFF33] rounded-3xl mt-6 mx-auto px-2 w-11/12"
+        className="bg-[#0D0D0D] border border-[#FFFFFF33] rounded-3xl mt-6 mx-auto px-2"
       >
         <NavbarContent className="hidden sm:flex gap-9" justify="start">
           {navigationItems.map((item) =>

@@ -12,6 +12,7 @@ export const Route = createRootRoute({
         animate="visible"
         exit="hidden"
         variants={containerVariants}
+        className="container items-center justify-center mx-auto"
       >
         <NavigationBar />
         <Outlet />
