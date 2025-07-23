@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add navigation item for home and update workspace configuration">
-      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar/NavigationCart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar/NavigationSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/profile.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add cart and profile routes; implement navigation cart component">
+      <change afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/products/$category.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/collections_/$category.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$/src/routes/products_/$category" />
+      <recent name="$PROJECT_DIR$/src/routes/products/$category" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,7 +87,7 @@
       <workItem from="1753135794634" duration="691000" />
       <workItem from="1753219722183" duration="3862000" />
       <workItem from="1753224229753" duration="1107000" />
-      <workItem from="1753225346135" duration="6234000" />
+      <workItem from="1753225346135" duration="8366000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -106,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753229605048</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add cart and profile routes; implement navigation cart component">
+      <option name="closed" value="true" />
+      <created>1753231610572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753231610572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +131,7 @@
     <MESSAGE value="initialize project with basic setup including routing, styles, and configuration files" />
     <MESSAGE value="add routing and components for calculator, modeling, and trainings; configure VCS and Prettier" />
     <MESSAGE value="add navigation item for home and update workspace configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="add navigation item for home and update workspace configuration" />
+    <MESSAGE value="add cart and profile routes; implement navigation cart component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cart and profile routes; implement navigation cart component" />
   </component>
 </project>

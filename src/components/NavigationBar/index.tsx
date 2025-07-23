@@ -63,7 +63,7 @@ export default function NavigationBar() {
                   {item.items!.map((opt) => (
                     <DropdownItem key={opt.category}>
                       <Link
-                        to="/products/$category"
+                        to="/collections/$category"
                         params={{ category: opt.category }}
                         className="text-sm flex w-full transition-colors duration-300 ease-in-out [&.active]:text-primary"
                       >

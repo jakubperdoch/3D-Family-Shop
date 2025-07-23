@@ -15,7 +15,8 @@ import { Route as ModelingRouteImport } from './routes/modeling'
 import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ProductsCategoryRouteImport } from './routes/products/$category'
+import { Route as ProductsProductRouteImport } from './routes/products_/$product'
+import { Route as CollectionsCategoryRouteImport } from './routes/collections_/$category'
 
 const TrainingsRoute = TrainingsRouteImport.update({
   id: '/trainings',
@@ -47,9 +48,14 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsCategoryRoute = ProductsCategoryRouteImport.update({
-  id: '/products/$category',
-  path: '/products/$category',
+const ProductsProductRoute = ProductsProductRouteImport.update({
+  id: '/products_/$product',
+  path: '/products/$product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CollectionsCategoryRoute = CollectionsCategoryRouteImport.update({
+  id: '/collections_/$category',
+  path: '/collections/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -60,7 +66,8 @@ export interface FileRoutesByFullPath {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/products/$category': typeof ProductsCategoryRoute
+  '/collections/$category': typeof CollectionsCategoryRoute
+  '/products/$product': typeof ProductsProductRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -69,7 +76,8 @@ export interface FileRoutesByTo {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/products/$category': typeof ProductsCategoryRoute
+  '/collections/$category': typeof CollectionsCategoryRoute
+  '/products/$product': typeof ProductsProductRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -79,7 +87,8 @@ export interface FileRoutesById {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/products/$category': typeof ProductsCategoryRoute
+  '/collections_/$category': typeof CollectionsCategoryRoute
+  '/products_/$product': typeof ProductsProductRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -90,7 +99,8 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/products/$category'
+    | '/collections/$category'
+    | '/products/$product'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -99,7 +109,8 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/products/$category'
+    | '/collections/$category'
+    | '/products/$product'
   id:
     | '__root__'
     | '/'
@@ -108,7 +119,8 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/products/$category'
+    | '/collections_/$category'
+    | '/products_/$product'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -118,7 +130,8 @@ export interface RootRouteChildren {
   ModelingRoute: typeof ModelingRoute
   ProfileRoute: typeof ProfileRoute
   TrainingsRoute: typeof TrainingsRoute
-  ProductsCategoryRoute: typeof ProductsCategoryRoute
+  CollectionsCategoryRoute: typeof CollectionsCategoryRoute
+  ProductsProductRoute: typeof ProductsProductRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -165,11 +178,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/$category': {
-      id: '/products/$category'
-      path: '/products/$category'
-      fullPath: '/products/$category'
-      preLoaderRoute: typeof ProductsCategoryRouteImport
+    '/products_/$product': {
+      id: '/products_/$product'
+      path: '/products/$product'
+      fullPath: '/products/$product'
+      preLoaderRoute: typeof ProductsProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/collections_/$category': {
+      id: '/collections_/$category'
+      path: '/collections/$category'
+      fullPath: '/collections/$category'
+      preLoaderRoute: typeof CollectionsCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -182,7 +202,8 @@ const rootRouteChildren: RootRouteChildren = {
   ModelingRoute: ModelingRoute,
   ProfileRoute: ProfileRoute,
   TrainingsRoute: TrainingsRoute,
-  ProductsCategoryRoute: ProductsCategoryRoute,
+  CollectionsCategoryRoute: CollectionsCategoryRoute,
+  ProductsProductRoute: ProductsProductRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
