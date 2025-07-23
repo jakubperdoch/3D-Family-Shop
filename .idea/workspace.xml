@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FeaturedCarousel description and button component">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add itemVariants to FeaturedCarousel for animation effects">
+      <change afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hero.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <workItem from="1753219722183" duration="3862000" />
       <workItem from="1753224229753" duration="1107000" />
       <workItem from="1753225346135" duration="9157000" />
-      <workItem from="1753260126992" duration="5879000" />
+      <workItem from="1753260126992" duration="8113000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -152,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753274457723</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add itemVariants to FeaturedCarousel for animation effects">
+      <option name="closed" value="true" />
+      <created>1753274507352</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753274507352</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +177,7 @@
     <MESSAGE value="add FeaturedCarousel component and update layout styles" />
     <MESSAGE value="add FeaturedCarousel placeholders" />
     <MESSAGE value="add FeaturedCarousel description and button component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add FeaturedCarousel description and button component" />
+    <MESSAGE value="add itemVariants to FeaturedCarousel for animation effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="add itemVariants to FeaturedCarousel for animation effects" />
   </component>
 </project>
