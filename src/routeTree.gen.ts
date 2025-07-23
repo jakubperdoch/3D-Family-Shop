@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TrainingsRouteImport } from './routes/trainings'
+import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ModelingRouteImport } from './routes/modeling'
+import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsCategoryRouteImport } from './routes/products/$category'
@@ -20,9 +22,19 @@ const TrainingsRoute = TrainingsRouteImport.update({
   path: '/trainings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ModelingRoute = ModelingRouteImport.update({
   id: '/modeling',
   path: '/modeling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CartRoute = CartRouteImport.update({
+  id: '/cart',
+  path: '/cart',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CalculatorRoute = CalculatorRouteImport.update({
@@ -44,14 +56,18 @@ const ProductsCategoryRoute = ProductsCategoryRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
+  '/cart': typeof CartRoute
   '/modeling': typeof ModelingRoute
+  '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
   '/products/$category': typeof ProductsCategoryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
+  '/cart': typeof CartRoute
   '/modeling': typeof ModelingRoute
+  '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
   '/products/$category': typeof ProductsCategoryRoute
 }
@@ -59,7 +75,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
+  '/cart': typeof CartRoute
   '/modeling': typeof ModelingRoute
+  '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
   '/products/$category': typeof ProductsCategoryRoute
 }
@@ -68,16 +86,27 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/calculator'
+    | '/cart'
     | '/modeling'
+    | '/profile'
     | '/trainings'
     | '/products/$category'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/calculator' | '/modeling' | '/trainings' | '/products/$category'
+  to:
+    | '/'
+    | '/calculator'
+    | '/cart'
+    | '/modeling'
+    | '/profile'
+    | '/trainings'
+    | '/products/$category'
   id:
     | '__root__'
     | '/'
     | '/calculator'
+    | '/cart'
     | '/modeling'
+    | '/profile'
     | '/trainings'
     | '/products/$category'
   fileRoutesById: FileRoutesById
@@ -85,7 +114,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CalculatorRoute: typeof CalculatorRoute
+  CartRoute: typeof CartRoute
   ModelingRoute: typeof ModelingRoute
+  ProfileRoute: typeof ProfileRoute
   TrainingsRoute: typeof TrainingsRoute
   ProductsCategoryRoute: typeof ProductsCategoryRoute
 }
@@ -99,11 +130,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrainingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/modeling': {
       id: '/modeling'
       path: '/modeling'
       fullPath: '/modeling'
       preLoaderRoute: typeof ModelingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cart': {
+      id: '/cart'
+      path: '/cart'
+      fullPath: '/cart'
+      preLoaderRoute: typeof CartRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/calculator': {
@@ -133,7 +178,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CalculatorRoute: CalculatorRoute,
+  CartRoute: CartRoute,
   ModelingRoute: ModelingRoute,
+  ProfileRoute: ProfileRoute,
   TrainingsRoute: TrainingsRoute,
   ProductsCategoryRoute: ProductsCategoryRoute,
 }

@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { FaCaretDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
+import { FaUser } from "react-icons/fa6";
+import { IoSearch } from "react-icons/io5";
 
 import {
   Button,
@@ -11,6 +13,7 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from "@heroui/react";
+import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
 
 const navigationItems = [
   { label: "Domov", to: "/" },
@@ -83,9 +86,25 @@ export default function NavigationBar() {
           )}
         </NavbarContent>
 
-        <NavbarContent className="!grow-0" justify="end">
-          <NavbarItem className="">
-            <Link to="/">Login</Link>
+        <NavbarContent className="!grow-0 gap-7" justify="end">
+          <NavbarItem>
+            <Link
+              to="/"
+              className="text-xl font-medium hover:opacity-70 transition duration-150"
+            >
+              <IoSearch />
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              to="/profile"
+              className="text-base font-medium hover:opacity-70 transition duration-150"
+            >
+              <FaUser />
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <NavigationCart count={5} />
           </NavbarItem>
         </NavbarContent>
       </Navbar>
