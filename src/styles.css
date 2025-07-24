@@ -7,8 +7,13 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme{
- --font-display: 'Rubik', sans-serif;
-  --font-heading: 'Rubik', sans-serif;
+    --font-display: 'Rubik', sans-serif;
+    --font-heading: 'Rubik', sans-serif;
+
+    --color-gray: #E7E7E3;
+    --color-gray-light: #ECEEF0;
+    --color-dark-gray: #232321;
+    --color-white: #ffffff;
 }
 
 

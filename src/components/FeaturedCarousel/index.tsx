@@ -27,7 +27,10 @@ export default function FeaturedCarousel() {
   }, [userClicked]);
 
   return (
-    <motion.div variants={itemVariants} className="flex w-full relative">
+    <motion.div
+      variants={itemVariants}
+      className="flex w-full relative container mx-auto"
+    >
       <AnimatePresence mode="wait">
         <motion.div
           key={activeIndex}

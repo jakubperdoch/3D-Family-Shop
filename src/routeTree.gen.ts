@@ -16,7 +16,7 @@ import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsProductRouteImport } from './routes/products_/$product'
-import { Route as CollectionsCategoryRouteImport } from './routes/collections_/$category'
+import { Route as CollectionsCollectionRouteImport } from './routes/collections_/$collection'
 
 const TrainingsRoute = TrainingsRouteImport.update({
   id: '/trainings',
@@ -53,9 +53,9 @@ const ProductsProductRoute = ProductsProductRouteImport.update({
   path: '/products/$product',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CollectionsCategoryRoute = CollectionsCategoryRouteImport.update({
-  id: '/collections_/$category',
-  path: '/collections/$category',
+const CollectionsCollectionRoute = CollectionsCollectionRouteImport.update({
+  id: '/collections_/$collection',
+  path: '/collections/$collection',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -66,7 +66,7 @@ export interface FileRoutesByFullPath {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/collections/$category': typeof CollectionsCategoryRoute
+  '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
 }
 export interface FileRoutesByTo {
@@ -76,7 +76,7 @@ export interface FileRoutesByTo {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/collections/$category': typeof CollectionsCategoryRoute
+  '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
 }
 export interface FileRoutesById {
@@ -87,7 +87,7 @@ export interface FileRoutesById {
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/trainings': typeof TrainingsRoute
-  '/collections_/$category': typeof CollectionsCategoryRoute
+  '/collections_/$collection': typeof CollectionsCollectionRoute
   '/products_/$product': typeof ProductsProductRoute
 }
 export interface FileRouteTypes {
@@ -99,7 +99,7 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/collections/$category'
+    | '/collections/$collection'
     | '/products/$product'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -109,7 +109,7 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/collections/$category'
+    | '/collections/$collection'
     | '/products/$product'
   id:
     | '__root__'
@@ -119,7 +119,7 @@ export interface FileRouteTypes {
     | '/modeling'
     | '/profile'
     | '/trainings'
-    | '/collections_/$category'
+    | '/collections_/$collection'
     | '/products_/$product'
   fileRoutesById: FileRoutesById
 }
@@ -130,7 +130,7 @@ export interface RootRouteChildren {
   ModelingRoute: typeof ModelingRoute
   ProfileRoute: typeof ProfileRoute
   TrainingsRoute: typeof TrainingsRoute
-  CollectionsCategoryRoute: typeof CollectionsCategoryRoute
+  CollectionsCollectionRoute: typeof CollectionsCollectionRoute
   ProductsProductRoute: typeof ProductsProductRoute
 }
 
@@ -185,11 +185,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsProductRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/collections_/$category': {
-      id: '/collections_/$category'
-      path: '/collections/$category'
-      fullPath: '/collections/$category'
-      preLoaderRoute: typeof CollectionsCategoryRouteImport
+    '/collections_/$collection': {
+      id: '/collections_/$collection'
+      path: '/collections/$collection'
+      fullPath: '/collections/$collection'
+      preLoaderRoute: typeof CollectionsCollectionRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -202,7 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   ModelingRoute: ModelingRoute,
   ProfileRoute: ProfileRoute,
   TrainingsRoute: TrainingsRoute,
-  CollectionsCategoryRoute: CollectionsCategoryRoute,
+  CollectionsCollectionRoute: CollectionsCollectionRoute,
   ProductsProductRoute: ProductsProductRoute,
 }
 export const routeTree = rootRouteImport

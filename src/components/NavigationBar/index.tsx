@@ -21,11 +21,11 @@ const navigationItems = [
     label: "Produkty",
     enableDropdown: true,
     items: [
-      { label: "3D tlačiarne", category: "3d-printers" },
-      { label: "Tlačové materiály", category: "print-materials" },
-      { label: "Príslušenstvo", category: "accessories" },
-      { label: "Náhradné diely", category: "spare-parts" },
-      { label: "Služby a servis", category: "services" },
+      { label: "3D tlačiarne", collection: "3d-printers" },
+      { label: "Tlačové materiály", collection: "print-materials" },
+      { label: "Príslušenstvo", collection: "accessories" },
+      { label: "Náhradné diely", collection: "spare-parts" },
+      { label: "Služby a servis", collection: "services" },
     ],
   },
   { label: "Kalkulačka na 3d tlač", to: "/calculator" },
@@ -35,16 +35,16 @@ const navigationItems = [
 
 export default function NavigationBar() {
   return (
-    <motion.div variants={itemVariants}>
+    <motion.div variants={itemVariants} className="container mx-auto">
       <Navbar
-        shouldHideOnScroll={true}
+        shouldHideOnScroll
         maxWidth="full"
         className="bg-[#0D0D0D] border border-[#FFFFFF33] rounded-3xl mt-6 mx-auto px-2"
       >
         <NavbarContent className="hidden sm:flex gap-9" justify="start">
           {navigationItems.map((item) =>
             item?.enableDropdown ? (
-              <Dropdown>
+              <Dropdown key={item?.label}>
                 <NavbarItem>
                   <DropdownTrigger>
                     <Button
@@ -61,10 +61,10 @@ export default function NavigationBar() {
 
                 <DropdownMenu>
                   {item.items!.map((opt) => (
-                    <DropdownItem key={opt.category}>
+                    <DropdownItem key={opt.collection}>
                       <Link
-                        to="/collections/$category"
-                        params={{ category: opt.category }}
+                        to="/collections/$collection"
+                        params={{ collection: opt.collection }}
                         className="text-sm flex w-full transition-colors duration-300 ease-in-out [&.active]:text-primary"
                       >
                         {opt.label}

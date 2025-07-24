@@ -17,7 +17,7 @@ export default function BestSellersSection({ cards }: BestSellersSectionProps) {
   return (
     <motion.section
       variants={itemVariants}
-      className="flex flex-col gap-8 mt-20"
+      className="flex flex-col gap-8 container mx-auto"
     >
       <h2 className="font-bold text-[4.6rem] leading-20">
         Čerstvé dizajny,
@@ -36,7 +36,7 @@ export default function BestSellersSection({ cards }: BestSellersSectionProps) {
                 alt={card?.title}
               />
               <h3 className="text-2xl font-bold">{card?.title}</h3>
-              <Button className="!bg-[#232321] text-white py-2 px-4">
+              <Button className="bg-dark-gray text-white py-2 px-4">
                 Zobraziť Produkt
               </Button>
             </div>
