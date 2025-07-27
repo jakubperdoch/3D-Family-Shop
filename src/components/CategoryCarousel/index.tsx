@@ -63,9 +63,6 @@ export default function CategoryCarousel({
           slidesPerView={2}
           className="!ms-14 rounded-tl-[4rem]"
         >
-          {/*
-          every second slide will have a different background color
-          */}
           {categories.map((category, index) => (
             <SwiperSlide
               key={category.id}
@@ -82,7 +79,7 @@ export default function CategoryCarousel({
                   {category?.title}
                 </h3>
                 <Button className="bg-dark-gray w-12 h-12" isIconOnly={true}>
-                  <FiArrowUpRight size="2rem" />
+                  <FiArrowUpRight size="1.5rem" />
                 </Button>
               </div>
             </SwiperSlide>

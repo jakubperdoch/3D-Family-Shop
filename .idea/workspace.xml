@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update BestSellersSection titles and adjust workspace configuration">
-      <change afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add CategoryCarousel component, refactor routes for collections, and update layout styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/collections_/$category.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jakubperdoch/Developer/3DFamily/src/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/src/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/utils" />
@@ -99,7 +86,8 @@
       <workItem from="1753219722183" duration="3862000" />
       <workItem from="1753224229753" duration="1107000" />
       <workItem from="1753225346135" duration="9157000" />
-      <workItem from="1753260126992" duration="15215000" />
+      <workItem from="1753260126992" duration="15925000" />
+      <workItem from="1753575540726" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -189,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753307415590</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add CategoryCarousel component, refactor routes for collections, and update layout styles">
+      <option name="closed" value="true" />
+      <created>1753315653049</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1753315653049</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +203,8 @@
     <MESSAGE value="add itemVariants to FeaturedCarousel for animation effects" />
     <MESSAGE value="add BestSellersSection component and integrate with FeaturedCarousel" />
     <MESSAGE value="update BestSellersSection titles and adjust workspace configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="update BestSellersSection titles and adjust workspace configuration" />
+    <MESSAGE value="add CategoryCarousel component and update routing for collections" />
+    <MESSAGE value="add CategoryCarousel component, refactor routes for collections, and update layout styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CategoryCarousel component, refactor routes for collections, and update layout styles" />
   </component>
 </project>
