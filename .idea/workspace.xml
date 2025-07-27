@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ReviewCarousel component and integrate it into the main application">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update ReviewCarousel component to enhance functionality and improve layout">
+      <change afterPath="$PROJECT_DIR$/src/components/RevealOnScroll/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,26 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/src/utils&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jakubperdoch/Developer/3DFamily/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -89,7 +91,7 @@
       <workItem from="1753225346135" duration="9157000" />
       <workItem from="1753260126992" duration="15925000" />
       <workItem from="1753575540726" duration="21000" />
-      <workItem from="1753641074718" duration="8354000" />
+      <workItem from="1753641074718" duration="10139000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -203,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753651137490</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update ReviewCarousel component to enhance functionality and improve layout">
+      <option name="closed" value="true" />
+      <created>1753652496841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753652496841</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +235,7 @@
     <MESSAGE value="add CategoryCarousel component, refactor routes for collections, and update layout styles" />
     <MESSAGE value="update button size in CategoryCarousel and clean up commented code" />
     <MESSAGE value="add ReviewCarousel component and integrate it into the main application" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ReviewCarousel component and integrate it into the main application" />
+    <MESSAGE value="update ReviewCarousel component to enhance functionality and improve layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ReviewCarousel component to enhance functionality and improve layout" />
   </component>
 </project>

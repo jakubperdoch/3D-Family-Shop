@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@heroui/react";
 import { itemVariants } from "@/utils/animations.ts";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 export default function FeaturedCarousel() {
   const [images] = useState<string[]>([
@@ -27,7 +28,7 @@ export default function FeaturedCarousel() {
   }, [userClicked]);
 
   return (
-    <motion.div
+    <RevealOnScroll
       variants={itemVariants}
       className="flex w-full relative container mx-auto"
     >
@@ -83,6 +84,6 @@ export default function FeaturedCarousel() {
             ),
         )}
       </div>
-    </motion.div>
+    </RevealOnScroll>
   );
 }

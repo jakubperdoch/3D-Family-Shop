@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/react";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 type CardProps = {
   id: string;
@@ -15,7 +16,7 @@ interface BestSellersSectionProps {
 
 export default function BestSellersSection({ cards }: BestSellersSectionProps) {
   return (
-    <motion.section
+    <RevealOnScroll
       variants={itemVariants}
       className="flex flex-col gap-8 container mx-auto"
     >
@@ -42,6 +43,6 @@ export default function BestSellersSection({ cards }: BestSellersSectionProps) {
             </div>
           ))}
       </motion.div>
-    </motion.section>
+    </RevealOnScroll>
   );
 }

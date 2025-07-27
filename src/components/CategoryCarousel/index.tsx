@@ -7,6 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Image } from "@heroui/image";
 import { Autoplay, Navigation } from "swiper/modules";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 type CategoryProps = {
   id: string;
@@ -22,7 +23,7 @@ export default function CategoryCarousel({
   categories,
 }: CategoryCarouselProps) {
   return (
-    <motion.section
+    <RevealOnScroll
       variants={itemVariants}
       className="flex flex-col gap-16 w-full bg-dark-gray"
     >
@@ -61,7 +62,7 @@ export default function CategoryCarousel({
             prevEl: ".swiper-button-prev",
           }}
           slidesPerView={2}
-          className="!ms-28 rounded-tl-[4rem]"
+          className="!ms-32 rounded-tl-[4rem]"
         >
           {categories.map((category, index) => (
             <SwiperSlide
@@ -86,6 +87,6 @@ export default function CategoryCarousel({
           ))}
         </Swiper>
       </motion.div>
-    </motion.section>
+    </RevealOnScroll>
   );
 }

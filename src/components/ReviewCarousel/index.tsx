@@ -7,6 +7,7 @@ import { Autoplay } from "swiper/modules";
 import { Link } from "@heroui/link";
 import type { Swiper as SwiperClass } from "swiper";
 import { useRef } from "react";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 type ReviewProps = {
   id: string;
@@ -33,7 +34,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
   const swiperRef = useRef<SwiperClass | null>(null);
 
   return (
-    <motion.section
+    <RevealOnScroll
       variants={itemVariants}
       className="flex flex-col gap-8 container mb-10 mx-auto"
     >
@@ -114,6 +115,6 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
           })}
         </Swiper>
       </motion.div>
-    </motion.section>
+    </RevealOnScroll>
   );
 }
