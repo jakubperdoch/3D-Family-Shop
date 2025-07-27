@@ -6,7 +6,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Image } from "@heroui/image";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 type CategoryProps = {
   id: string;
@@ -55,7 +55,7 @@ export default function CategoryCarousel({
             disableOnInteraction: true,
           }}
           loop={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
