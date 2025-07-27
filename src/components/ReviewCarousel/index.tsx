@@ -4,6 +4,9 @@ import { Image } from "@heroui/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import { Autoplay } from "swiper/modules";
+import { Link } from "@heroui/link";
+import type { Swiper as SwiperClass } from "swiper";
+import { useRef } from "react";
 
 type ReviewProps = {
   id: string;
@@ -27,6 +30,8 @@ const quality: { [key: number]: string } = {
 export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
+  const swiperRef = useRef<SwiperClass | null>(null);
+
   return (
     <motion.section
       variants={itemVariants}
@@ -37,6 +42,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
       <motion.div variants={itemVariants} className="overflow-hidden">
         <Swiper
           modules={[Autoplay]}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           autoplay={{
             delay: 5000,
             disableOnInteraction: true,
@@ -55,11 +61,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
                   transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
                   className="bg-white rounded-t-xl text-dark-gray p-8 flex flex-col "
                 >
-                  <h3 className="font-semibold text-2xl">
-                    {quality[review.rating]}
-                  </h3>
-
-                  <motion.div layout className="mt-4">
+                  <motion.div layout>
                     <motion.div
                       key={isExpanded ? "expanded" : "collapsed"}
                       initial={{ opacity: 0, filter: "blur(4px)" }}
@@ -68,6 +70,9 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
                       transition={{ duration: 0.7 }}
                       layout
                     >
+                      <h3 className="font-semibold text-2xl mb-4">
+                        {quality[review.rating]}
+                      </h3>
                       <p
                         className={`opacity-80 ${isExpanded ? "" : "line-clamp-2"}`}
                       >
@@ -75,14 +80,25 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
                       </p>
                     </motion.div>
 
-                    <button
-                      onClick={() =>
-                        setExpandedId(isExpanded ? null : review.id)
-                      }
-                      className="text-sm text-primary mt-2 underline"
+                    <Link
+                      isBlock={true}
+                      color="primary"
+                      className="mt-2 text-sm"
+                      onPress={() => {
+                        setExpandedId(isExpanded ? null : review.id);
+
+                        const swiper = swiperRef.current;
+                        if (swiper?.autoplay) {
+                          if (!isExpanded) {
+                            swiper.autoplay.stop();
+                          } else {
+                            swiper.autoplay.start();
+                          }
+                        }
+                      }}
                     >
                       {isExpanded ? "Zobraziť menej" : "Zobraziť viac"}
-                    </button>
+                    </Link>
                   </motion.div>
                 </motion.div>
 

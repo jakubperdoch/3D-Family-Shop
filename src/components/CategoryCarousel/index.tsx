@@ -61,7 +61,7 @@ export default function CategoryCarousel({
             prevEl: ".swiper-button-prev",
           }}
           slidesPerView={2}
-          className="!ms-14 rounded-tl-[4rem]"
+          className="!ms-28 rounded-tl-[4rem]"
         >
           {categories.map((category, index) => (
             <SwiperSlide
