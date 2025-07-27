@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update ReviewCarousel component to enhance functionality and improve layout">
-      <change afterPath="$PROJECT_DIR$/src/components/RevealOnScroll/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor components to use RevealOnScroll for enhanced visibility on scroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,7 @@
       <workItem from="1753225346135" duration="9157000" />
       <workItem from="1753260126992" duration="15925000" />
       <workItem from="1753575540726" duration="21000" />
-      <workItem from="1753641074718" duration="10139000" />
+      <workItem from="1753641074718" duration="10757000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -213,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753652496841</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactor components to use RevealOnScroll for enhanced visibility on scroll">
+      <option name="closed" value="true" />
+      <created>1753659022334</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753659022334</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +246,7 @@
     <MESSAGE value="update button size in CategoryCarousel and clean up commented code" />
     <MESSAGE value="add ReviewCarousel component and integrate it into the main application" />
     <MESSAGE value="update ReviewCarousel component to enhance functionality and improve layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ReviewCarousel component to enhance functionality and improve layout" />
+    <MESSAGE value="refactor components to use RevealOnScroll for enhanced visibility on scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor components to use RevealOnScroll for enhanced visibility on scroll" />
   </component>
 </project>

@@ -9,19 +9,31 @@ import { Image } from "@heroui/image";
 import { Autoplay, Navigation } from "swiper/modules";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
+const categories: CategoryProps[] = [
+  {
+    id: "1",
+    title: "3D fotolampa",
+    imageUrl: "../../public/placeholder-lamp.png",
+  },
+  {
+    id: "2",
+    title: "Hotové Výrobky",
+    imageUrl: "../../public/placeholder-griffin.png",
+  },
+  {
+    id: "3",
+    title: "Náhradné diely",
+    imageUrl: "../../public/placeholder-part.png",
+  },
+];
+
 type CategoryProps = {
   id: string;
   title: string;
   imageUrl: string;
 };
 
-interface CategoryCarouselProps {
-  categories: CategoryProps[];
-}
-
-export default function CategoryCarousel({
-  categories,
-}: CategoryCarouselProps) {
+export default function CategoryCarousel() {
   return (
     <RevealOnScroll
       variants={itemVariants}

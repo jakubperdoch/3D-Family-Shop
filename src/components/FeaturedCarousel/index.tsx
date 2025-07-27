@@ -5,12 +5,26 @@ import { Button } from "@heroui/react";
 import { itemVariants } from "@/utils/animations.ts";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
-export default function FeaturedCarousel() {
-  const [images] = useState<string[]>([
+const featuredProduct: FeaturedProductProps = {
+  id: "1",
+  images: [
     "../../public/placeholder.png",
     "../../public/placeholder--2.png",
     "../../public/placeholder--3.jpg",
-  ]);
+  ],
+  title: "1972 Datsun 240k GT",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit, dui quis.",
+};
+
+type FeaturedProductProps = {
+  id: string;
+  images: string[];
+  title: string;
+  description: string;
+};
+
+export default function FeaturedCarousel() {
   const [userClicked, setUserClicked] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -22,7 +36,7 @@ export default function FeaturedCarousel() {
   useEffect(() => {
     if (userClicked) return;
     const id = setInterval(() => {
-      setActiveIndex((i) => (i + 1) % images.length);
+      setActiveIndex((i) => (i + 1) % featuredProduct?.images.length);
     }, 5000);
     return () => clearInterval(id);
   }, [userClicked]);
@@ -43,7 +57,7 @@ export default function FeaturedCarousel() {
         >
           <Image
             removeWrapper
-            src={images[activeIndex]}
+            src={featuredProduct.images[activeIndex]}
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -52,10 +66,9 @@ export default function FeaturedCarousel() {
       <div className="absolute bottom-0 z-[2] h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_31.12%,rgba(0,0,0,0.5)_66.06%)] rounded-b-xl"></div>
 
       <div className="absolute z-[2] left-8 bottom-8 flex flex-col max-w-3xl">
-        <h4 className="text-7xl font-bold">1972 Datsun 240k GT</h4>
+        <h4 className="text-7xl font-bold">{featuredProduct.title}</h4>
         <span className="text-2xl max-w-lg ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          suscipit, dui quis
+          {featuredProduct.description}
         </span>
 
         <Button
@@ -67,7 +80,7 @@ export default function FeaturedCarousel() {
       </div>
 
       <div className="absolute right-8 bottom-8 flex flex-col gap-2">
-        {images.map(
+        {featuredProduct.images.map(
           (image, index) =>
             index !== activeIndex && (
               <button

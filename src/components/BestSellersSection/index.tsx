@@ -3,6 +3,30 @@ import { itemVariants } from "@/utils/animations.ts";
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/react";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { Link } from "@tanstack/react-router";
+
+const bestSellersCards: CardProps[] = [
+  {
+    id: "1",
+    image: "../../public/bestseller-card.png",
+    title: "Lorem ipsum dolor sit amet, consectetur",
+  },
+  {
+    id: "2",
+    image: "../../public/bestseller-card.png",
+    title: "Lorem ipsum dolor sit amet, consectetur",
+  },
+  {
+    id: "3",
+    image: "../../public/bestseller-card.png",
+    title: "Lorem ipsum dolor sit amet, consectetur",
+  },
+  {
+    id: "4",
+    image: "../../public/bestseller-card.png",
+    title: "Lorem ipsum dolor sit amet, consectetur",
+  },
+];
 
 type CardProps = {
   id: string;
@@ -10,11 +34,7 @@ type CardProps = {
   title: string;
 };
 
-interface BestSellersSectionProps {
-  cards: CardProps[];
-}
-
-export default function BestSellersSection({ cards }: BestSellersSectionProps) {
+export default function BestSellersSection() {
   return (
     <RevealOnScroll
       variants={itemVariants}
@@ -26,9 +46,9 @@ export default function BestSellersSection({ cards }: BestSellersSectionProps) {
       </h2>
 
       <motion.div variants={itemVariants} className="flex flex-row gap-4">
-        {cards &&
-          cards.length > 0 &&
-          cards.map((card) => (
+        {bestSellersCards &&
+          bestSellersCards.length > 0 &&
+          bestSellersCards.map((card) => (
             <div key={card?.id} className="flex flex-col gap-4">
               <Image
                 src={card?.image}
@@ -37,9 +57,11 @@ export default function BestSellersSection({ cards }: BestSellersSectionProps) {
                 alt={card?.title}
               />
               <h3 className="text-2xl font-bold">{card?.title}</h3>
-              <Button className="bg-dark-gray text-white py-2 px-4">
-                Zobraziť Produkt
-              </Button>
+              <Link to={"/products/$product"} params={{ product: card?.id }}>
+                <Button className="bg-dark-gray text-white py-2 px-4">
+                  Zobraziť Produkt
+                </Button>
+              </Link>
             </div>
           ))}
       </motion.div>

@@ -9,16 +9,50 @@ import type { Swiper as SwiperClass } from "swiper";
 import { useRef } from "react";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 
+const reviews: ReviewProps[] = [
+  {
+    id: "1",
+    imageUrl: "../../public/bestseller-card.png",
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    rating: 5,
+  },
+  {
+    id: "2",
+    imageUrl: "../../public/bestseller-card.png",
+    review:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    rating: 4,
+  },
+  {
+    id: "3",
+    imageUrl: "../../public/bestseller-card.png",
+    review:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    rating: 5,
+  },
+  {
+    id: "4",
+    imageUrl: "../../public/bestseller-card.png",
+    review:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+    rating: 4,
+  },
+  {
+    id: "5",
+    imageUrl: "../../public/bestseller-card.png",
+    review:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+    rating: 3,
+  },
+];
+
 type ReviewProps = {
   id: string;
   imageUrl: string;
   review: string;
   rating: number;
 };
-
-interface ReviewCarouselProps {
-  reviews: ReviewProps[];
-}
 
 const quality: { [key: number]: string } = {
   1: "Veľmi nespokojný",
@@ -28,7 +62,7 @@ const quality: { [key: number]: string } = {
   5: "Nad očakávania",
 };
 
-export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
+export default function ReviewCarousel() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const swiperRef = useRef<SwiperClass | null>(null);
