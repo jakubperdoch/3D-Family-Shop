@@ -88,7 +88,7 @@ export default function CategoryCarousel() {
               />
 
               <div className="flex justify-between items-end">
-                <h3 className="text-dark-gray font-semibold text-4xl max-w-[13rem]">
+                <h3 className="text-dark-gray capitalize font-semibold text-4xl max-w-[13rem]">
                   {category?.title}
                 </h3>
                 <Button className="bg-dark-gray w-12 h-12" isIconOnly={true}>
