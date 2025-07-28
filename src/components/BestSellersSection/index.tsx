@@ -10,21 +10,25 @@ const bestSellersCards: CardProps[] = [
     id: "1",
     image: "../../public/bestseller-card.png",
     title: "Lorem ipsum dolor sit amet, consectetur",
+    price: 19.99,
   },
   {
     id: "2",
     image: "../../public/bestseller-card.png",
     title: "Lorem ipsum dolor sit amet, consectetur",
+    price: 24.99,
   },
   {
     id: "3",
     image: "../../public/bestseller-card.png",
     title: "Lorem ipsum dolor sit amet, consectetur",
+    price: 29.99,
   },
   {
     id: "4",
     image: "../../public/bestseller-card.png",
     title: "Lorem ipsum dolor sit amet, consectetur",
+    price: 34.99,
   },
 ];
 
@@ -32,6 +36,7 @@ type CardProps = {
   id: string;
   image: string;
   title: string;
+  price: number;
 };
 
 export default function BestSellersSection() {
@@ -57,9 +62,14 @@ export default function BestSellersSection() {
                 alt={card?.title}
               />
               <h3 className="text-2xl font-bold">{card?.title}</h3>
-              <Link to={"/products/$product"} params={{ product: card?.id }}>
-                <Button className="bg-dark-gray text-white py-2 px-4">
-                  Zobraziť Produkt
+              <Link
+                to={"/products/$product"}
+                className="w-full"
+                params={{ product: card?.id }}
+              >
+                <Button className="bg-dark-gray w-full text-white py-2 px-4">
+                  Zobraziť Produkt -{" "}
+                  <span className="text-primary">{card?.price} €</span>
                 </Button>
               </Link>
             </div>

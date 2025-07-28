@@ -16,7 +16,7 @@ function App() {
       <section className="container mx-auto">
         <motion.h1
           variants={itemVariants}
-          className="text-[9.5rem] font-bold uppercase"
+          className="text-[9.5rem] font-bold uppercase "
         >
           Dokonalá <span className="text-primary">tlač</span>
         </motion.h1>

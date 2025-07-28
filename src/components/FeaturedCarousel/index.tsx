@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@heroui/react";
 import { itemVariants } from "@/utils/animations.ts";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { Link } from "@tanstack/react-router";
 
 const featuredProduct: FeaturedProductProps = {
   id: "1",
@@ -15,6 +16,7 @@ const featuredProduct: FeaturedProductProps = {
   title: "1972 Datsun 240k GT",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit, dui quis.",
+  price: 199.99,
 };
 
 type FeaturedProductProps = {
@@ -22,6 +24,7 @@ type FeaturedProductProps = {
   images: string[];
   title: string;
   description: string;
+  price: number;
 };
 
 export default function FeaturedCarousel() {
@@ -66,7 +69,14 @@ export default function FeaturedCarousel() {
       <div className="absolute bottom-0 z-[2] h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_31.12%,rgba(0,0,0,0.5)_66.06%)] rounded-b-xl"></div>
 
       <div className="absolute z-[2] left-8 bottom-8 flex flex-col max-w-3xl">
-        <h4 className="text-7xl font-bold">{featuredProduct.title}</h4>
+        <Link
+          to={"/products/$product"}
+          params={{ product: featuredProduct.id }}
+        >
+          <h4 className="text-7xl font-bold hover:text-primary hover:opacity-90 transition-all duration-300 ease-in-out cursor-pointer">
+            {featuredProduct.title}
+          </h4>
+        </Link>
         <span className="text-2xl max-w-lg ">
           {featuredProduct.description}
         </span>
@@ -75,7 +85,7 @@ export default function FeaturedCarousel() {
           className="w-fit mt-6 px-8 py-2 text-white text-sm font-medium"
           color={"primary"}
         >
-          Pridať do Košíka
+          Pridať do Košíka - {featuredProduct.price.toFixed(2)} €
         </Button>
       </div>
 
