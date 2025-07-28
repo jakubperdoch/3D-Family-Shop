@@ -3,6 +3,7 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import NavigationBar from "@/components/NavigationBar";
 import { motion } from "framer-motion";
 import { containerVariants } from "@/utils/animations.ts";
+import Footer from "@/components/Footer";
 
 export const Route = createRootRoute({
   component: () => (
@@ -15,6 +16,7 @@ export const Route = createRootRoute({
       >
         <NavigationBar />
         <Outlet />
+        <Footer />
       </motion.div>
       <TanStackRouterDevtools />
     </>

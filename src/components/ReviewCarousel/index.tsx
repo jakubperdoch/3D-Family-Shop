@@ -94,7 +94,7 @@ export default function ReviewCarousel() {
                 <motion.div
                   layout
                   transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
-                  className="bg-white rounded-t-xl text-dark-gray p-8 flex flex-col "
+                  className="bg-white rounded-t-4xl text-dark-gray p-8 flex flex-col "
                 >
                   <motion.div layout>
                     <motion.div
@@ -140,7 +140,7 @@ export default function ReviewCarousel() {
                 <motion.div layout>
                   <Image
                     removeWrapper
-                    className="rounded-t-none max-h-80 w-full object-cover"
+                    className="rounded-t-none rounded-b-4xl max-h-80 w-full object-cover"
                     src={review.imageUrl}
                   />
                 </motion.div>

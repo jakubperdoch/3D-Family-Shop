@@ -73,7 +73,7 @@ export default function FeaturedCarousel() {
           to={"/products/$product"}
           params={{ product: featuredProduct.id }}
         >
-          <h4 className="text-7xl font-bold hover:text-primary hover:opacity-90 transition-all duration-300 ease-in-out cursor-pointer">
+          <h4 className="text-7xl font-bold hover:text-primary transition-all duration-300 ease-in-out cursor-pointer">
             {featuredProduct.title}
           </h4>
         </Link>

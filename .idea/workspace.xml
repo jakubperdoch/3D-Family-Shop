@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ProductPage component with product details and image gallery">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753659543427</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add ProductPage component with product details and image gallery">
+      <option name="closed" value="true" />
+      <created>1753663698666</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1753663698666</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +262,7 @@
     <MESSAGE value="update ReviewCarousel component to enhance functionality and improve layout" />
     <MESSAGE value="refactor components to use RevealOnScroll for enhanced visibility on scroll" />
     <MESSAGE value="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure" />
+    <MESSAGE value="add ProductPage component with product details and image gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ProductPage component with product details and image gallery" />
   </component>
 </project>
