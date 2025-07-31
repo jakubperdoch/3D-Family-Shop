@@ -57,7 +57,7 @@ export default function BestSellersSection() {
             <div key={card?.id} className="flex flex-col gap-4">
               <Image
                 src={card?.image}
-                className="border-5 border-white rounded-[1.75rem] "
+                className="border-5 border-white rounded-[1.75rem]"
                 removeWrapper={true}
                 alt={card?.title}
               />

@@ -58,7 +58,7 @@ function ProductPage() {
             {product.images.map((image, index) => (
               <PhotoView src={image} key={index}>
                 <Image
-                  className="w-full h-full object-cover cursor-pointer hover:scale-95"
+                  className="w-full h-full rounded-[1.75rem] object-cover cursor-pointer hover:scale-95"
                   removeWrapper={true}
                   src={image}
                 />

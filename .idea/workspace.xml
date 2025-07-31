@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ProductPage component with product details and image gallery">
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add Footer component with responsive design and reveal on scroll effect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,8 @@
       <workItem from="1753260126992" duration="15925000" />
       <workItem from="1753575540726" duration="21000" />
       <workItem from="1753641074718" duration="12151000" />
+      <workItem from="1753701160525" duration="92000" />
+      <workItem from="1753971241586" duration="171000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -237,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753663698666</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add Footer component with responsive design and reveal on scroll effect">
+      <option name="closed" value="true" />
+      <created>1753675276350</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753675276350</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +272,7 @@
     <MESSAGE value="refactor components to use RevealOnScroll for enhanced visibility on scroll" />
     <MESSAGE value="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure" />
     <MESSAGE value="add ProductPage component with product details and image gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ProductPage component with product details and image gallery" />
+    <MESSAGE value="add Footer component with responsive design and reveal on scroll effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Footer component with responsive design and reveal on scroll effect" />
   </component>
 </project>
