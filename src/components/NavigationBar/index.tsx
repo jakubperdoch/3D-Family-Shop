@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { FaUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-
+import { useSelector } from "react-redux";
 import {
   Button,
   Dropdown,
@@ -14,6 +14,8 @@ import {
   DropdownTrigger,
 } from "@heroui/react";
 import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
+
+import type { RootState } from "@/store/types.ts";
 
 const navigationItems = [
   { label: "Domov", to: "/" },
@@ -34,6 +36,10 @@ const navigationItems = [
 ];
 
 export default function NavigationBar() {
+  const cartCount = useSelector(
+    (state: RootState) => state.cart?.totalQuantity,
+  );
+
   return (
     <motion.div variants={itemVariants} className="container mx-auto">
       <Navbar
@@ -104,7 +110,7 @@ export default function NavigationBar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <NavigationCart count={5} />
+            <NavigationCart count={cartCount ?? 0} />
           </NavbarItem>
         </NavbarContent>
       </Navbar>

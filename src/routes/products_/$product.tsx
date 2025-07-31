@@ -3,6 +3,9 @@ import { Image } from "@heroui/image";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { BreadcrumbItem, Breadcrumbs, Button } from "@heroui/react";
 import RelatedProductsSection from "@/components/RelatedProductsSection";
+import { useDispatch } from "react-redux";
+import type { AppDispatch } from "@/store/types";
+import { addToCart } from "@/store/slices/cartSlice.ts";
 
 export const Route = createFileRoute("/products_/$product")({
   component: ProductPage,
@@ -41,6 +44,8 @@ type ProductPageProps = {
 };
 
 function ProductPage() {
+  const dispatch = useDispatch<AppDispatch>();
+
   return (
     <div className="container flex flex-col gap-32 mx-auto mt-12 mb-10">
       <Breadcrumbs className="mb-8">
@@ -79,6 +84,19 @@ function ProductPage() {
           </span>
 
           <Button
+            onPress={() => {
+              dispatch(
+                addToCart({
+                  id: product.id,
+                  title: product.name,
+                  category: product.category,
+                  material: product.material,
+                  price: product.price,
+                  image: product.images[0],
+                  quantity: 1,
+                }),
+              );
+            }}
             className="my-4 !text-sm text-white uppercase font-medium"
             size={"lg"}
             color="primary"

@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update image styling in Product and index components for consistency">
-      <change afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/card.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/slices/cartSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +101,8 @@
       <workItem from="1753575540726" duration="21000" />
       <workItem from="1753641074718" duration="12151000" />
       <workItem from="1753701160525" duration="92000" />
-      <workItem from="1753971241586" duration="859000" />
+      <workItem from="1753971241586" duration="5005000" />
+      <workItem from="1753991443367" duration="5031000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -258,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753971432137</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update image styling in Product and index components for consistency">
+      <option name="closed" value="true" />
+      <created>1753972130918</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1753972130918</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,6 +5,9 @@ import { Button } from "@heroui/react";
 import { itemVariants } from "@/utils/animations.ts";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { Link } from "@tanstack/react-router";
+import { useDispatch } from "react-redux";
+import type { AppDispatch } from "@/store/types";
+import { addToCart } from "@/store/slices/cartSlice.ts";
 
 const featuredProduct: FeaturedProductProps = {
   id: "1",
@@ -17,6 +20,11 @@ const featuredProduct: FeaturedProductProps = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit, dui quis.",
   price: 199.99,
+  category: "Dekorácie",
+  material: "Akrylové sklo",
+  dimensions: "24 cm × 18 cm × 5 cm",
+  weight: "420 g",
+  isNew: true,
 };
 
 type FeaturedProductProps = {
@@ -25,11 +33,18 @@ type FeaturedProductProps = {
   title: string;
   description: string;
   price: number;
+  category: string;
+  material: string;
+  dimensions: string;
+  weight: string;
+  isNew: boolean;
 };
 
 export default function FeaturedCarousel() {
   const [userClicked, setUserClicked] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const dispatch = useDispatch<AppDispatch>();
 
   const handleImageChange = (index: number) => {
     setUserClicked(true);
@@ -82,6 +97,19 @@ export default function FeaturedCarousel() {
         </span>
 
         <Button
+          onPress={() => {
+            dispatch(
+              addToCart({
+                id: featuredProduct.id,
+                title: featuredProduct.title,
+                category: featuredProduct.category,
+                material: featuredProduct.material,
+                price: featuredProduct.price,
+                image: featuredProduct.images[activeIndex],
+                quantity: 1,
+              }),
+            );
+          }}
           className="w-fit mt-6 px-8 py-2 text-white text-sm font-medium"
           color={"primary"}
         >
