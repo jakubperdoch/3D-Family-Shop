@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
-import { itemVariants } from "@/utils/animations.ts";
+import type { CardProps } from "@/types";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
+import { containerVariants, itemVariants } from "@/utils/animations.ts";
+import { motion } from "framer-motion";
 import Card from "@/components/Card.tsx";
 
-const bestSellersCards: CardProps[] = [
+const relatedProducts: CardProps[] = [
   {
     id: "1",
     image: "../../public/bestseller-card.png",
@@ -30,28 +31,18 @@ const bestSellersCards: CardProps[] = [
   },
 ];
 
-type CardProps = {
-  id: string;
-  image: string;
-  title: string;
-  price: number;
-};
-
-export default function BestSellersSection() {
+export default function RelatedProductsSection() {
   return (
     <RevealOnScroll
-      variants={itemVariants}
-      className="flex flex-col gap-10 container mx-auto"
+      className="flex flex-col gap-10"
+      variants={containerVariants}
     >
-      <h2 className="font-bold text-[4.6rem] leading-20">
-        Čerstvé dizajny,
-        <br /> okamžite k objednaniu.
-      </h2>
+      <h3 className="text-5xl font-bold">Mohlo by sa vám páčiť</h3>
 
       <motion.div variants={itemVariants} className="flex flex-row gap-4">
-        {bestSellersCards &&
-          bestSellersCards.length > 0 &&
-          bestSellersCards.map((card) => (
+        {relatedProducts &&
+          relatedProducts.length > 0 &&
+          relatedProducts.map((card) => (
             <Card
               key={card?.id}
               id={card?.id}

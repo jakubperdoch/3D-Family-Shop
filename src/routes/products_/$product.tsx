@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Image } from "@heroui/image";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { BreadcrumbItem, Breadcrumbs, Button } from "@heroui/react";
+import RelatedProductsSection from "@/components/RelatedProductsSection";
 
 export const Route = createFileRoute("/products_/$product")({
   component: ProductPage,
@@ -41,7 +42,7 @@ type ProductPageProps = {
 
 function ProductPage() {
   return (
-    <div className="container mx-auto mt-12">
+    <div className="container flex flex-col gap-32 mx-auto mt-12 mb-10">
       <Breadcrumbs className="mb-8">
         <BreadcrumbItem>
           <a href="/">Domov</a>
@@ -109,6 +110,8 @@ function ProductPage() {
           </div>
         </div>
       </section>
+
+      <RelatedProductsSection />
     </div>
   );
 }

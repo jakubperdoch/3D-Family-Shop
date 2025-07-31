@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add Footer component with responsive design and reveal on scroll effect">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update image styling in Product and index components for consistency">
+      <change afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/card.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
@@ -92,7 +96,7 @@
       <workItem from="1753575540726" duration="21000" />
       <workItem from="1753641074718" duration="12151000" />
       <workItem from="1753701160525" duration="92000" />
-      <workItem from="1753971241586" duration="171000" />
+      <workItem from="1753971241586" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -246,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753675276350</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update image styling in Product and index components for consistency">
+      <option name="closed" value="true" />
+      <created>1753971432137</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1753971432137</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +285,7 @@
     <MESSAGE value="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure" />
     <MESSAGE value="add ProductPage component with product details and image gallery" />
     <MESSAGE value="add Footer component with responsive design and reveal on scroll effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Footer component with responsive design and reveal on scroll effect" />
+    <MESSAGE value="update image styling in Product and index components for consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="update image styling in Product and index components for consistency" />
   </component>
 </project>
