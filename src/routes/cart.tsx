@@ -14,6 +14,8 @@ import { motion } from "framer-motion";
 import { IoTrashBinOutline } from "react-icons/io5";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { Button } from "@heroui/react";
+import AlertDialog from "@/components/AlertDialog";
+import { useState } from "react";
 
 export const Route = createFileRoute("/cart")({
   component: RouteComponent,
@@ -21,13 +23,23 @@ export const Route = createFileRoute("/cart")({
 
 function RouteComponent() {
   const dispatch = useDispatch();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
 
-  // Selectors to get cart items, total quantity, and total price from the Redux store
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const totalQuantity = useSelector(
     (state: RootState) => state.cart.totalQuantity,
   );
   const totalPrice = useSelector((state: RootState) => state.cart.totalPrice);
+
+  const handleModalOpen = (id: string, quantity: number) => {
+    if (quantity === 1) {
+      setSelectedItemId(id);
+      setIsModalOpen(true);
+    } else {
+      dispatch(decreaseQuantity(id));
+    }
+  };
 
   return (
     <RevealOnScroll
@@ -67,8 +79,9 @@ function RouteComponent() {
                   key={item?.id}
                 >
                   <Image
-                    removeWrapper
                     src={item?.image}
+                    width={"100%"}
+                    height={"100%"}
                     className="max-w-[12rem] h-auto object-cover"
                   />
 
@@ -82,8 +95,9 @@ function RouteComponent() {
                     <div className="flex items-center justify-between opacity-80 max-w-20">
                       <FaMinus
                         className="cursor-pointer"
-                        onClick={() => dispatch(decreaseQuantity(item?.id))}
+                        onClick={() => handleModalOpen(item.id, item.quantity)}
                       />
+
                       <span
                         className="select-none
 "
@@ -148,6 +162,24 @@ function RouteComponent() {
       </motion.section>
 
       <RelatedProductsSection />
+      <AlertDialog
+        isModalOpen={isModalOpen}
+        title="Odstrániť položku"
+        description="Chystáte sa odstrániť posledný kus tejto položky. Pokračovať?"
+        cancelText="Zrušiť"
+        confirmText="Odstrániť"
+        onConfirm={() => {
+          if (selectedItemId) {
+            dispatch(decreaseQuantity(selectedItemId));
+          }
+          setIsModalOpen(false);
+          setSelectedItemId(null);
+        }}
+        onClose={() => {
+          setIsModalOpen(false);
+          setSelectedItemId(null);
+        }}
+      />
     </RevealOnScroll>
   );
 }
