@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items">
-      <change afterPath="$PROJECT_DIR$/src/components/GalleryCard/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PacketaWidget/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ShowcaseFigure component and implement gallery route with 3D model rendering">
+      <change afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <workItem from="1753701160525" duration="92000" />
       <workItem from="1753971241586" duration="5005000" />
       <workItem from="1753991443367" duration="8404000" />
-      <workItem from="1754141605823" duration="13730000" />
+      <workItem from="1754141605823" duration="16303000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -295,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754144276249</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add ShowcaseFigure component and implement gallery route with 3D model rendering">
+      <option name="closed" value="true" />
+      <created>1754164225310</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1754164225310</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +329,7 @@
     <MESSAGE value="add Redux store and cart functionality with add, remove, and update item features" />
     <MESSAGE value="add AlertDialog component and implement modal for item removal confirmation in cart" />
     <MESSAGE value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
-    <option name="LAST_COMMIT_MESSAGE" value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
+    <MESSAGE value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
   </component>
 </project>

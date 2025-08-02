@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import ShowcaseFigure from "@/components/Showcase/figure.tsx";
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
+import GallerySection from "@/components/GallerySection";
 
 export const Route = createFileRoute("/gallery")({
   component: RouteComponent,
@@ -21,6 +22,8 @@ function RouteComponent() {
 
         <ShowcaseFigure />
       </section>
+
+      <GallerySection />
     </div>
   );
 }
