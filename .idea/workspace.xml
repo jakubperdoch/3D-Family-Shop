@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add AlertDialog component and implement modal for item removal confirmation in cart">
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/logo.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items">
+      <change afterPath="$PROJECT_DIR$/src/components/GalleryCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PacketaWidget/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +69,8 @@
       <recent name="$PROJECT_DIR$/src/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/models" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/routes/products_/$category" />
       <recent name="$PROJECT_DIR$/src/routes/products/$category" />
@@ -94,7 +101,7 @@
       <workItem from="1753701160525" duration="92000" />
       <workItem from="1753971241586" duration="5005000" />
       <workItem from="1753991443367" duration="8404000" />
-      <workItem from="1754141605823" duration="1655000" />
+      <workItem from="1754141605823" duration="13730000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -280,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754051323219</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items">
+      <option name="closed" value="true" />
+      <created>1754144276249</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1754144276249</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +325,7 @@
     <MESSAGE value="update image styling in Product and index components for consistency" />
     <MESSAGE value="add Redux store and cart functionality with add, remove, and update item features" />
     <MESSAGE value="add AlertDialog component and implement modal for item removal confirmation in cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="add AlertDialog component and implement modal for item removal confirmation in cart" />
+    <MESSAGE value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
+    <option name="LAST_COMMIT_MESSAGE" value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
   </component>
 </project>
