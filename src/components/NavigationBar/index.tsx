@@ -16,9 +16,9 @@ import {
 import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
 
 import type { RootState } from "@/store/types.ts";
+import LogoIcon from "@/components/Icon/logo.tsx";
 
 const navigationItems = [
-  { label: "Domov", to: "/" },
   {
     label: "Produkty",
     enableDropdown: true,
@@ -30,9 +30,16 @@ const navigationItems = [
       { label: "Služby a servis", collection: "services" },
     ],
   },
-  { label: "Kalkulačka na 3d tlač", to: "/calculator" },
-  { label: "Modelovanie", to: "/modeling" },
-  { label: "Školenia", to: "/trainings" },
+  {
+    label: "Služby",
+    enableDropdown: true,
+    items: [
+      { label: "Modelovanie", to: "/modeling" },
+      { label: "Školenia", to: "/trainings" },
+      { label: "Kalkulačka na 3d tlač", to: "/calculator" },
+    ],
+  },
+  { label: "Fotogaléria", to: "/gallery" },
 ];
 
 export default function NavigationBar() {
@@ -66,17 +73,28 @@ export default function NavigationBar() {
                 </NavbarItem>
 
                 <DropdownMenu>
-                  {item.items!.map((opt) => (
-                    <DropdownItem key={opt.collection}>
-                      <Link
-                        to="/collections/$collection"
-                        params={{ collection: opt.collection }}
-                        className="text-sm flex w-full transition-colors duration-300 ease-in-out [&.active]:text-primary"
-                      >
-                        {opt.label}
-                      </Link>
-                    </DropdownItem>
-                  ))}
+                  {item.items!.map((opt) =>
+                    "collection" in opt ? (
+                      <DropdownItem key={opt.collection}>
+                        <Link
+                          to="/collections/$collection"
+                          params={{ collection: opt.collection }}
+                          className="text-sm flex w-full transition-colors duration-300 ease-in-out [&.active]:text-primary"
+                        >
+                          {opt.label}
+                        </Link>
+                      </DropdownItem>
+                    ) : (
+                      <DropdownItem key={opt.to}>
+                        <Link
+                          to={opt.to}
+                          className="text-sm flex w-full transition-colors duration-300 ease-in-out [&.active]:text-primary"
+                        >
+                          {opt.label}
+                        </Link>
+                      </DropdownItem>
+                    ),
+                  )}
                 </DropdownMenu>
               </Dropdown>
             ) : (
@@ -92,7 +110,13 @@ export default function NavigationBar() {
           )}
         </NavbarContent>
 
-        <NavbarContent className="!grow-0 gap-7" justify="end">
+        <NavbarContent justify="center">
+          <Link to={"/"} className="[&.active]:text-primary">
+            <LogoIcon />
+          </Link>
+        </NavbarContent>
+
+        <NavbarContent className="gap-7" justify="end">
           <NavbarItem>
             <Link
               to="/"
