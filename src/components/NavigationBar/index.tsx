@@ -111,7 +111,10 @@ export default function NavigationBar() {
         </NavbarContent>
 
         <NavbarContent justify="center">
-          <Link to={"/"} className="[&.active]:text-primary">
+          <Link
+            to={"/"}
+            className="[&.active]:text-primary transition-colors duration-300 ease-in-out"
+          >
             <LogoIcon />
           </Link>
         </NavbarContent>

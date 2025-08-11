@@ -14,7 +14,7 @@ function RouteComponent() {
       <section className="flex flex-col xl:flex-row items-center justify-between container mx-auto">
         <motion.h1
           variants={itemVariants}
-          className="text-[6.5rem] font-bold uppercase leading-tight"
+          className="text-[6.5rem] font-bold uppercase leading-tight max-lg:text-center"
         >
           <span className="text-primary">Precíznosť</span>
           <br /> v obraze

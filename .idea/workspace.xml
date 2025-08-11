@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ShowcaseFigure component and implement gallery route with 3D model rendering">
-      <change afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add GallerySection component and integrate it into the gallery route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.27812.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
       </set>
     </attachedChunks>
   </component>
@@ -96,7 +97,10 @@
       <workItem from="1753701160525" duration="92000" />
       <workItem from="1753971241586" duration="5005000" />
       <workItem from="1753991443367" duration="8404000" />
-      <workItem from="1754141605823" duration="16303000" />
+      <workItem from="1754141605823" duration="19439000" />
+      <workItem from="1754246107425" duration="2000" />
+      <workItem from="1754600558257" duration="147000" />
+      <workItem from="1754948615312" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -298,14 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754164225310</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add GallerySection component and integrate it into the gallery route">
+      <option name="closed" value="true" />
+      <created>1754166525343</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1754166525343</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initialize project with basic setup including routing, styles, and configuration files" />
     <MESSAGE value="add routing and components for calculator, modeling, and trainings; configure VCS and Prettier" />
     <MESSAGE value="add navigation item for home and update workspace configuration" />
     <MESSAGE value="add cart and profile routes; implement navigation cart component" />
@@ -330,6 +341,7 @@
     <MESSAGE value="add AlertDialog component and implement modal for item removal confirmation in cart" />
     <MESSAGE value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
     <MESSAGE value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
+    <MESSAGE value="add GallerySection component and integrate it into the gallery route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add GallerySection component and integrate it into the gallery route" />
   </component>
 </project>
