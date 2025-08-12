@@ -11,7 +11,10 @@ export const Route = createFileRoute("/gallery")({
 function RouteComponent() {
   return (
     <div className="flex flex-col gap-20 items-center justify-start mt-20">
-      <section className="flex flex-col xl:flex-row items-center justify-between container mx-auto">
+      <motion.section
+        variants={itemVariants}
+        className="flex flex-col xl:flex-row items-center justify-between container mx-auto bg-dark-gray py-16 px-14 rounded-2xl"
+      >
         <motion.h1
           variants={itemVariants}
           className="text-[6.5rem] font-bold uppercase leading-tight max-lg:text-center"
@@ -21,7 +24,7 @@ function RouteComponent() {
         </motion.h1>
 
         <ShowcaseFigure />
-      </section>
+      </motion.section>
 
       <GallerySection />
     </div>
