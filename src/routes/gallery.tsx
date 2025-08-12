@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import ShowcaseFigure from "@/components/Showcase/figure.tsx";
+import ShowcaseFigure from "@/components/Showcase";
 import GallerySection from "@/components/GallerySection";
 import Banner from "@/components/Banner";
 
@@ -18,7 +18,14 @@ function RouteComponent() {
           </>
         }
       >
-        <ShowcaseFigure />
+        <ShowcaseFigure
+          objectUrl={"/models/figure--model.glb"}
+          position={{
+            x: 0,
+            y: -2.3,
+            z: 0,
+          }}
+        />
       </Banner>
 
       <GallerySection />

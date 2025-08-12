@@ -2,7 +2,12 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
-export default function ShowcaseFigure() {
+type ShowcaseProps = {
+  objectUrl: string;
+  position: { x: number; y: number; z: number };
+};
+
+export default function Showcase({ objectUrl, position }: ShowcaseProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const modelRef = useRef<THREE.Object3D | null>(null);
   const isDragging = useRef(false);
@@ -38,7 +43,7 @@ export default function ShowcaseFigure() {
     // Load model
     const loader = new GLTFLoader();
     loader.load(
-      "/models/figure--model.glb",
+      objectUrl,
       (gltf) => {
         const model = gltf.scene;
 
@@ -50,7 +55,7 @@ export default function ShowcaseFigure() {
         const scale = targetHeight / size.y;
         model.scale.setScalar(scale);
 
-        model.position.set(0, -2.3, 0);
+        model.position.set(position.x, position.y, position.z);
 
         scene.add(model);
         modelRef.current = model;
