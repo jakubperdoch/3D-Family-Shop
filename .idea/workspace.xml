@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor gallery route to enhance layout and integrate motion effects">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor workspace configuration to update task summaries and adjust local tasks counter">
+      <change afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ui.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jakubperdoch/Developer/3DFamily/public/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/public/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/models" />
@@ -99,6 +103,10 @@
       <workItem from="1754246107425" duration="2000" />
       <workItem from="1754600558257" duration="147000" />
       <workItem from="1754948615312" duration="13791000" />
+      <workItem from="1755022295227" duration="58000" />
+      <workItem from="1755022372667" duration="1247000" />
+      <workItem from="1755026817297" duration="3118000" />
+      <workItem from="1755030826389" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -324,14 +332,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754960947364</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="refactor workspace configuration to update task summaries and adjust local tasks counter">
+      <option name="closed" value="true" />
+      <created>1755022300718</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1755022300718</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor routes to use collections and products naming conventions; update components accordingly" />
     <MESSAGE value="add FeaturedCarousel component and update layout styles" />
     <MESSAGE value="add FeaturedCarousel placeholders" />
     <MESSAGE value="add FeaturedCarousel description and button component" />
@@ -356,6 +371,7 @@
     <MESSAGE value="refactor GallerySection component for improved layout and animation" />
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor gallery route to enhance layout and integrate motion effects" />
+    <MESSAGE value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
   </component>
 </project>
