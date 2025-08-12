@@ -111,7 +111,7 @@ export default function ShowcaseFigure() {
   }, []);
 
   return (
-    <div className="w-fit h-full min-h-[280px]">
+    <div className="relative w-fit h-full min-h-[280px]">
       <canvas
         ref={canvasRef}
         className="w-full h-full block cursor-grab active:cursor-grabbing"

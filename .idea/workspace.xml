@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor workspace configuration to update task summaries and adjust local tasks counter">
-      <change afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ui.ts" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add HeroSection component and integrate it into the main route">
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1755022295227" duration="58000" />
       <workItem from="1755022372667" duration="1247000" />
       <workItem from="1755026817297" duration="3118000" />
-      <workItem from="1755030826389" duration="2894000" />
+      <workItem from="1755030826389" duration="3836000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -340,14 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755022300718</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add HeroSection component and integrate it into the main route">
+      <option name="closed" value="true" />
+      <created>1755037182547</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1755037182547</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add FeaturedCarousel component and update layout styles" />
     <MESSAGE value="add FeaturedCarousel placeholders" />
     <MESSAGE value="add FeaturedCarousel description and button component" />
     <MESSAGE value="add itemVariants to FeaturedCarousel for animation effects" />
@@ -372,6 +379,7 @@
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
     <MESSAGE value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
+    <MESSAGE value="add HeroSection component and integrate it into the main route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HeroSection component and integrate it into the main route" />
   </component>
 </project>

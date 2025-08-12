@@ -23,7 +23,7 @@ export default function GallerySection() {
         return (
           <motion.div
             key={image.id}
-            className={`relative rounded-xl group shadow-sm overflow-hidden`}
+            className={`relative rounded-2xl group shadow-sm overflow-hidden`}
             variants={itemVariants}
           >
             <Image
