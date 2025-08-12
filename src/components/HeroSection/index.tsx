@@ -15,7 +15,7 @@ export default function HeroSection() {
     hidden: { opacity: 1 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.08, delayChildren: 0.9 },
+      transition: { staggerChildren: 0.08, delayChildren: 0.5 },
     },
   };
 

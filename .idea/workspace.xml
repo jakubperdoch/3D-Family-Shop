@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add HeroSection component and integrate it into the main route">
-      <change afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add Banner component and integrate it into the gallery route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showcase/figure.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/modeling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/modeling.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1755022295227" duration="58000" />
       <workItem from="1755022372667" duration="1247000" />
       <workItem from="1755026817297" duration="3118000" />
-      <workItem from="1755030826389" duration="3836000" />
+      <workItem from="1755030826389" duration="4131000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -348,14 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755037182547</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add Banner component and integrate it into the gallery route">
+      <option name="closed" value="true" />
+      <created>1755038117061</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1755038117061</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add FeaturedCarousel placeholders" />
     <MESSAGE value="add FeaturedCarousel description and button component" />
     <MESSAGE value="add itemVariants to FeaturedCarousel for animation effects" />
     <MESSAGE value="add BestSellersSection component and integrate with FeaturedCarousel" />
@@ -380,6 +386,7 @@
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
     <MESSAGE value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
     <MESSAGE value="add HeroSection component and integrate it into the main route" />
-    <option name="LAST_COMMIT_MESSAGE" value="add HeroSection component and integrate it into the main route" />
+    <MESSAGE value="add Banner component and integrate it into the gallery route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Banner component and integrate it into the gallery route" />
   </component>
 </project>
