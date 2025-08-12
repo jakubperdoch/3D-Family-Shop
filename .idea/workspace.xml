@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update 3D model in ShowcaseFigure component and adjust scaling and positioning">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor gallery route to enhance layout and integrate motion effects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,7 @@
       <workItem from="1754141605823" duration="19439000" />
       <workItem from="1754246107425" duration="2000" />
       <workItem from="1754600558257" duration="147000" />
-      <workItem from="1754948615312" duration="10987000" />
+      <workItem from="1754948615312" duration="13791000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -317,14 +316,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754949519593</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="refactor gallery route to enhance layout and integrate motion effects">
+      <option name="closed" value="true" />
+      <created>1754960947364</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1754960947364</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add cart and profile routes; implement navigation cart component" />
     <MESSAGE value="refactor routes to use collections and products naming conventions; update components accordingly" />
     <MESSAGE value="add FeaturedCarousel component and update layout styles" />
     <MESSAGE value="add FeaturedCarousel placeholders" />
@@ -349,6 +355,7 @@
     <MESSAGE value="add GallerySection component and integrate it into the gallery route" />
     <MESSAGE value="refactor GallerySection component for improved layout and animation" />
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
+    <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor gallery route to enhance layout and integrate motion effects" />
   </component>
 </project>
