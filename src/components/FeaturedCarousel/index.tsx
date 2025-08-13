@@ -67,7 +67,7 @@ export default function FeaturedCarousel() {
       <AnimatePresence mode="wait">
         <motion.div
           key={activeIndex}
-          className="object-cover max-h-[40rem] relative z-[1] w-full"
+          className="object-cover max-h-[40rem] overflow-hidden rounded-[1.75rem] relative z-[1] w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

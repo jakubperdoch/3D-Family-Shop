@@ -47,7 +47,7 @@ function ProductPage() {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <div className="container flex flex-col gap-32 mx-auto mt-12 mb-10">
+    <div className="container flex flex-col mx-auto mt-12 mb-10">
       <Breadcrumbs className="mb-8">
         <BreadcrumbItem>
           <a href="/">Domov</a>
@@ -58,7 +58,7 @@ function ProductPage() {
         <BreadcrumbItem isLast={true}>{product.name}</BreadcrumbItem>
       </Breadcrumbs>
 
-      <section className="grid grid-cols-[1fr_auto] gap-6">
+      <section className="grid grid-cols-[1fr_auto] mb-32 gap-6">
         <PhotoProvider>
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
             {product.images.map((image, index) => (

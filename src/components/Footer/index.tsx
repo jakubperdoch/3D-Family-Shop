@@ -2,6 +2,8 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { containerVariants } from "@/utils/animations.ts";
 import { Image } from "@heroui/image";
 import { Link } from "@tanstack/react-router";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -40,18 +42,20 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4 text-[#FFD6F6]">
               Sleduj nás
             </h3>
-            <Link
-              to={"/"}
-              className="block mb-2 hover:text-white transition-colors duration-300 ease-in-out"
-            >
-              Facebook
-            </Link>
-            <Link
-              to={"/"}
-              className="block mb-2 hover:text-white transition-colors duration-300 ease-in-out"
-            >
-              Instagram
-            </Link>
+            <div className="flex gap-6">
+              <Link
+                to={"/"}
+                className="mb-2 flex w-fit hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                <FaFacebook size={24} />
+              </Link>
+              <Link
+                to={"/"}
+                className="mb-2 flex w-fit hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                <FaInstagram size={24} />
+              </Link>
+            </div>
           </div>
         </div>
 
