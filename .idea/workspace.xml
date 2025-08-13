@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Showcase component to adjust position prop and enhance SplitImageSection integration">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx">
+      <change afterPath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showcase/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showcase/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/modeling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/modeling.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,7 @@
       <workItem from="1755022372667" duration="1247000" />
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
-      <workItem from="1755108686780" duration="1483000" />
+      <workItem from="1755108686780" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -387,14 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755044450014</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx">
+      <option name="closed" value="true" />
+      <created>1755110233858</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1755110233858</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add CategoryCarousel component and update routing for collections" />
     <MESSAGE value="add CategoryCarousel component, refactor routes for collections, and update layout styles" />
     <MESSAGE value="update button size in CategoryCarousel and clean up commented code" />
     <MESSAGE value="add ReviewCarousel component and integrate it into the main application" />
@@ -419,6 +426,7 @@
     <MESSAGE value="refactor ShowcaseFigure component to accept props for object URL and position" />
     <MESSAGE value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
     <MESSAGE value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
+    <MESSAGE value="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx" />
   </component>
 </project>

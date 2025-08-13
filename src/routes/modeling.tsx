@@ -14,6 +14,7 @@ import { FaPencilRuler, FaRegFile, FaRegLightbulb } from "react-icons/fa";
 import { IoLayers } from "react-icons/io5";
 import { LuPrinter } from "react-icons/lu";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
+import ContactBanner from "@/components/ContactBanner";
 
 export const Route = createFileRoute("/modeling")({
   component: RouteComponent,
@@ -163,6 +164,14 @@ function RouteComponent() {
             {section?.renderAside && section.renderAside()}
           </SplitImageSection>
         ))}
+
+      <ContactBanner
+        title="Váš projekt môže začať už dnes."
+        subtitle="Zaujalo vás, čo robíme?"
+        buttonText="Kontaktujte nás"
+        buttonLink={"/"}
+        mainText="Vaša vízia – naša výzva"
+      />
     </div>
   );
 }
