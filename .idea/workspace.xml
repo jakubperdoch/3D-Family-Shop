@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ContactBanner component and integrate it into modeling route">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor $product.tsx layout and enhance Footer component with social media links">
+      <change afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hero.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +110,7 @@
       <workItem from="1755022372667" duration="1247000" />
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
-      <workItem from="1755108686780" duration="3704000" />
+      <workItem from="1755108686780" duration="12047000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -404,14 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755111043382</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="refactor $product.tsx layout and enhance Footer component with social media links">
+      <option name="closed" value="true" />
+      <created>1755114625764</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1755114625764</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update button size in CategoryCarousel and clean up commented code" />
     <MESSAGE value="add ReviewCarousel component and integrate it into the main application" />
     <MESSAGE value="update ReviewCarousel component to enhance functionality and improve layout" />
     <MESSAGE value="refactor components to use RevealOnScroll for enhanced visibility on scroll" />
@@ -436,6 +447,7 @@
     <MESSAGE value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
     <MESSAGE value="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx" />
     <MESSAGE value="add ContactBanner component and integrate it into modeling route" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ContactBanner component and integrate it into modeling route" />
+    <MESSAGE value="refactor $product.tsx layout and enhance Footer component with social media links" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor $product.tsx layout and enhance Footer component with social media links" />
   </component>
 </project>

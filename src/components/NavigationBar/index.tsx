@@ -130,7 +130,7 @@ export default function NavigationBar() {
           </NavbarItem>
           <NavbarItem>
             <Link
-              to="/profile"
+              to="/login"
               className="text-base font-medium hover:opacity-70 transition duration-150"
             >
               <FaUser />

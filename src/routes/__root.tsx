@@ -1,4 +1,8 @@
-import { Outlet, createRootRoute } from "@tanstack/react-router";
+import {
+  Outlet,
+  createRootRoute,
+  useRouterState,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import NavigationBar from "@/components/NavigationBar";
 import { motion } from "framer-motion";
@@ -9,7 +13,32 @@ import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "@/store";
 
 export const Route = createRootRoute({
-  component: () => (
+  component: () => <Root />,
+});
+
+function Root() {
+  const hideLayout = useRouterState({
+    select: (s) => s.matches.some((m) => (m.staticData as any)?.hideLayout),
+  });
+
+  if (hideLayout)
+    return (
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={containerVariants}
+          >
+            <Outlet />
+          </motion.div>
+          <TanStackRouterDevtools />
+        </PersistGate>
+      </Provider>
+    );
+
+  return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <motion.div
@@ -25,5 +54,5 @@ export const Route = createRootRoute({
         <TanStackRouterDevtools />
       </PersistGate>
     </Provider>
-  ),
-});
+  );
+}
