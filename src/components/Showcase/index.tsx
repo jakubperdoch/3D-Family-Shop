@@ -72,7 +72,7 @@ export default function Showcase({
         // Animate
         const animate = () => {
           requestAnimationFrame(animate);
-          model.rotation.y += 0.007;
+          model.rotation.y += 0.002;
           renderer.render(scene, camera);
         };
 

@@ -6,6 +6,15 @@ import ShowcaseFigure from "@/components/Showcase";
 
 import type { JSX } from "react";
 
+// Icons
+import { AiOutlineMessage } from "react-icons/ai";
+import { FaGear, FaSliders } from "react-icons/fa6";
+import { LuPackage, LuScanFace } from "react-icons/lu";
+import { FaPencilRuler, FaRegFile, FaRegLightbulb } from "react-icons/fa";
+import { IoLayers } from "react-icons/io5";
+import { LuPrinter } from "react-icons/lu";
+import { BsFillGrid1X2Fill } from "react-icons/bs";
+
 export const Route = createFileRoute("/modeling")({
   component: RouteComponent,
 });
@@ -34,16 +43,17 @@ const sections: Section[] = [
         description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <FaRegLightbulb color="#C1C7CD" size={25} />,
+        description:
+          "Pracujeme s nápadmi, technickými výkresmi aj predstavivosťou.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <AiOutlineMessage color="#C1C7CD" size={25} />,
+        description: "Konzultujeme dizajn a funkčnosť pred finálnou verziou.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <FaGear color="#C1C7CD" size={25} />,
+        description: "Každý model optimalizujeme pre bezchybnú 3D tlač.",
       },
     ],
 
@@ -64,20 +74,20 @@ const sections: Section[] = [
     subtitle: "Digitalizácia reálneho objektu",
     items: [
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <LuScanFace color="#C1C7CD" size={25} />,
+        description: "Zdigitalizujeme reálny objekt do 3D podoby.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <FaPencilRuler color="#C1C7CD" size={25} />,
+        description: "Zachytávame rozmery, tvary aj jemné detaily.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <IoLayers color="#C1C7CD" size={25} />,
+        description: "Používame technológiu vhodnú pre rôzne materiály.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <FaRegFile color="#C1C7CD" size={25} />,
+        description: "Výstup spracujeme pre ďalšie úpravy či tlač.",
       },
     ],
 
@@ -94,25 +104,25 @@ const sections: Section[] = [
   },
 
   {
-    title:
-      "Pomocou presných 3D skenerov vieme previesť fyzický objekt do digitálnej podoby.",
-    subtitle: "Digitalizácia reálneho objektu",
+    title: "Hotový model vytlačíme bez kompromisov.",
+    subtitle: "Model → Sken → Tlač",
     items: [
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <LuPrinter color="#C1C7CD" size={25} />,
+        description:
+          "Model rovno pripravíme na tlač — bez ďalších krokov z vašej strany.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <FaSliders color="#C1C7CD" size={25} />,
+        description: "Vyberieme vhodné parametre aj materiály.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <BsFillGrid1X2Fill color="#C1C7CD" size={25} />,
+        description: "Zaistíme správne rozloženie modelu pre efektívnu tlač.",
       },
       {
-        icon: <FaPencilAlt color="#C1C7CD" size={25} />,
-        description: "Navrhneme 3D model podľa vášho zadania či náčrtu.",
+        icon: <LuPackage color="#C1C7CD" size={25} />,
+        description: "Pošleme vám hotový produkt alebo tlačový súbor.",
       },
     ],
 

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Showcase component to adjust position prop and enhance SplitImageSection integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/models/figure--model.glb" beforeDir="false" afterPath="$PROJECT_DIR$/public/models/figure--model.glb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Showcase/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showcase/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SplitImageSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitImageSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/modeling.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/modeling.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,8 @@
       <workItem from="1755022295227" duration="58000" />
       <workItem from="1755022372667" duration="1247000" />
       <workItem from="1755026817297" duration="3118000" />
-      <workItem from="1755030826389" duration="9795000" />
+      <workItem from="1755030826389" duration="10123000" />
+      <workItem from="1755108686780" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -380,14 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755043344278</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="refactor Showcase component to adjust position prop and enhance SplitImageSection integration">
+      <option name="closed" value="true" />
+      <created>1755044450014</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1755044450014</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update BestSellersSection titles and adjust workspace configuration" />
     <MESSAGE value="add CategoryCarousel component and update routing for collections" />
     <MESSAGE value="add CategoryCarousel component, refactor routes for collections, and update layout styles" />
     <MESSAGE value="update button size in CategoryCarousel and clean up commented code" />
@@ -412,6 +418,7 @@
     <MESSAGE value="add Banner and GallerySection components to modeling route" />
     <MESSAGE value="refactor ShowcaseFigure component to accept props for object URL and position" />
     <MESSAGE value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
+    <MESSAGE value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
   </component>
 </project>
