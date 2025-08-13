@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+#User-agent: *
+#Allow: /
+#
+#Sitemap: https://tvoja-domena.sk/sitemap.xml
+

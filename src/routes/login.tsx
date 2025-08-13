@@ -1,59 +1,62 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { Form } from "@heroui/form";
 import { Input } from "@heroui/input";
 import { Button } from "@heroui/react";
-import type { ValidationErrors } from "@react-types/shared";
 import { FaGoogle } from "react-icons/fa6";
 import ShowcaseCrystal from "@/components/Showcase";
 import { itemVariants } from "@/utils/animations.ts";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import type { SubmitHandler } from "react-hook-form";
+import { z } from "zod";
 
 export const Route = createFileRoute("/login")({
   staticData: { hideLayout: true },
   component: RouteComponent,
 });
 
+type ValidationSchema = {
+  email: string;
+  password: string;
+};
+
 function RouteComponent() {
-  const [errors, setErrors] = useState<ValidationErrors>({});
+  const validationSchema = z.object({
+    email: z.email("Neplatný email").nonempty("Email je povinný"),
+    password: z.string().min(6, "Heslo musí mať aspoň 6 znakov"),
+  });
 
-  const getPasswordError = (value) => {
-    if (value.length < 4) {
-      return "Password must be 4 characters or more";
-    }
-    if ((value.match(/[A-Z]/g) || []).length < 1) {
-      return "Password needs at least 1 uppercase letter";
-    }
-    if ((value.match(/[^a-z]/gi) || []).length < 1) {
-      return "Password needs at least 1 symbol";
-    }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ValidationSchema>({
+    resolver: zodResolver(validationSchema),
+  });
 
-    return null;
-  };
+  const onSubmit: SubmitHandler<ValidationSchema> = (data) => console.log(data);
 
   return (
     <section className="min-h-screen grid grid-cols-2 items-center justify-center">
       <motion.div variants={itemVariants} className="p-20">
         <h2 className="mb-12 text-[2.6rem] font-bold">Prihlásanie</h2>
 
-        <Form validationErrors={errors} className="grid grid-cols-2 gap-4">
+        <form
+          className="grid grid-cols-2 gap-4"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <Input
             size="lg"
             className="col-span-2"
             inputMode="email"
             isRequired
             label="Email"
-            name="email"
             type="email"
             labelPlacement="outside"
             placeholder="Email"
-            errorMessage={({ validationDetails }) => {
-              if (validationDetails.valueMissing) {
-                return "Email je povinný";
-              }
-
-              return null;
-            }}
+            {...register("email")}
+            isInvalid={!!errors.email}
+            errorMessage={errors.email?.message}
           />
 
           <Input
@@ -62,15 +65,19 @@ function RouteComponent() {
             isRequired
             label="Heslo"
             labelPlacement={"outside-top"}
-            name="password"
             type="password"
+            placeholder="Heslo"
+            {...register("password")}
+            isInvalid={!!errors.password}
+            errorMessage={errors.password?.message}
           />
 
-          {errors.terms && (
-            <span className="text-danger text-small">{errors.terms}</span>
-          )}
-
-          <Button size="lg" color="primary" className="text-white col-span-2">
+          <Button
+            type={"submit"}
+            size="lg"
+            color="primary"
+            className="text-white col-span-2"
+          >
             Prihlásiť sa
           </Button>
 
@@ -83,7 +90,7 @@ function RouteComponent() {
             <FaGoogle />
             Prihlásiť sa cez Google
           </Button>
-        </Form>
+        </form>
       </motion.div>
 
       <motion.div variants={itemVariants} className="relative h-full w-full">
