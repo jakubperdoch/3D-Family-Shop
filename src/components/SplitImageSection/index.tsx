@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils";
+import { itemVariants } from "@/utils/animations.ts";
 
 type SplitImageSectionProps = {
   title: string;
@@ -24,6 +25,7 @@ export default function SplitImageSection({
 }: SplitImageSectionProps) {
   return (
     <motion.section
+      variants={itemVariants}
       className={cn(
         align === "left" ? "flex-row" : "flex-row-reverse",
         variation === "dark" && "bg-dark-gray",

@@ -14,7 +14,7 @@ export default function Showcase({
   objectUrl,
   position,
   className,
-  customHeight = 1,
+  customHeight,
 }: ShowcaseProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const modelRef = useRef<THREE.Object3D | null>(null);

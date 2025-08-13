@@ -22,7 +22,7 @@ function RouteComponent() {
           objectUrl={"/models/figure--model.glb"}
           position={{
             x: 0,
-            y: -2.3,
+            y: -0.5,
             z: 0,
           }}
         />
