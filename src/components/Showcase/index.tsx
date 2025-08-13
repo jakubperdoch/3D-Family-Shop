@@ -1,13 +1,21 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { cn } from "@/utils";
 
 type ShowcaseProps = {
   objectUrl: string;
   position: { x: number; y: number; z: number };
+  className?: string;
+  customHeight?: number;
 };
 
-export default function Showcase({ objectUrl, position }: ShowcaseProps) {
+export default function Showcase({
+  objectUrl,
+  position,
+  className,
+  customHeight = 1,
+}: ShowcaseProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const modelRef = useRef<THREE.Object3D | null>(null);
   const isDragging = useRef(false);
@@ -51,8 +59,9 @@ export default function Showcase({ objectUrl, position }: ShowcaseProps) {
         const box = new THREE.Box3().setFromObject(model);
         const size = new THREE.Vector3();
         box.getSize(size);
-        const targetHeight = 5;
+        const targetHeight = customHeight ? customHeight : 5;
         const scale = targetHeight / size.y;
+
         model.scale.setScalar(scale);
 
         model.position.set(position.x, position.y, position.z);
@@ -116,7 +125,7 @@ export default function Showcase({ objectUrl, position }: ShowcaseProps) {
   }, []);
 
   return (
-    <div className="relative w-fit h-full min-h-[280px]">
+    <div className={cn(className, "relative w-fit h-full min-h-[280px]")}>
       <canvas
         ref={canvasRef}
         className="w-full h-full block cursor-grab active:cursor-grabbing"
