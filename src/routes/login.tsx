@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Input } from "@heroui/input";
 import { Button } from "@heroui/react";
@@ -38,11 +38,13 @@ function RouteComponent() {
 
   return (
     <section className="min-h-screen grid grid-cols-2 items-center justify-center">
-      <motion.div variants={itemVariants} className="p-20">
-        <h2 className="mb-12 text-[2.6rem] font-bold">Prihlásanie</h2>
-
+      <motion.div
+        variants={itemVariants}
+        className="flex flex-col gap-12 px-20"
+      >
+        <h2 className="text-[2.6rem] font-bold">Prihlásenie</h2>
         <form
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-2 gap-5"
           onSubmit={handleSubmit(onSubmit)}
         >
           <Input
@@ -91,6 +93,27 @@ function RouteComponent() {
             Prihlásiť sa cez Google
           </Button>
         </form>
+        <motion.hr
+          style={{
+            width: "100%",
+            height: "2px",
+          }}
+          className="border-dark-gray"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+        />
+
+        <Link
+          to="/register"
+          className="relative w-fit mx-auto text-center text-primary group"
+        >
+          <span>
+            Nemáš ešte účet?{" "}
+            <span className="font-semibold">Zaregistruj sa</span>
+          </span>
+          <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+        </Link>
       </motion.div>
 
       <motion.div variants={itemVariants} className="relative h-full w-full">
