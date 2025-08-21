@@ -4,7 +4,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { FaUser } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import {
   Button,
@@ -17,17 +16,16 @@ import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
 
 import type { RootState } from "@/store/types.ts";
 import LogoIcon from "@/components/Icon/logo.tsx";
+import NavigationSearch from "@/components/NavigationBar/NavigationSearch.tsx";
 
 const navigationItems = [
   {
     label: "Produkty",
     enableDropdown: true,
     items: [
-      { label: "3D tlačiarne", collection: "3d-printers" },
-      { label: "Tlačové materiály", collection: "print-materials" },
-      { label: "Príslušenstvo", collection: "accessories" },
-      { label: "Náhradné diely", collection: "spare-parts" },
-      { label: "Služby a servis", collection: "services" },
+      { label: "3D Foto lampy", collection: "3d-lamps" },
+      { label: "Dekorácie a zápichy na torty", collection: "cake-toppers" },
+      { label: "Zákazková 3D tlač", collection: "custom-3d-printing" },
     ],
   },
   {
@@ -121,12 +119,7 @@ export default function NavigationBar() {
 
         <NavbarContent className="gap-7" justify="end">
           <NavbarItem>
-            <Link
-              to="/"
-              className="text-xl font-medium hover:opacity-70 transition duration-150"
-            >
-              <IoSearch />
-            </Link>
+            <NavigationSearch />
           </NavbarItem>
           <NavbarItem>
             <Link
