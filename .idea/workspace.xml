@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features">
-      <change afterPath="$PROJECT_DIR$/src/components/FaqSection/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FaqSection component to courses route and improve layout consistency across components">
+      <change afterPath="$PROJECT_DIR$/src/routes/contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/courses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/courses.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
       <workItem from="1755108686780" duration="17487000" />
-      <workItem from="1755848519918" duration="958000" />
+      <workItem from="1755848519918" duration="5262000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -455,14 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755847971012</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add FaqSection component to courses route and improve layout consistency across components">
+      <option name="closed" value="true" />
+      <created>1755849578432</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1755849578432</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
     <MESSAGE value="add GallerySection component and integrate it into the gallery route" />
     <MESSAGE value="refactor GallerySection component for improved layout and animation" />
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
@@ -487,6 +492,7 @@
     <MESSAGE value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
     <MESSAGE value="rename Trainings route to Courses and update related components" />
     <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
+    <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FaqSection component to courses route and improve layout consistency across components" />
   </component>
 </project>

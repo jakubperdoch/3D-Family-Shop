@@ -15,6 +15,7 @@ import { Route as ModelingRouteImport } from './routes/modeling'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
@@ -51,6 +52,11 @@ const CoursesRoute = CoursesRouteImport.update({
   path: '/courses',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CartRoute = CartRouteImport.update({
   id: '/cart',
   path: '/cart',
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/contact': typeof ContactRoute
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/contact'
     | '/courses'
     | '/gallery'
     | '/login'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/contact'
     | '/courses'
     | '/gallery'
     | '/login'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/contact'
     | '/courses'
     | '/gallery'
     | '/login'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CalculatorRoute: typeof CalculatorRoute
   CartRoute: typeof CartRoute
+  ContactRoute: typeof ContactRoute
   CoursesRoute: typeof CoursesRoute
   GalleryRoute: typeof GalleryRoute
   LoginRoute: typeof LoginRoute
@@ -217,6 +230,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CoursesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cart': {
       id: '/cart'
       path: '/cart'
@@ -259,6 +279,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CalculatorRoute: CalculatorRoute,
   CartRoute: CartRoute,
+  ContactRoute: ContactRoute,
   CoursesRoute: CoursesRoute,
   GalleryRoute: GalleryRoute,
   LoginRoute: LoginRoute,

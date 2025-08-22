@@ -67,7 +67,7 @@ function RouteComponent() {
         title="Radi vám pomôžeme."
         subtitle="Ešte máte otázky ?"
         buttonText="Kontaktujte nás"
-        buttonLink={"/"}
+        buttonLink={"/contact"}
         mainText="Ozvite sa nám a spoločne nájdeme ideálne školenie pre vás."
       />
     </div>
