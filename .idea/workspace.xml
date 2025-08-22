@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add NavigationSearch component with improved accessibility and enhanced search functionality">
+      <change afterPath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/NavigationSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/NavigationSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/trainings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/courses.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,15 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755789776278</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add NavigationSearch component with improved accessibility and enhanced search functionality">
+      <option name="closed" value="true" />
+      <created>1755843086618</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1755843086618</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update image styling in Product and index components for consistency" />
-    <MESSAGE value="add Redux store and cart functionality with add, remove, and update item features" />
     <MESSAGE value="add AlertDialog component and implement modal for item removal confirmation in cart" />
     <MESSAGE value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
     <MESSAGE value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
@@ -466,6 +476,8 @@
     <MESSAGE value="add NavigationSearch component with autocomplete functionality and update navigation items" />
     <MESSAGE value="add NavigationSearch component with autocomplete and integrate it into NavigationBar" />
     <MESSAGE value="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality" />
+    <MESSAGE value="add aria-label to NavigationSearch component and enhance search icon styling" />
+    <MESSAGE value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
   </component>
 </project>

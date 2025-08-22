@@ -9,23 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TrainingsRouteImport } from './routes/trainings'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ModelingRouteImport } from './routes/modeling'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as CoursesRouteImport } from './routes/courses'
 import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsProductRouteImport } from './routes/products_/$product'
 import { Route as CollectionsCollectionRouteImport } from './routes/collections_/$collection'
 
-const TrainingsRoute = TrainingsRouteImport.update({
-  id: '/trainings',
-  path: '/trainings',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const RegisterRoute = RegisterRouteImport.update({
   id: '/register',
   path: '/register',
@@ -49,6 +44,11 @@ const LoginRoute = LoginRouteImport.update({
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursesRoute = CoursesRouteImport.update({
+  id: '/courses',
+  path: '/courses',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CartRoute = CartRouteImport.update({
@@ -81,12 +81,12 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
-  '/trainings': typeof TrainingsRoute
   '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
 }
@@ -94,12 +94,12 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
-  '/trainings': typeof TrainingsRoute
   '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
 }
@@ -108,12 +108,12 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/calculator': typeof CalculatorRoute
   '/cart': typeof CartRoute
+  '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
   '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
-  '/trainings': typeof TrainingsRoute
   '/collections_/$collection': typeof CollectionsCollectionRoute
   '/products_/$product': typeof ProductsProductRoute
 }
@@ -123,12 +123,12 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/courses'
     | '/gallery'
     | '/login'
     | '/modeling'
     | '/profile'
     | '/register'
-    | '/trainings'
     | '/collections/$collection'
     | '/products/$product'
   fileRoutesByTo: FileRoutesByTo
@@ -136,12 +136,12 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/courses'
     | '/gallery'
     | '/login'
     | '/modeling'
     | '/profile'
     | '/register'
-    | '/trainings'
     | '/collections/$collection'
     | '/products/$product'
   id:
@@ -149,12 +149,12 @@ export interface FileRouteTypes {
     | '/'
     | '/calculator'
     | '/cart'
+    | '/courses'
     | '/gallery'
     | '/login'
     | '/modeling'
     | '/profile'
     | '/register'
-    | '/trainings'
     | '/collections_/$collection'
     | '/products_/$product'
   fileRoutesById: FileRoutesById
@@ -163,25 +163,18 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CalculatorRoute: typeof CalculatorRoute
   CartRoute: typeof CartRoute
+  CoursesRoute: typeof CoursesRoute
   GalleryRoute: typeof GalleryRoute
   LoginRoute: typeof LoginRoute
   ModelingRoute: typeof ModelingRoute
   ProfileRoute: typeof ProfileRoute
   RegisterRoute: typeof RegisterRoute
-  TrainingsRoute: typeof TrainingsRoute
   CollectionsCollectionRoute: typeof CollectionsCollectionRoute
   ProductsProductRoute: typeof ProductsProductRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/trainings': {
-      id: '/trainings'
-      path: '/trainings'
-      fullPath: '/trainings'
-      preLoaderRoute: typeof TrainingsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/register': {
       id: '/register'
       path: '/register'
@@ -215,6 +208,13 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/courses': {
+      id: '/courses'
+      path: '/courses'
+      fullPath: '/courses'
+      preLoaderRoute: typeof CoursesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cart': {
@@ -259,12 +259,12 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CalculatorRoute: CalculatorRoute,
   CartRoute: CartRoute,
+  CoursesRoute: CoursesRoute,
   GalleryRoute: GalleryRoute,
   LoginRoute: LoginRoute,
   ModelingRoute: ModelingRoute,
   ProfileRoute: ProfileRoute,
   RegisterRoute: RegisterRoute,
-  TrainingsRoute: TrainingsRoute,
   CollectionsCollectionRoute: CollectionsCollectionRoute,
   ProductsProductRoute: ProductsProductRoute,
 }

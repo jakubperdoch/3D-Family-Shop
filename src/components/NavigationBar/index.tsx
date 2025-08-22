@@ -33,7 +33,7 @@ const navigationItems = [
     enableDropdown: true,
     items: [
       { label: "Modelovanie", to: "/modeling" },
-      { label: "Školenia", to: "/trainings" },
+      { label: "Školenia", to: "/courses" },
       { label: "Kalkulačka na 3d tlač", to: "/calculator" },
     ],
   },
