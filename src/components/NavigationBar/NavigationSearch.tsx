@@ -17,7 +17,7 @@ export const items: SearchItem[] = [
       "https://image.made-in-china.com/2f0j00CrDGyVMBZIpv/3D-Acrylic-LED-Night-Light-3D-Acrylic-Home-Decor-Lamp.webp",
   },
   {
-    id: 2,
+    id: 5,
     name: "Deadpool maska",
     avatar:
       "https://yoshstudios.com/wp-content/uploads/2024/11/Deadpool3-Movie-01-Textured_Yosh-Studios-1024x1024.jpg",
@@ -52,9 +52,13 @@ export default function NavigationSearch() {
       >
         <Autocomplete
           ref={inputRef}
+          aria-label={"Search"}
           type={"text"}
           // @ts-ignore
           variant={""}
+          onSelectionChange={(item) => {
+            console.log(item);
+          }}
           defaultItems={items}
           placeholder={isOpen ? "Čo si prajete vytlačiť?" : ""}
           onFocus={() => setIsOpen(true)}
@@ -69,7 +73,7 @@ export default function NavigationSearch() {
               }}
               className="cursor-pointer text-xl text-default-500"
             >
-              <BiSearchAlt size={25} />
+              <BiSearchAlt size={25} color={"#fff"} />
             </div>
           }
           classNames={{
