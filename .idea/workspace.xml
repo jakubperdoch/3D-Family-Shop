@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add NavigationSearch component with improved accessibility and enhanced search functionality">
-      <change afterPath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features">
+      <change afterPath="$PROJECT_DIR$/src/components/FaqSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/trainings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/courses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/courses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/courses.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jakubperdoch/Developer/3DFamily/public/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.chat.ChatConfigurable",
-    "ts.external.directory.path": "/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/public/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.chat.ChatConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jakubperdoch/Developer/3DFamily/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/models" />
@@ -109,6 +109,7 @@
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
       <workItem from="1755108686780" duration="17487000" />
+      <workItem from="1755848519918" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -446,15 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755843086618</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features">
+      <option name="closed" value="true" />
+      <created>1755847971012</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1755847971012</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add AlertDialog component and implement modal for item removal confirmation in cart" />
-    <MESSAGE value="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items" />
     <MESSAGE value="add ShowcaseFigure component and implement gallery route with 3D model rendering" />
     <MESSAGE value="add GallerySection component and integrate it into the gallery route" />
     <MESSAGE value="refactor GallerySection component for improved layout and animation" />
@@ -478,6 +485,8 @@
     <MESSAGE value="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality" />
     <MESSAGE value="add aria-label to NavigationSearch component and enhance search icon styling" />
     <MESSAGE value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
+    <MESSAGE value="rename Trainings route to Courses and update related components" />
+    <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
   </component>
 </project>

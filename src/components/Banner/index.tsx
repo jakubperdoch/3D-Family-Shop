@@ -14,7 +14,7 @@ export default function Banner({ title, children }: BannerProps) {
       variants={itemVariants}
       className={cn(
         children ? "justify-between" : "justify-center",
-        "relative overflow-hidden flex flex-col xl:flex-row items-center container mx-auto py-12 px-14 rounded-2xl",
+        "relative overflow-hidden flex flex-col xl:flex-row items-center container mx-auto py-12 px-14 rounded-[3rem]",
       )}
     >
       <div className="absolute inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-50"></div>

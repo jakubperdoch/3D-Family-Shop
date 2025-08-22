@@ -52,7 +52,7 @@ export default function PricingCardsSection() {
       className="container mx-auto flex flex-col gap-12"
     >
       <div className="text-center">
-        <p className="text-primary uppercase font-bold text-xl">Ceny</p>
+        <p className="text-primary uppercase font-bold text-xl mb-2">Ceny</p>
         <h2 className="mb-6 text-[3.3rem] leading-tight font-bold">
           Praktické školenia, ktoré vás pripravia na vlastnú tvorbu.
         </h2>

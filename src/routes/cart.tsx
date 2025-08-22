@@ -98,12 +98,7 @@ function RouteComponent() {
                         onClick={() => handleModalOpen(item.id, item.quantity)}
                       />
 
-                      <span
-                        className="select-none
-"
-                      >
-                        {item?.quantity}
-                      </span>
+                      <span className="select-none">{item?.quantity}</span>
                       <FaPlus
                         className="cursor-pointer"
                         onClick={() => dispatch(increaseQuantity(item?.id))}
