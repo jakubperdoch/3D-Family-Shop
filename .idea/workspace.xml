@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FaqSection component to courses route and improve layout consistency across components">
-      <change afterPath="$PROJECT_DIR$/src/routes/contact.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add Contact route with form validation and integrate it into Courses route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/courses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/courses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
       <workItem from="1755108686780" duration="17487000" />
-      <workItem from="1755848519918" duration="5262000" />
+      <workItem from="1755848519918" duration="5811000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -461,14 +459,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755849578432</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add Contact route with form validation and integrate it into Courses route">
+      <option name="closed" value="true" />
+      <created>1755858612567</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1755858612567</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add GallerySection component and integrate it into the gallery route" />
     <MESSAGE value="refactor GallerySection component for improved layout and animation" />
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
@@ -493,6 +498,7 @@
     <MESSAGE value="rename Trainings route to Courses and update related components" />
     <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
     <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
-    <option name="LAST_COMMIT_MESSAGE" value="add FaqSection component to courses route and improve layout consistency across components" />
+    <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Contact route with form validation and integrate it into Courses route" />
   </component>
 </project>

@@ -9,7 +9,7 @@ import type { JSX } from "react";
 import { Input, Textarea } from "@heroui/input";
 import { Radio, RadioGroup } from "@heroui/radio";
 import { Button } from "@heroui/react";
-import { type SubmitHandler, useForm } from "react-hook-form";
+import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export const Route = createFileRoute("/contact")({
@@ -76,6 +76,7 @@ function RouteComponent() {
   const {
     register: form,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<ValidationSchema>({
     resolver: zodResolver(validationSchema),
@@ -196,24 +197,32 @@ function RouteComponent() {
             errorMessage={errors.phone?.message}
           />
 
-          <RadioGroup
-            isRequired
-            label="O čo máte záujem?"
-            orientation="horizontal"
-            classNames={{
-              base: "col-span-2 flex !justify-between gap-3",
-              wrapper: "gap-4",
-            }}
-            {...form("object")}
-            isInvalid={!!errors.object}
-            errorMessage={errors.object?.message}
-          >
-            <Radio value="skolenie">Školenie</Radio>
-            <Radio value="zakazkova-tlac">Zákazková 3D tlač</Radio>
-            <Radio value="spolupraca">Spolupráca</Radio>
-            <Radio value="poradenstvo">Poradenstvo</Radio>
-            <Radio value="ine">Iné</Radio>
-          </RadioGroup>
+          <Controller
+            defaultValue=""
+            render={({ field }) => (
+              <RadioGroup
+                isRequired
+                label="O čo máte záujem?"
+                orientation="horizontal"
+                value={field.value}
+                classNames={{
+                  base: "col-span-2 gap-3",
+                  wrapper: "gap-4",
+                }}
+                onValueChange={field.onChange}
+                isInvalid={!!errors.object}
+                errorMessage={errors.object?.message}
+              >
+                <Radio value="skolenie">Školenie</Radio>
+                <Radio value="zakazkova-tlac">Zákazková 3D tlač</Radio>
+                <Radio value="spolupraca">Spolupráca</Radio>
+                <Radio value="poradenstvo">Poradenstvo</Radio>
+                <Radio value="ine">Iné</Radio>
+              </RadioGroup>
+            )}
+            name="object"
+            control={control}
+          />
 
           <Textarea
             size="lg"
