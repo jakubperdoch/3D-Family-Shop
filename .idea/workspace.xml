@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add Contact route with form validation and integrate it into Courses route">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,9 @@
     &quot;accountId&quot;: &quot;376ac8ec-2fe0-43bf-ba07-ca213f5ff6f6&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -105,7 +109,7 @@
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
       <workItem from="1755108686780" duration="17487000" />
-      <workItem from="1755848519918" duration="5811000" />
+      <workItem from="1755848519918" duration="8530000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -467,14 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755858612567</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration">
+      <option name="closed" value="true" />
+      <created>1755859125907</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1755859125907</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor GallerySection component for improved layout and animation" />
     <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
     <MESSAGE value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
@@ -499,6 +510,7 @@
     <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
     <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
     <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Contact route with form validation and integrate it into Courses route" />
+    <MESSAGE value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
   </component>
 </project>

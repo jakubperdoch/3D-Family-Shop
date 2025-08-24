@@ -30,7 +30,7 @@ export default function HeroSection() {
   return (
     <motion.section
       variants={itemVariants}
-      className="w-full absolute top-0 flex flex-col items-center justify-center min-h-screen overflow-hidden"
+      className="w-full absolute pt-32 pb-10 top-0 flex flex-col items-center justify-center min-h-screen overflow-hidden"
     >
       <motion.div className="absolute inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-50"></motion.div>
       <motion.div
@@ -75,7 +75,7 @@ export default function HeroSection() {
           showAnchorIcon
           anchorIcon={<FiArrowUpRight size="1rem" />}
           color="primary"
-          href="#"
+          href={"/contact"}
         >
           Kontaktujte nás
         </Link>

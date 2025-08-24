@@ -32,7 +32,7 @@ export default function Footer() {
               Všeobecné obchodné podmienky
             </Link>
             <Link
-              to={"/"}
+              to={"/contact"}
               className="block mb-2 hover:text-white transition-colors duration-300 ease-in-out"
             >
               Kontakt
