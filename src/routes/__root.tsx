@@ -21,23 +21,6 @@ function Root() {
     select: (s) => s.matches.some((m) => (m.staticData as any)?.hideLayout),
   });
 
-  if (hideLayout)
-    return (
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={containerVariants}
-          >
-            <Outlet />
-          </motion.div>
-          <TanStackRouterDevtools />
-        </PersistGate>
-      </Provider>
-    );
-
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
@@ -47,9 +30,11 @@ function Root() {
           exit="hidden"
           variants={containerVariants}
         >
-          <NavigationBar />
+          {!hideLayout && <NavigationBar />}
+
           <Outlet />
-          <Footer />
+
+          {!hideLayout && <Footer />}
         </motion.div>
         <TanStackRouterDevtools />
       </PersistGate>

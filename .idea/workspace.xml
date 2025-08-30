@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update footer and hero section links to point to the contact route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/calculator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,8 @@
       <workItem from="1755026817297" duration="3118000" />
       <workItem from="1755030826389" duration="10123000" />
       <workItem from="1755108686780" duration="17487000" />
-      <workItem from="1755848519918" duration="8530000" />
+      <workItem from="1755848519918" duration="10991000" />
+      <workItem from="1756575722777" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
       <option name="closed" value="true" />
@@ -479,14 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755859125907</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update footer and hero section links to point to the contact route">
+      <option name="closed" value="true" />
+      <created>1756051256007</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1756051256007</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update 3D model in ShowcaseFigure component and adjust scaling and positioning" />
     <MESSAGE value="refactor gallery route to enhance layout and integrate motion effects" />
     <MESSAGE value="refactor workspace configuration to update task summaries and adjust local tasks counter" />
     <MESSAGE value="add HeroSection component and integrate it into the main route" />
@@ -511,6 +519,7 @@
     <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
     <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
     <MESSAGE value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
+    <MESSAGE value="update footer and hero section links to point to the contact route" />
+    <option name="LAST_COMMIT_MESSAGE" value="update footer and hero section links to point to the contact route" />
   </component>
 </project>
