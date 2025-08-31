@@ -1,9 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Banner from "@/components/Banner";
-import { Tabs } from "@heroui/tabs";
-import { Button, Tab } from "@heroui/react";
-import { motion } from "framer-motion";
-import { itemVariants } from "@/utils/animations.ts";
+import TabsWrapper from "@/components/Calculator/TabsWrapper.tsx";
 
 export const Route = createFileRoute("/calculator")({
   component: RouteComponent,
@@ -21,99 +18,7 @@ function RouteComponent() {
         }
       />
 
-      <motion.section
-        variants={itemVariants}
-        className="container mx-auto flex flex-col justify-center items-center gap-6"
-      >
-        <Tabs
-          color="primary"
-          size="lg"
-          classNames={{
-            tabList: "p-1.5 rounded-2xl",
-            cursor: "rounded-xl",
-            tab: "h-11",
-            tabContent: "group-data-[selected=true]:text-white px-2 text-lg",
-          }}
-        >
-          <Tab title="Online kalkulácia" key="/calculator" className="w-full">
-            <div className="grid grid-cols-2 grid-rows-2 gap-y-5 gap-x-7">
-              <div className="bg-dark-gray rounded-t-3xl row-start-1 px-8 py-7 flex flex-col gap-2">
-                <h3 className="text-2xl font-medium">
-                  Nemáte model, ale máte nápad?
-                </h3>
-                <p className="text-lg text-white/60">
-                  Nevadí – nemusíte byť dizajnér, aby ste mohli začať.
-                </p>
-                <p>
-                  Stačí náčrt, popis alebo len predstava. Náš tím vám pomôže
-                  celý model navrhnúť na mieru podľa vašich potrieb.
-                </p>
-
-                <ul className="list-disc list-inside">
-                  <li>Opíšte svoj nápad</li>
-                  <li>Priložte obrázok, skicu alebo referenciu</li>
-                  <li>Vyberte materiál, farbu a veľkosť</li>
-                  <li>
-                    My vám pripravíme nezáväznú ponuku aj s orientačnou cenou
-                  </li>
-                </ul>
-
-                <Button
-                  color="primary"
-                  className="w-fit text-sm text-white mt-4"
-                >
-                  Zadať požiadavku
-                </Button>
-              </div>
-
-              <div className="bg-dark-gray rounded-b-3xl col-start-1 row-start-2 px-8 py-7 flex flex-col gap-2">
-                <h3 className="text-2xl font-medium">Máte 3D model? </h3>
-                <p className="text-lg text-white/60">
-                  Online kalkulačka jednoduchý a rýchly výpočet ceny tlače
-                </p>
-                <p>
-                  Nahrajte svoj 3D model, vyplňte parametre a okamžite zistíte
-                  orientačnú cenu. Ak vám cena vyhovuje, môžete rovno objednať.
-                </p>
-
-                <div>
-                  <h4 className="text-2xl font-medium mb-2">Ako to funguje?</h4>
-                  <ul className="list-disc list-outside pl-3.5">
-                    <li>
-                      Nahrajte svoj 3D model vo formáte STL, OBJ alebo PLY.
-                      <br />
-                      (Max. veľkosť 200 MB)
-                    </li>
-                    <li>
-                      Vyberte požadované parametre (materiál, farba, výplň...).
-                    </li>
-                    <li>Okamžite získate odhad ceny a času výroby.</li>
-                    <li>V prípade záujmu odošlite objednávku jedným klikom.</li>
-                    <li>
-                      My váš model skontrolujeme, potvrdíme cenu a začneme
-                      tlačiť.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-dark-gray col-start-2 row-span-2 rounded-3xl px-8 py-7">
-                <h1>Online kalkulácia</h1>
-              </div>
-            </div>
-          </Tab>
-
-          <Tab
-            title="Individuálna ponuka"
-            key="/calculator/individual-offer"
-            className="w-full"
-          >
-            <div className="flex flex-col gap-4">
-              <h1>Individuálna ponuka</h1>
-            </div>
-          </Tab>
-        </Tabs>
-      </motion.section>
+      <TabsWrapper />
     </div>
   );
 }
