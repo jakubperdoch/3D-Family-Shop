@@ -139,6 +139,8 @@ export default function ReviewCarousel() {
 
                 <motion.div layout>
                   <Image
+                    alt="Review Image"
+                    loading="lazy"
                     removeWrapper
                     className="rounded-t-none rounded-b-4xl max-h-80 w-full object-cover"
                     src={review.imageUrl}

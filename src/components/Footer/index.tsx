@@ -26,12 +26,14 @@ export default function Footer() {
           <div className="text-[#E7E7E3CC]">
             <h3 className="text-2xl font-bold mb-4 text-[#FFD6F6]">Podpora</h3>
             <Link
+              aria-label="Všeobecné obchodné podmienky"
               to={"/"}
               className="block mb-2 hover:text-white transition-colors duration-300 ease-in-out"
             >
               Všeobecné obchodné podmienky
             </Link>
             <Link
+              aria-label="Kontakt"
               to={"/contact"}
               className="block mb-2 hover:text-white transition-colors duration-300 ease-in-out"
             >
@@ -44,12 +46,14 @@ export default function Footer() {
             </h3>
             <div className="flex gap-6">
               <Link
+                aria-label="Facebook"
                 to={"/"}
                 className="mb-2 flex w-fit hover:text-white transition-colors duration-300 ease-in-out"
               >
                 <FaFacebook size={24} />
               </Link>
               <Link
+                aria-label="Instagram"
                 to={"/"}
                 className="mb-2 flex w-fit hover:text-white transition-colors duration-300 ease-in-out"
               >
@@ -59,7 +63,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <Image removeWrapper={true} src="../../public/logo--secondary.svg" />
+        <Image
+          aria-label="logo"
+          alt="logo"
+          loading="lazy"
+          removeWrapper={true}
+          src="../../public/logo--secondary.svg"
+        />
       </footer>
 
       <span className="text-center mt-10 text-[#E7E7E3CC]">

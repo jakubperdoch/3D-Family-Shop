@@ -2,7 +2,6 @@ import {
   materialIndex,
   strengthIndex,
   qualityIndex,
-  usageIndex,
   infillIndex,
 } from "@/constants/priceIndex";
 

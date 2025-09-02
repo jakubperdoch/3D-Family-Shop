@@ -27,6 +27,7 @@ export default function GallerySection() {
             variants={itemVariants}
           >
             <Image
+              loading="lazy"
               src={image.src}
               alt={image.description}
               className="w-full h-auto object-cover z-[2]"

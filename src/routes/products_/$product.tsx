@@ -64,6 +64,8 @@ function ProductPage() {
             {product.images.map((image, index) => (
               <PhotoView src={image} key={index}>
                 <Image
+                  alt={product.name ?? "Product Image"}
+                  loading="lazy"
                   className="w-full h-full rounded-[1.75rem] object-cover cursor-pointer hover:scale-95"
                   removeWrapper={true}
                   src={image}

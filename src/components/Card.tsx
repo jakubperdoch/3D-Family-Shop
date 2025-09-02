@@ -13,6 +13,7 @@ export default function Card(card: CardProps) {
   return (
     <div className="flex flex-col gap-4">
       <Image
+        loading="lazy"
         src={card?.image}
         className="border-5 border-white rounded-[1.75rem]"
         removeWrapper={true}
@@ -24,7 +25,10 @@ export default function Card(card: CardProps) {
         className="w-full"
         params={{ product: card?.id }}
       >
-        <Button className="bg-dark-gray w-full text-white py-2 px-4">
+        <Button
+          aria-label="Zobraziť Produkt"
+          className="bg-dark-gray w-full text-white py-2 px-4"
+        >
           Zobraziť Produkt -{" "}
           <span className="text-primary">{card?.price} €</span>
         </Button>

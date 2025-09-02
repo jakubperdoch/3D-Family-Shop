@@ -55,10 +55,16 @@ export default function AlertDialog({
             </ModalHeader>
             <ModalBody>{children}</ModalBody>
             <ModalFooter>
-              <Button color="danger" variant="ghost" onPress={onClose}>
+              <Button
+                aria-label="Cancel"
+                color="danger"
+                variant="ghost"
+                onPress={onClose}
+              >
                 {cancelText}
               </Button>
               <Button
+                aria-label="Confirm"
                 color="primary"
                 onPress={() => {
                   onConfirm();

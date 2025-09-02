@@ -4,20 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="enhance FileUploader component with animations and improve file upload UI">
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/calculatorOptions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/priceIndex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schemas/onlineCalculator.schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add online calculator form and options for material, color, strength, quality, and infill">
+      <change afterPath="$PROJECT_DIR$/public/background--gradient.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculatorTab.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/background--gradient.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AlertDialog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AlertDialog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/IndividualRequestTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/IndividualRequestTab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GallerySection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +89,9 @@
       <recent name="$PROJECT_DIR$/src/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator" />
       <recent name="$PROJECT_DIR$/public/models" />
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/routes/products_/$category" />
     </key>
@@ -123,15 +134,7 @@
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
-      <workItem from="1756840519383" duration="12288000" />
-    </task>
-    <task id="LOCAL-00003" summary="add navigation item for home and update workspace configuration">
-      <option name="closed" value="true" />
-      <created>1753229605048</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1753229605048</updated>
+      <workItem from="1756840519383" duration="14257000" />
     </task>
     <task id="LOCAL-00004" summary="add cart and profile routes; implement navigation cart component">
       <option name="closed" value="true" />
@@ -517,14 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756838898326</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add online calculator form and options for material, color, strength, quality, and infill">
+      <option name="closed" value="true" />
+      <created>1756854523103</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1756854523103</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor ShowcaseFigure component to accept props for object URL and position" />
     <MESSAGE value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
     <MESSAGE value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
     <MESSAGE value="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx" />
@@ -549,6 +559,7 @@
     <MESSAGE value="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component" />
     <MESSAGE value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
     <MESSAGE value="enhance FileUploader component with animations and improve file upload UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="enhance FileUploader component with animations and improve file upload UI" />
+    <MESSAGE value="add online calculator form and options for material, color, strength, quality, and infill" />
+    <option name="LAST_COMMIT_MESSAGE" value="add online calculator form and options for material, color, strength, quality, and infill" />
   </component>
 </project>

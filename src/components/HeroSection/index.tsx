@@ -32,7 +32,7 @@ export default function HeroSection() {
       variants={itemVariants}
       className="w-full absolute pt-32 pb-10 top-0 flex flex-col items-center justify-center min-h-screen overflow-hidden"
     >
-      <motion.div className="absolute inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-50"></motion.div>
+      <motion.div className="absolute inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-50"></motion.div>
       <motion.div
         ref={containerRef}
         variants={parent}
@@ -64,7 +64,12 @@ export default function HeroSection() {
       </motion.span>
 
       <motion.div className="mt-10 flex flex-row gap-8">
-        <Button size="lg" color="primary" className="text-white text-medium">
+        <Button
+          aria-label="Objav nové produkty"
+          size="lg"
+          color="primary"
+          className="text-white text-medium"
+        >
           Objav nové produkty
         </Button>
 

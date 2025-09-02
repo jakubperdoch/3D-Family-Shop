@@ -28,7 +28,12 @@ export default function ContactBanner({
       </div>
 
       <Link to={buttonLink}>
-        <Button size="lg" color={"primary"} className="text-white">
+        <Button
+          aria-label={buttonText}
+          size="lg"
+          color={"primary"}
+          className="text-white"
+        >
           {buttonText}
         </Button>
       </Link>

@@ -81,6 +81,7 @@ function RouteComponent() {
           />
 
           <Button
+            aria-label="Prihlásiť sa"
             type={"submit"}
             size="lg"
             color="primary"
@@ -90,6 +91,7 @@ function RouteComponent() {
           </Button>
 
           <Button
+            aria-label="Prihlásiť sa cez Google"
             size="lg"
             color="primary"
             variant="bordered"
@@ -123,7 +125,7 @@ function RouteComponent() {
       </motion.div>
 
       <motion.div variants={itemVariants} className="relative h-full w-full">
-        <motion.div className="absolute inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-50"></motion.div>
+        <motion.div className="absolute inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-50"></motion.div>
         <ShowcaseCrystal
           objectUrl={"/models/crystals--model.glb"}
           customHeight={3.5}

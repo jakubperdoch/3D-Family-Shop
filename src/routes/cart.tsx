@@ -79,6 +79,8 @@ function RouteComponent() {
                   key={item?.id}
                 >
                   <Image
+                    alt={item?.title}
+                    loading="lazy"
                     src={item?.image}
                     width={"100%"}
                     height={"100%"}
@@ -146,6 +148,7 @@ function RouteComponent() {
               </div>
 
               <Button
+                aria-label="Prejsť k pokladni"
                 className="text-white text-sm font-medium"
                 color={"primary"}
               >

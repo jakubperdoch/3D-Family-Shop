@@ -74,6 +74,8 @@ export default function FeaturedCarousel() {
           transition={{ duration: 0.4 }}
         >
           <Image
+            loading="lazy"
+            alt="Featured Product Image"
             removeWrapper
             src={featuredProduct.images[activeIndex]}
             className="w-full h-full object-cover"
@@ -97,6 +99,7 @@ export default function FeaturedCarousel() {
         </span>
 
         <Button
+          aria-label="Pridať do Košíka"
           onPress={() => {
             dispatch(
               addToCart({
@@ -127,6 +130,8 @@ export default function FeaturedCarousel() {
                 className={`w-40 h-40 flex object-cover cursor-pointer`}
               >
                 <Image
+                  loading="lazy"
+                  alt="Featured Product Image"
                   className="object-cover border-3 border-white"
                   removeWrapper={true}
                   src={image}

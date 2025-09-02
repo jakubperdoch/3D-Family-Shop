@@ -217,6 +217,7 @@ export default function OnlineCalculatorForm() {
           </span>
 
           <Button
+            aria-label="Odoslať žiadosť o kalkuláciu"
             size="lg"
             color="primary"
             type="submit"

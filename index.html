@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Basics -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- Title & Description -->
+    <title>3D Printing Calculator | 3D-Family</title>
     <meta
-      name="description"
-      content="Web site created using create-tsrouter-app"
+            name="description"
+            content="Upload your 3D model (STL) and instantly calculate the price of 3D printing. Choose material, quality, and infill for a transparent cost estimate."
     />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Create TanStack App - 3DFamily</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+    <!-- Robots / Canonical -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://3d-family.sk" />
+
+    <!-- PWA -->
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="3D Printing Calculator | 3D-Family" />
+    <meta
+            property="og:description"
+            content="Instant 3D printing price calculator. Upload your STL and get a real-time cost estimate."
+    />
+    <meta property="og:url" content="https://3d-family.sk" />
+    <meta property="og:image" content="https://3d-family.sk/preview.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="3D Printing Calculator | 3D-Family" />
+    <meta
+            name="twitter:description"
+            content="Upload STL and calculate your 3D print price instantly."
+    />
+    <meta name="twitter:image" content="https://3d-family.sk/preview.jpg" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "3D Printing Calculator",
+            "url": "https://3d-family.sk/calculator",
+            "description": "Estimate the cost of your 3D print instantly.",
+            "applicationCategory": "Utility",
+            "publisher": {
+                "@type": "Organization",
+                "name": "3D-Family"
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
 </html>

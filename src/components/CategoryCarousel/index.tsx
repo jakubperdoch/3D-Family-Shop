@@ -46,6 +46,7 @@ export default function CategoryCarousel() {
 
         <div className="flex gap-4">
           <Button
+            aria-label="Predchádzajúca kategória"
             disabled={categories.length <= 1}
             isIconOnly
             className="bg-gray swiper-button-prev"
@@ -82,6 +83,8 @@ export default function CategoryCarousel() {
               className={`!flex !flex-col !justify-between !h-auto px-16 pt-20 pb-6 ${index % 2 === 0 ? "bg-gray-light" : "bg-white"}`}
             >
               <Image
+                alt={category?.title ?? "Category Image"}
+                loading="lazy"
                 className="w-full h-full  max-w-2/3 object-cover mx-auto"
                 removeWrapper
                 src={category?.imageUrl}
@@ -91,7 +94,11 @@ export default function CategoryCarousel() {
                 <h3 className="text-dark-gray capitalize font-semibold text-4xl max-w-[13rem]">
                   {category?.title}
                 </h3>
-                <Button className="bg-dark-gray w-12 h-12" isIconOnly={true}>
+                <Button
+                  aria-label="Zobraziť kategóriu"
+                  className="bg-dark-gray w-12 h-12"
+                  isIconOnly={true}
+                >
                   <FiArrowUpRight size="1.5rem" />
                 </Button>
               </div>

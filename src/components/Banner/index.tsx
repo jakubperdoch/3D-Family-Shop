@@ -17,7 +17,7 @@ export default function Banner({ title, children }: BannerProps) {
         "relative overflow-hidden flex flex-col xl:flex-row items-center container mx-auto py-12 px-14 rounded-[3rem]",
       )}
     >
-      <div className="absolute inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-50"></div>
+      <div className="absolute inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-50"></div>
       <motion.h3
         variants={itemVariants}
         className={cn(

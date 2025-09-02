@@ -37,6 +37,7 @@ export default function OnlineCalculatorTab({
           </ul>
 
           <Button
+            aria-label="Zadať požiadavku"
             color="primary"
             onPress={() => {
               setSelectedTab("individual-offer");

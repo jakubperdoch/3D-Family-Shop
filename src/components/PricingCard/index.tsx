@@ -30,7 +30,7 @@ export default function PricingCard({
       )}
     >
       {type === "premium" && (
-        <motion.div className="absolute rounded-[3rem] inset-0 bg-[url('/background--gradient.png')] bg-cover bg-center opacity-40"></motion.div>
+        <motion.div className="absolute rounded-[3rem] inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-40"></motion.div>
       )}
 
       <div className="max-w-[25rem] relative z-10">
@@ -82,7 +82,12 @@ export default function PricingCard({
         </ul>
       )}
 
-      <Button color={"primary"} size={"lg"} className="text-white">
+      <Button
+        aria-label={`Získať školenie ${title}`}
+        color={"primary"}
+        size={"lg"}
+        className="text-white"
+      >
         Získať školenie {title}
       </Button>
     </motion.div>

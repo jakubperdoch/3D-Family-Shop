@@ -96,6 +96,7 @@ export default function FileUploader({
                       className="relative bg-white/20 border border-white/20 p-4 rounded-2xl"
                     >
                       <Button
+                        aria-label="Odstrániť súbor"
                         className="absolute top-2 right-2 rounded-full"
                         isIconOnly
                         variant="light"
