@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component">
-      <change afterPath="$PROJECT_DIR$/src/components/FileUploader/PreviewModel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objectCalculations.ts" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculatorTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculatorTab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,15 +112,7 @@
       <workItem from="1755848519918" duration="10991000" />
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
-      <workItem from="1756837274354" duration="617000" />
-    </task>
-    <task id="LOCAL-00001" summary="initialize project with basic setup including routing, styles, and configuration files">
-      <option name="closed" value="true" />
-      <created>1753135854899</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1753135854899</updated>
+      <workItem from="1756837274354" duration="1581000" />
     </task>
     <task id="LOCAL-00002" summary="add routing and components for calculator, modeling, and trainings; configure VCS and Prettier">
       <option name="closed" value="true" />
@@ -511,14 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756598797000</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations">
+      <option name="closed" value="true" />
+      <created>1756837965856</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1756837965857</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Banner component and integrate it into the gallery route" />
     <MESSAGE value="add Banner and GallerySection components to modeling route" />
     <MESSAGE value="refactor ShowcaseFigure component to accept props for object URL and position" />
     <MESSAGE value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
@@ -543,6 +537,7 @@
     <MESSAGE value="refactor layout handling in __root and enhance calculator route with dynamic content" />
     <MESSAGE value="refactor layout rendering in root route and enhance calculator route with Tabs and dynamic content" />
     <MESSAGE value="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component" />
+    <MESSAGE value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
   </component>
 </project>

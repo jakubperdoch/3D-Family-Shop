@@ -9,6 +9,8 @@ import { Icon } from "@iconify/react";
 import * as THREE from "three";
 import { Button } from "@heroui/react";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { itemVariants } from "@/utils/animations.ts";
 
 export default function FileUploader() {
   const [files, setFiles] = useState<File[]>([]);
@@ -53,9 +55,9 @@ export default function FileUploader() {
         onChange={handleFileChange}
         multiple
       />
-      <label htmlFor="files">
-        <div className="flex items-center justify-center w-full h-72 border border-dashed border-white/60 rounded-2xl cursor-pointer bg-dark-gray">
-          {files.length === 0 && (
+      {files.length === 0 && (
+        <label htmlFor="files">
+          <div className="flex items-center justify-center w-full h-72 border border-dashed border-white/60 rounded-2xl cursor-pointer bg-dark-gray">
             <div className="h-full w-full px-8 grid grid-cols-2 items-center justify-center">
               <div className="text-center flex flex-col gap-1">
                 <h3 className="text-xl font-medium">Nahrajte 3D modely</h3>
@@ -64,15 +66,20 @@ export default function FileUploader() {
 
               <Icon icon="line-md:uploading-loop" className="h-1/3 w-full" />
             </div>
-          )}
+          </div>
+        </label>
+      )}
 
-          {files.length > 0 && (
-            <div className="w-full rounded-2xl py-8 px-8 h-full overflow-y-auto custom-scroll pr-2">
+      {files.length > 0 && (
+        <div className="flex flex-col gap-4">
+          <div className="bg-dark-gray border border-dashed overflow-hidden border-white/60 rounded-2xl">
+            <div className="w-full h-72 rounded-2xl py-8 px-8 overflow-y-auto custom-scroll ">
               <ul className="grid lg:grid-cols-2 gap-4">
                 {files.map((file, index) => {
                   const result = results[file.name];
                   return (
-                    <li
+                    <motion.li
+                      variants={itemVariants}
                       key={index}
                       className="relative bg-white/20 border border-white/20 p-4 rounded-2xl"
                     >
@@ -108,14 +115,26 @@ export default function FileUploader() {
                       ) : (
                         <p className="text-white/50">Počítam…</p>
                       )}
-                    </li>
+                    </motion.li>
                   );
                 })}
               </ul>
             </div>
-          )}
+          </div>
+
+          <motion.div variants={itemVariants} className="w-fit ms-auto">
+            <Button
+              variant="flat"
+              color="primary"
+              onPress={() => {
+                document.getElementById("files")?.click();
+              }}
+            >
+              + Pridať ďalšie súbory
+            </Button>
+          </motion.div>
         </div>
-      </label>
+      )}
     </div>
   );
 }
