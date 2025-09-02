@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { Tab, Tabs } from "@heroui/react";
-import OnlineCalculatorTab from "@/components/Calculator/OnlineCalculatorTab.tsx";
+import OnlineCalculatorTab from "@/components/Calculator/OnlineCalculator/Tab.tsx";
 import IndividualRequestTab from "@/components/Calculator/IndividualRequestTab.tsx";
 import { useState } from "react";
 

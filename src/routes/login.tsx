@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import type { SubmitHandler } from "react-hook-form";
 import { z } from "zod";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/login")({
   staticData: { hideLayout: true },
@@ -29,10 +30,15 @@ function RouteComponent() {
   const {
     register,
     handleSubmit,
+    getValues,
     formState: { errors },
   } = useForm<ValidationSchema>({
     resolver: zodResolver(validationSchema),
   });
+
+  useEffect(() => {
+    getValues();
+  }, [getValues]);
 
   const onSubmit: SubmitHandler<ValidationSchema> = (data) => console.log(data);
 

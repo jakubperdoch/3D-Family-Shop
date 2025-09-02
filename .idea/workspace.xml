@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="enhance FileUploader component with animations and improve file upload UI">
+      <change afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/calculatorOptions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/priceIndex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/schemas/onlineCalculator.schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculatorTab.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +78,11 @@
       <recent name="$PROJECT_DIR$/src/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator" />
       <recent name="$PROJECT_DIR$/public/models" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/routes/products_/$category" />
-      <recent name="$PROJECT_DIR$/src/routes/products/$category" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -112,15 +122,8 @@
       <workItem from="1755848519918" duration="10991000" />
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
-      <workItem from="1756837274354" duration="1581000" />
-    </task>
-    <task id="LOCAL-00002" summary="add routing and components for calculator, modeling, and trainings; configure VCS and Prettier">
-      <option name="closed" value="true" />
-      <created>1753229222491</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1753229222491</updated>
+      <workItem from="1756837274354" duration="2879000" />
+      <workItem from="1756840519383" duration="12288000" />
     </task>
     <task id="LOCAL-00003" summary="add navigation item for home and update workspace configuration">
       <option name="closed" value="true" />
@@ -506,14 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756837965857</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="enhance FileUploader component with animations and improve file upload UI">
+      <option name="closed" value="true" />
+      <created>1756838898326</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1756838898326</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Banner and GallerySection components to modeling route" />
     <MESSAGE value="refactor ShowcaseFigure component to accept props for object URL and position" />
     <MESSAGE value="refactor Showcase component to accept additional props and add SplitImageSection component for enhanced layout" />
     <MESSAGE value="refactor Showcase component to adjust position prop and enhance SplitImageSection integration" />
@@ -538,6 +548,7 @@
     <MESSAGE value="refactor layout rendering in root route and enhance calculator route with Tabs and dynamic content" />
     <MESSAGE value="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component" />
     <MESSAGE value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
+    <MESSAGE value="enhance FileUploader component with animations and improve file upload UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhance FileUploader component with animations and improve file upload UI" />
   </component>
 </project>
