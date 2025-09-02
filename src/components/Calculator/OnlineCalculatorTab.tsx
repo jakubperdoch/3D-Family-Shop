@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { Button } from "@heroui/react";
+import FileUploader from "@/components/FileUploader";
 
 type CalculatorTabProps = {
   setSelectedTab: (tab: string) => void;
@@ -57,7 +58,7 @@ export default function OnlineCalculatorTab({
           <h4 className="text-2xl font-medium mb-2">Ako to funguje?</h4>
           <ul className="list-disc list-outside pl-3.5 flex flex-col gap-px">
             <li>
-              Nahrajte svoj 3D model vo formáte STL, OBJ alebo PLY.
+              Nahrajte svoj 3D model vo formáte STL
               <br />
               (Max. veľkosť 200 MB)
             </li>
@@ -72,7 +73,7 @@ export default function OnlineCalculatorTab({
       </div>
 
       <div className="bg-dark-gray col-start-2 row-span-2 rounded-3xl px-8 py-7">
-        <h1>Form</h1>
+        <FileUploader />
       </div>
     </motion.div>
   );
