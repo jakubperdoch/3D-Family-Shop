@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor layout and typography in login and register components for improved responsiveness and accessibility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/priceIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/priceIndex.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,15 +118,8 @@
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
-      <workItem from="1756840519383" duration="17161000" />
-    </task>
-    <task id="LOCAL-00009" summary="add itemVariants to FeaturedCarousel for animation effects">
-      <option name="closed" value="true" />
-      <created>1753274507352</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1753274507352</updated>
+      <workItem from="1756840519383" duration="17751000" />
+      <workItem from="1756860337928" duration="2866000" />
     </task>
     <task id="LOCAL-00010" summary="add BestSellersSection component and integrate with FeaturedCarousel">
       <option name="closed" value="true" />
@@ -508,14 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756859458256</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="refactor layout and typography in login and register components for improved responsiveness and accessibility">
+      <option name="closed" value="true" />
+      <created>1756859754006</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1756859754006</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add login and register routes with corresponding components" />
     <MESSAGE value="refactor login component to use react-hook-form for validation and improve error handling" />
     <MESSAGE value="add registration component with form validation and navigation to login" />
     <MESSAGE value="add NavigationSearch component with autocomplete functionality and update navigation items" />
@@ -540,6 +544,7 @@
     <MESSAGE value="refactor typography in components for improved responsiveness and layout consistency" />
     <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
+    <MESSAGE value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
   </component>
 </project>

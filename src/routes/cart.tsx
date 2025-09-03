@@ -51,7 +51,7 @@ function RouteComponent() {
         className="grid grid-cols-[auto_auto] items-center gap-6"
       >
         <div
-          className={`flex flex-col gap-12 bg-[#B48CDE33] w-fit p-6 rounded-2xl ${totalQuantity > 0 ? "" : "min-h-52 col-span-2 w-full justify-center items-center"}`}
+          className={`flex flex-col gap-12 w-fit p-6 rounded-2xl ${totalQuantity > 0 ? "" : "min-h-52 col-span-2 w-full justify-center items-center"}`}
         >
           {totalQuantity > 0 ? (
             <div>

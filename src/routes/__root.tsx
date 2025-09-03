@@ -14,6 +14,17 @@ import { store, persistor } from "@/store";
 
 export const Route = createRootRoute({
   component: () => <Root />,
+  notFoundComponent: () => (
+    <section className="container mx-auto mt-20 rounded-3xl flex flex-col gap-4 justify-center items-center p-20 bg-dark-gray">
+      <h1 className="text-5xl font-medium text-primary ">
+        404 – Stratený model
+      </h1>
+      <span className="text-lg text-white/60 max-w-xl text-center">
+        Váš 3D model sa zatiaľ nenašiel. Možno uviazol v sliceri, zmazal sa zo
+        SD karty alebo ešte len čaká na prvú vrstvu.
+      </span>
+    </section>
+  ),
 });
 
 function Root() {

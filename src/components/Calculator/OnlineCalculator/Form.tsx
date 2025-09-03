@@ -16,10 +16,9 @@ import {
 import { useEffect, useState } from "react";
 import * as THREE from "three";
 import { calculatePrice } from "@/utils/priceCalcutations.ts";
-import {
-  onlineCalculatorSchema,
-  type OnlineCalculatorForm,
-} from "@/schemas/onlineCalculator.schema";
+import { type z } from "zod";
+import { onlineCalculatorSchema } from "@/schemas/onlineCalculator.schema";
+
 import {
   Controller,
   FormProvider,
@@ -34,8 +33,8 @@ export default function OnlineCalculatorForm() {
   >({});
   const [totalPrice, setTotalPrice] = useState<number | null>(null);
 
-  const methods = useForm<OnlineCalculatorForm>({
-    resolver: zodResolver(onlineCalculatorSchema),
+  const methods = useForm<z.infer<typeof onlineCalculatorSchema>>({
+    resolver: zodResolver(onlineCalculatorSchema) as any,
     defaultValues: {
       files: [],
       material: "pla",
@@ -56,7 +55,7 @@ export default function OnlineCalculatorForm() {
     formState: { errors },
   } = methods;
 
-  const { material, strength, quality, infill, count } = watch();
+  const { material, strength, quality, infill, count, color } = watch();
 
   useEffect(() => {
     const handlePriceChange = async () => {
@@ -73,6 +72,7 @@ export default function OnlineCalculatorForm() {
           strength: strength || "daily-use",
           quality: quality || "standard",
           infill: infill || "high",
+          color: color || "black",
           count: count || 1,
         });
         totalPrice += calculatedPrice;
@@ -86,8 +86,10 @@ export default function OnlineCalculatorForm() {
     });
   }, [results, material, strength, quality, infill, count]);
 
-  const onSubmit: SubmitHandler<OnlineCalculatorForm> = (data) => {
-    console.log("Form data", data);
+  const onSubmit: SubmitHandler<z.infer<typeof onlineCalculatorSchema>> = (
+    data,
+  ) => {
+    console.log(data);
   };
 
   return (

@@ -11,14 +11,12 @@ type CalcParams = {
   quality: string;
   infill: string;
   count: number;
+  color?: string;
 };
 
-export function calculatePrice(
-  volume: number, // v mm³
-  params: CalcParams,
-): number {
-  const basePricePerCm3 = 0.15; // 0.15 € / cm³
-  const volumeCm3 = volume / 1000; // prevod mm³ → cm³
+export function calculatePrice(volume: number, params: CalcParams): number {
+  const basePricePerCm3 = 0.15;
+  const volumeCm3 = volume / 1000;
 
   const base = volumeCm3 * basePricePerCm3;
 
@@ -26,7 +24,7 @@ export function calculatePrice(
   const strength = strengthIndex[params.strength] ?? 1;
   const quality = qualityIndex[params.quality] ?? 1;
   const infill = infillIndex[params.infill] ?? 1;
-  const count = params.count;
+  const count = params.count ?? 1;
 
   const finalPrice = base * material * strength * quality * infill * count;
 

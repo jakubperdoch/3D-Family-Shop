@@ -22,13 +22,6 @@ export const qualityIndex: Record<string, number> = {
   premium: 1.4,
 };
 
-export const usageIndex: Record<string, number> = {
-  indoor: 1.0,
-  outdoor: 1.2,
-  both: 1.15,
-  "machine-part": 1.4,
-};
-
 export const infillIndex: Record<string, number> = {
   low: 0.8,
   medium: 1.0,
