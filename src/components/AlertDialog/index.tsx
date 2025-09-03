@@ -44,13 +44,15 @@ export default function AlertDialog({
       onOpenChange={onModalOpen || (() => {})}
       onClose={onClose || (() => {})}
     >
-      <ModalContent>
+      <ModalContent className="p-2">
         {(onClose) => (
           <>
             <ModalHeader className="flex flex-col gap-1">
-              <h2 className="text-lg font-semibold">{title}</h2>
+              <h2 className="text-xl font-semibold">{title}</h2>
               {description && (
-                <p className="text-sm text-gray-600">{description}</p>
+                <p className="text-lg font-normal text-white/60">
+                  {description}
+                </p>
               )}
             </ModalHeader>
             <ModalBody>{children}</ModalBody>

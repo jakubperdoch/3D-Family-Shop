@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add ToastProvider for global toast notifications and integrate success toast in OnlineCalculator form submission">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AlertDialog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AlertDialog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,15 +115,7 @@
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
       <workItem from="1756840519383" duration="17751000" />
-      <workItem from="1756860337928" duration="3309000" />
-    </task>
-    <task id="LOCAL-00011" summary="update BestSellersSection titles and adjust workspace configuration">
-      <option name="closed" value="true" />
-      <created>1753307415590</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1753307415590</updated>
+      <workItem from="1756860337928" duration="4810000" />
     </task>
     <task id="LOCAL-00012" summary="add CategoryCarousel component, refactor routes for collections, and update layout styles">
       <option name="closed" value="true" />
@@ -508,14 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756863239622</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="add ToastProvider for global toast notifications and integrate success toast in OnlineCalculator form submission">
+      <option name="closed" value="true" />
+      <created>1756863681215</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1756863681215</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add NavigationSearch component with autocomplete functionality and update navigation items" />
     <MESSAGE value="add NavigationSearch component with autocomplete and integrate it into NavigationBar" />
     <MESSAGE value="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality" />
     <MESSAGE value="add aria-label to NavigationSearch component and enhance search icon styling" />
@@ -540,6 +540,7 @@
     <MESSAGE value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography in collection and root components for improved responsiveness and accessibility" />
     <MESSAGE value="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes" />
+    <MESSAGE value="add ToastProvider for global toast notifications and integrate success toast in OnlineCalculator form submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ToastProvider for global toast notifications and integrate success toast in OnlineCalculator form submission" />
   </component>
 </project>
