@@ -21,8 +21,10 @@ export default function Banner({ title, children }: BannerProps) {
       <motion.h3
         variants={itemVariants}
         className={cn(
-          children ? "text-left text-[5rem]" : "text-center text-[5.25rem]",
-          "relative font-bold uppercase leading-tight max-lg:text-center",
+          children
+            ? "text-left text-5xl md:text-[4rem] lg:text-[5rem]"
+            : "text-center text-5xl md:text-[4rem] lg:text-[5.25rem]",
+          "relative font-bold uppercase leading-tight max-xl:text-center max-lg:mb-8",
         )}
       >
         {title}
