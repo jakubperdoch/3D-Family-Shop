@@ -16,8 +16,8 @@ export default function OnlineCalculatorTab({
       variants={itemVariants}
       className="grid grid-cols-2 gap-y-5 gap-x-7"
     >
-      <div className="flex flex-col gap-y-5">
-        <div className="bg-dark-gray h-fit rounded-t-3xl row-start-1 max-lg:col-span-2 px-8 py-7 flex flex-col gap-2">
+      <div className="flex flex-col gap-y-5 max-lg:col-span-2">
+        <div className="bg-dark-gray h-fit rounded-t-3xl px-8 py-7 flex flex-col gap-2">
           <h3 className="text-2xl font-medium">
             Nemáte model, ale máte nápad?
           </h3>

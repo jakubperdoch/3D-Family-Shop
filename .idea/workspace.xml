@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor ContactBanner layout for improved responsiveness and accessibility">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FaqSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FaqSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PricingCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PricingCardsSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,15 +114,7 @@
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
-      <workItem from="1756840519383" duration="16862000" />
-    </task>
-    <task id="LOCAL-00008" summary="add FeaturedCarousel description and button component">
-      <option name="closed" value="true" />
-      <created>1753274457723</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1753274457723</updated>
+      <workItem from="1756840519383" duration="17161000" />
     </task>
     <task id="LOCAL-00009" summary="add itemVariants to FeaturedCarousel for animation effects">
       <option name="closed" value="true" />
@@ -509,14 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756858930521</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency">
+      <option name="closed" value="true" />
+      <created>1756859458256</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1756859458256</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor $product.tsx layout and enhance Footer component with social media links" />
     <MESSAGE value="add login and register routes with corresponding components" />
     <MESSAGE value="refactor login component to use react-hook-form for validation and improve error handling" />
     <MESSAGE value="add registration component with form validation and navigation to login" />
@@ -541,6 +539,7 @@
     <MESSAGE value="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component" />
     <MESSAGE value="refactor typography in components for improved responsiveness and layout consistency" />
     <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor ContactBanner layout for improved responsiveness and accessibility" />
+    <MESSAGE value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
   </component>
 </project>

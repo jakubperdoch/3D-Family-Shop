@@ -71,10 +71,10 @@ function RouteComponent() {
   const onSubmit: SubmitHandler<ValidationSchema> = (data) => console.log(data);
 
   return (
-    <section className="min-h-screen grid grid-cols-2 items-center justify-center">
+    <section className="min-h-screen flex flex-col lg:grid lg:grid-cols-2 items-center justify-center">
       <motion.div
         variants={itemVariants}
-        className="flex flex-col gap-12 px-20"
+        className="flex flex-col gap-12 px-20 max-lg:w-full"
       >
         <h2 className="text-[2.6rem] font-bold">Registrácia</h2>
 
@@ -214,7 +214,10 @@ function RouteComponent() {
         </Link>
       </motion.div>
 
-      <motion.div variants={itemVariants} className="relative h-full w-full">
+      <motion.div
+        variants={itemVariants}
+        className="relative h-full w-full  max-lg:hidden"
+      >
         <motion.div className="absolute inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-50"></motion.div>
         <ShowcaseCrystal
           objectUrl={"/models/crystals--model.glb"}
