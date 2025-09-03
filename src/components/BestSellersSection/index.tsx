@@ -43,12 +43,15 @@ export default function BestSellersSection() {
       variants={itemVariants}
       className="flex flex-col gap-10 container mx-auto"
     >
-      <h2 className="font-bold text-[4.6rem] leading-20">
+      <h2 className="font-bold text-4xl md:text-5xl lg:text-[4.6rem] lg:leading-20">
         Čerstvé dizajny,
         <br /> okamžite k objednaniu.
       </h2>
 
-      <motion.div variants={itemVariants} className="flex flex-row gap-4">
+      <motion.div
+        variants={itemVariants}
+        className="grid grid-cols-2 lg:flex max-lg:gap-8 flex-row gap-4"
+      >
         {bestSellersCards &&
           bestSellersCards.length > 0 &&
           bestSellersCards.map((card) => (

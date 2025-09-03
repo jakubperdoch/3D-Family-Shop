@@ -67,7 +67,7 @@ export default function FeaturedCarousel() {
       <AnimatePresence mode="wait">
         <motion.div
           key={activeIndex}
-          className="object-cover max-h-[40rem] overflow-hidden rounded-[1.75rem] relative z-[1] w-full"
+          className="object-cover max-h-[40rem] overflow-hidden rounded-[1.75rem] relative z-[1] w-full max-lg:h-[25rem]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -90,11 +90,11 @@ export default function FeaturedCarousel() {
           to={"/products/$product"}
           params={{ product: featuredProduct.id }}
         >
-          <h4 className="text-7xl font-bold hover:text-primary transition-all duration-300 ease-in-out cursor-pointer">
+          <h4 className="text-2xl md:text-4xl lg:text-7xl font-bold hover:text-primary transition-all duration-300 ease-in-out cursor-pointer">
             {featuredProduct.title}
           </h4>
         </Link>
-        <span className="text-2xl max-w-lg ">
+        <span className="text-lg max-w-sm lg:text-2xl lg:max-w-lg">
           {featuredProduct.description}
         </span>
 
@@ -127,7 +127,7 @@ export default function FeaturedCarousel() {
               <button
                 key={index}
                 onClick={() => handleImageChange(index)}
-                className={`w-40 h-40 flex object-cover cursor-pointer`}
+                className={`w-20 h-20 lg:w-40 lg:h-40 flex object-cover cursor-pointer`}
               >
                 <Image
                   loading="lazy"

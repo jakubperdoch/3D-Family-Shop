@@ -47,7 +47,7 @@ export default function HeroSection() {
               <motion.span
                 key={i}
                 variants={char}
-                className="relative text-[6.25rem] font-bold text-center leading-tight mb-11"
+                className="relative text-5xl sm:text-6xl md:text-[4rem] lg:text-[6.25rem] font-bold text-center leading-tight mb-11"
               >
                 {ch === " " ? "\u00A0" : ch}
               </motion.span>
@@ -57,7 +57,7 @@ export default function HeroSection() {
         ))}
       </motion.div>
 
-      <motion.span className="text-xl leading-8 text-center">
+      <motion.span className="text-lg md:text-xl leading-8 text-center">
         Modelovanie, skenovanie aj zákazková 3D výroba na jednom mieste.
         <br />
         Vaša vízia – náš filament.

@@ -19,7 +19,7 @@ export default function Card(card: CardProps) {
         removeWrapper={true}
         alt={card?.title}
       />
-      <h3 className="text-2xl font-bold">{card?.title}</h3>
+      <h3 className="text-lg md:text-2xl font-bold">{card?.title}</h3>
       <Link
         to={"/products/$product"}
         className="w-full"

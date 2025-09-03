@@ -37,10 +37,10 @@ export default function CategoryCarousel() {
   return (
     <RevealOnScroll
       variants={itemVariants}
-      className="flex flex-col gap-16 w-full bg-dark-gray"
+      className="flex flex-col gap-16 w-full mb-10 bg-dark-gray"
     >
       <div className="flex justify-between container mx-auto pt-20">
-        <h2 className="text-white font-bold text-[4.6rem] leading-16">
+        <h2 className="text-white font-bold text-5xl lg:text-[4.6rem] lg:leading-16">
           Kategórie
         </h2>
 
@@ -75,12 +75,12 @@ export default function CategoryCarousel() {
             prevEl: ".swiper-button-prev",
           }}
           slidesPerView={2}
-          className="!ms-32 rounded-tl-[4rem]"
+          className="lg:!ms-32 rounded-tl-[4rem]"
         >
           {categories.map((category, index) => (
             <SwiperSlide
               key={category.id}
-              className={`!flex !flex-col !justify-between !h-auto px-16 pt-20 pb-6 ${index % 2 === 0 ? "bg-gray-light" : "bg-white"}`}
+              className={`!flex !flex-col !justify-between !h-auto px-8 lg:px-16 pt-20 pb-6 ${index % 2 === 0 ? "bg-gray-light" : "bg-white"}`}
             >
               <Image
                 alt={category?.title ?? "Category Image"}
@@ -90,8 +90,8 @@ export default function CategoryCarousel() {
                 src={category?.imageUrl}
               />
 
-              <div className="flex justify-between items-end">
-                <h3 className="text-dark-gray capitalize font-semibold text-4xl max-w-[13rem]">
+              <div className="flex justify-between items-end max-md:flex-col max-md:gap-4 max-md:mt-6 ">
+                <h3 className="text-dark-gray w-fit capitalize font-semibold text-2xl lg:text-4xl max-w-[13rem]">
                   {category?.title}
                 </h3>
                 <Button
