@@ -9,25 +9,34 @@ import { Icon } from "@iconify/react";
 import * as THREE from "three";
 import { Button } from "@heroui/react";
 import { IoClose } from "react-icons/io5";
-import type { OnlineCalculatorForm } from "@/schemas/onlineCalculator.schema.ts";
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { useFormContext } from "react-hook-form";
 
+import type { OnlineCalculatorForm } from "@/schemas/onlineCalculator.schema.ts";
+import type { OnlinePriceRequestForm } from "@/schemas/onlinePriceRequest.schema.ts";
+
 type ResultsMap = Record<string, { size: THREE.Vector3; volume: number }>;
+type UploadForms = OnlineCalculatorForm | OnlinePriceRequestForm;
 
 type FileUploaderProps = {
   results: ResultsMap;
   setResults: (data: ResultsMap) => void;
   errorMessage?: string;
+  acceptedFileTypes?: string[];
+  placeholderTitle?: string;
+  placeholderDescription?: string;
 };
 
 export default function FileUploader({
   results,
   setResults,
   errorMessage,
+  acceptedFileTypes = [".stl"],
+  placeholderTitle = "Nahrajte svoj 3D model",
+  placeholderDescription = "STL (max. 200 MB)",
 }: FileUploaderProps) {
-  const { setValue, watch } = useFormContext<OnlineCalculatorForm>();
+  const { setValue, watch } = useFormContext<UploadForms>();
   const files = watch("files") || [];
 
   const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -64,7 +73,7 @@ export default function FileUploader({
         type="file"
         id="files"
         className="hidden"
-        accept=".stl"
+        accept={acceptedFileTypes?.join(" ")}
         multiple
         onChange={handleFileChange}
       />
@@ -74,8 +83,8 @@ export default function FileUploader({
           <div className="flex items-center justify-center w-full h-72 border border-dashed border-white/60 rounded-2xl cursor-pointer bg-dark-gray">
             <div className="h-full w-full px-8 grid grid-cols-2 items-center justify-center">
               <div className="text-center flex flex-col gap-1">
-                <h3 className="text-xl font-medium">Nahrajte 3D modely</h3>
-                <p className="text-white/60">STL (max. 200 MB)</p>
+                <h3 className="text-xl font-medium">{placeholderTitle}</h3>
+                <p className="text-white/60">{placeholderDescription}</p>
               </div>
               <Icon icon="line-md:uploading-loop" className="h-1/3 w-full" />
             </div>

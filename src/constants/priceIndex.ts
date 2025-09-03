@@ -1,5 +1,6 @@
 // indexy pre výpočet ceny
 export const materialIndex: Record<string, number> = {
+  optional: 1.0,
   pla: 1.0,
   petg: 1.2,
   abs: 1.3,

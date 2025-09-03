@@ -1,12 +1,5 @@
 import FileUploader from "@/components/FileUploader";
-import {
-  addToast,
-  Button,
-  NumberInput,
-  Select,
-  SelectItem,
-  Textarea,
-} from "@heroui/react";
+import { addToast, Button, Select, SelectItem, Textarea } from "@heroui/react";
 import {
   colorOptions,
   infillOptions,
@@ -14,28 +7,21 @@ import {
   qualityOptions,
   strengthOptions,
 } from "@/constants/calculatorOptions.ts";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as THREE from "three";
-import { calculatePrice } from "@/utils/priceCalcutations.ts";
 import { type z } from "zod";
-import { onlineCalculatorSchema } from "@/schemas/onlineCalculator.schema";
 
-import {
-  Controller,
-  FormProvider,
-  type SubmitHandler,
-  useForm,
-} from "react-hook-form";
+import { onlinePriceRequestSchema } from "@/schemas/onlinePriceRequest.schema.ts";
+import { FormProvider, type SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-export default function OnlineCalculatorForm() {
+export default function RequestCalculatorForm() {
   const [results, setResults] = useState<
     Record<string, { size: THREE.Vector3; volume: number }>
   >({});
-  const [totalPrice, setTotalPrice] = useState<number | null>(null);
 
-  const methods = useForm<z.infer<typeof onlineCalculatorSchema>>({
-    resolver: zodResolver(onlineCalculatorSchema) as any,
+  const methods = useForm<z.infer<typeof onlinePriceRequestSchema>>({
+    resolver: zodResolver(onlinePriceRequestSchema) as any,
     defaultValues: {
       files: [],
       material: "pla",
@@ -43,58 +29,25 @@ export default function OnlineCalculatorForm() {
       quality: "standard",
       infill: "high",
       color: "black",
-      count: 1,
       note: "",
     },
   });
 
   const {
     handleSubmit,
-    control,
-    watch,
     register,
     formState: { errors },
   } = methods;
 
-  const { material, strength, quality, infill, count, color } = watch();
-
-  useEffect(() => {
-    const handlePriceChange = async () => {
-      if (Object.keys(results).length === 0) {
-        setTotalPrice(null);
-      }
-
-      let totalPrice = 0;
-
-      for (const key in results) {
-        const result = results[key];
-        const calculatedPrice = calculatePrice(result.volume, {
-          material: material || "pla",
-          strength: strength || "daily-use",
-          quality: quality || "standard",
-          infill: infill || "high",
-          color: color || "black",
-          count: count || 1,
-        });
-        totalPrice += calculatedPrice;
-      }
-
-      setTotalPrice(totalPrice);
-    };
-
-    handlePriceChange().catch((error) => {
-      console.error("Error calculating price:", error);
-    });
-  }, [results, material, strength, quality, infill, count]);
-
-  const onSubmit: SubmitHandler<z.infer<typeof onlineCalculatorSchema>> = (
+  const onSubmit: SubmitHandler<z.infer<typeof onlinePriceRequestSchema>> = (
     data,
   ) => {
     console.log(data);
 
     addToast({
       title: "Žiadosť odoslaná",
-      description: "Vaša žiadosť o kalkuláciu bola úspešne odoslaná.",
+      description:
+        "Vaša individuálna žiadosť o kalkuláciu bola úspešne odoslaná.",
       severity: "success",
       color: "success",
     });
@@ -109,6 +62,9 @@ export default function OnlineCalculatorForm() {
         <FileUploader
           results={results}
           setResults={setResults}
+          acceptedFileTypes={[".stl", ".obj", ".3mf"]}
+          placeholderTitle="Priložte podklady"
+          placeholderDescription="Podporovaný formát: .STL alebo prípadne náčrty, fotografie, obrázky"
           errorMessage={
             Array.isArray(errors.files)
               ? errors.files[0]?.message
@@ -117,12 +73,28 @@ export default function OnlineCalculatorForm() {
         />
 
         <div className="grid grid-cols-2 gap-4 mt-12">
+          {/* Poznámka */}
+          <Textarea
+            isClearable
+            isRequired
+            variant="bordered"
+            label="Špecifikácia požiadavky"
+            description="Opíšte čo najdetailnejšie, čo potrebujete – rozmer, účel použitia, materiál, farbu, odolnosť… čím viac detailov, tým presnejšia bude ponuka."
+            className="col-span-2"
+            classNames={{
+              inputWrapper: "border border-white/60 rounded-xl",
+            }}
+            {...register("note")}
+            isInvalid={!!errors.note}
+            errorMessage={errors.note?.message}
+          />
+
           {/* Material */}
           <Select
             size="sm"
             label="Zvolený materiál"
-            variant="bordered"
             className="col-span-2"
+            variant="bordered"
             classNames={{
               trigger: "border border-white/60 rounded-xl",
             }}
@@ -206,62 +178,17 @@ export default function OnlineCalculatorForm() {
               <SelectItem key={color.value}>{color.label}</SelectItem>
             ))}
           </Select>
-
-          {/* Počet */}
-          <Controller
-            name="count"
-            control={control}
-            render={({ field }) => (
-              <NumberInput
-                {...field}
-                size="sm"
-                minValue={1}
-                maxValue={1000}
-                label="Počet kusov"
-                variant="bordered"
-                className="max-lg:col-span-2"
-                classNames={{
-                  inputWrapper: "border border-white/60 rounded-xl",
-                }}
-                value={field.value}
-                onChange={(val) => field.onChange(val)}
-              />
-            )}
-          />
-
-          {/* Poznámka */}
-          <Textarea
-            isClearable
-            label="Poznámka (nepovinné)"
-            className="col-span-2"
-            variant="bordered"
-            classNames={{
-              inputWrapper: "border border-white/60 rounded-xl",
-            }}
-            {...register("note")}
-            isInvalid={!!errors.note}
-            errorMessage={errors.note?.message}
-          />
         </div>
 
-        <div className="mt-12 flex flex-col items-end gap-4">
-          <span>
-            Celková cena:{" "}
-            <span className="font-medium text-xl">{totalPrice} €</span>
-          </span>
-          <span>Odhadovaná doba odoslania: </span>
-          <span className="text-xs text-white/60">
-            Výsledná cena sa môže líšiť po kontrole technika
-          </span>
-
+        <div className="flex items-end justify-end">
           <Button
             aria-label="Odoslať žiadosť o kalkuláciu"
             size="lg"
             color="primary"
             type="submit"
-            className="text-white w-fit mt-4 font-medium"
+            className="text-white w-fit mt-12 font-medium"
           >
-            Odoslať žiadosť o kalkuláciu
+            Získať ponuku na mieru
           </Button>
         </div>
       </form>

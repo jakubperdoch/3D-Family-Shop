@@ -53,7 +53,7 @@ function ProductPage() {
           <a href="/">Domov</a>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <a href="/products">Produkty</a>
+          <a href="/collections/custom-3d-printing">Produkty</a>
         </BreadcrumbItem>
         <BreadcrumbItem isLast={true}>{product.name}</BreadcrumbItem>
       </Breadcrumbs>

@@ -8,6 +8,7 @@ export type SelectOption = {
  * Materiál – základná voľba pre zákazníkov
  */
 export const materialOptions: SelectOption[] = [
+  { value: "optional", label: "Nechám si poradiť" },
   { value: "pla", label: "PLA – univerzálny a cenovo dostupný" },
   { value: "petg", label: "PETG – vyššia odolnosť voči teplu" },
   { value: "abs", label: "ABS – pevný a odolný materiál" },

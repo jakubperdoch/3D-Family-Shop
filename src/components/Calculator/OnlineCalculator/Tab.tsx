@@ -48,7 +48,7 @@ export default function OnlineCalculatorTab({
           </Button>
         </div>
 
-        <div className="bg-dark-gray h-fit rounded-b-3xl col-start-1 row-start-2 max-lg:col-span-2 px-8 py-7 flex flex-col gap-2">
+        <div className="bg-dark-gray h-fit rounded-b-3xl px-8 py-7 flex flex-col gap-2">
           <h3 className="text-2xl font-medium">Máte 3D model? </h3>
           <p className="text-lg text-white/60">
             Online kalkulačka jednoduchý a rýchly výpočet ceny tlače

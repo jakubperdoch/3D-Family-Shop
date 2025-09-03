@@ -21,8 +21,8 @@ export const Route = createRootRoute({
         404 – Stratený model
       </h1>
       <span className="text-lg text-white/60 max-w-xl text-center">
-        Váš 3D model sa zatiaľ nenašiel. Možno uviazol v sliceri, zmazal sa zo
-        SD karty alebo ešte len čaká na prvú vrstvu.
+        Váš 3D model sa zatiaľ nenašiel. Možno uviazol v sliceri, zmazal sa z SD
+        karty alebo ešte len čaká na prvú vrstvu.
       </span>
     </section>
   ),
