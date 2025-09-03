@@ -1,5 +1,6 @@
 import FileUploader from "@/components/FileUploader";
 import {
+  addToast,
   Button,
   NumberInput,
   Select,
@@ -90,6 +91,13 @@ export default function OnlineCalculatorForm() {
     data,
   ) => {
     console.log(data);
+
+    addToast({
+      title: "Žiadosť odoslaná",
+      description: "Vaša žiadosť o kalkuláciu bola úspešne odoslaná.",
+      severity: "success",
+      color: "success",
+    });
   };
 
   return (

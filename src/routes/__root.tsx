@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "@/store";
+import { ToastProvider } from "@heroui/react";
 
 export const Route = createRootRoute({
   component: () => <Root />,
@@ -45,6 +46,7 @@ function Root() {
 
           <Outlet />
 
+          <ToastProvider placement="top-right" />
           {!hideLayout && <Footer />}
         </motion.div>
         <TanStackRouterDevtools />

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor layout and typography in login and register components for improved responsiveness and accessibility">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/priceIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/priceIndex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/collections_/$collection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/priceCalcutations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,15 +114,7 @@
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
       <workItem from="1756840519383" duration="17751000" />
-      <workItem from="1756860337928" duration="2866000" />
-    </task>
-    <task id="LOCAL-00010" summary="add BestSellersSection component and integrate with FeaturedCarousel">
-      <option name="closed" value="true" />
-      <created>1753302058043</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1753302058043</updated>
+      <workItem from="1756860337928" duration="3309000" />
     </task>
     <task id="LOCAL-00011" summary="update BestSellersSection titles and adjust workspace configuration">
       <option name="closed" value="true" />
@@ -513,15 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756859754006</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes">
+      <option name="closed" value="true" />
+      <created>1756863239621</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1756863239622</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor login component to use react-hook-form for validation and improve error handling" />
-    <MESSAGE value="add registration component with form validation and navigation to login" />
     <MESSAGE value="add NavigationSearch component with autocomplete functionality and update navigation items" />
     <MESSAGE value="add NavigationSearch component with autocomplete and integrate it into NavigationBar" />
     <MESSAGE value="replace search icon in NavigationBar with new NavigationSearch component featuring enhanced functionality" />
@@ -545,6 +538,8 @@
     <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
     <MESSAGE value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
+    <MESSAGE value="refactor layout and typography in collection and root components for improved responsiveness and accessibility" />
+    <MESSAGE value="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor codebase: remove unused `usageIndex`, adjust imports and formatting, enhance error handling in calculator form, and add 404 page rendering for missing routes" />
   </component>
 </project>
