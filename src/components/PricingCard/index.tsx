@@ -26,11 +26,11 @@ export default function PricingCard({
       variants={itemVariants}
       className={cn(
         type === "premium" ? "bg-black" : "bg-dark-gray",
-        "relative flex flex-col gap-7 w-fit p-10 pb-8 rounded-[3rem]",
+        "relative flex flex-col gap-7 w-fit p-8 pb-6 md:p-10 md:pb-8 rounded-4xl md:rounded-[3rem] max-lg:mx-auto",
       )}
     >
       {type === "premium" && (
-        <motion.div className="absolute rounded-[3rem] inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-40"></motion.div>
+        <motion.div className="absolute rounded-4xl md:rounded-[3rem] inset-0 bg-[url('/background--gradient.webp')] bg-cover bg-center opacity-40"></motion.div>
       )}
 
       <div className="max-w-[25rem] relative z-10">
@@ -39,7 +39,9 @@ export default function PricingCard({
         )}
 
         <div className="flex justify-between items-center gap-3 mb-3">
-          {title && <h3 className="text-[2.75rem] font-medium">{title}</h3>}
+          {title && (
+            <h3 className="text-3xl md:text-[2.75rem] font-medium">{title}</h3>
+          )}
 
           {type === "premium" && (
             <div className="border border-white rounded-lg px-3 py-1 bg-black/20">
@@ -49,11 +51,13 @@ export default function PricingCard({
         </div>
 
         {description && (
-          <p className="text-2xl text-white/80 font-light mb-6">
+          <p className="text-xl md:text-2xl text-white/80 font-light mb-6">
             {description}
           </p>
         )}
-        {price && <p className="text-[3.75rem] font-medium">{price}</p>}
+        {price && (
+          <p className="text-4xl md:text-[3.75rem] font-medium">{price}</p>
+        )}
       </div>
 
       <hr className="border-[#E7EBFF]" />
@@ -61,7 +65,10 @@ export default function PricingCard({
       {features && (
         <ul className="flex flex-col gap-4 relative z-10 mb-5">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center gap-4 text-xl">
+            <li
+              key={index}
+              className="flex items-center gap-4 text-lg md:text-xl"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"

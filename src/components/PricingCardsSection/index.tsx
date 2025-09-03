@@ -53,10 +53,10 @@ export default function PricingCardsSection() {
     >
       <div className="text-center">
         <p className="text-primary uppercase font-bold text-xl mb-2">Ceny</p>
-        <h2 className="mb-6 text-[3.3rem] leading-tight font-bold">
+        <h2 className="mb-6 text-4xl md:text-[3.3rem] leading-tight font-bold">
           Praktické školenia, ktoré vás pripravia na vlastnú tvorbu.
         </h2>
-        <p className="text-lg">
+        <p className="text-lg text-white/60">
           Naše školenia sú navrhnuté pre začiatočníkov aj pokročilých. V
           priebehu jedného dňa vás naučíme všetko potrebné – od prípravy modelu
           až po jeho finálnu tlač. Navyše ponúkame možnosť ročnej podpory, vďaka
@@ -64,7 +64,7 @@ export default function PricingCardsSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[auto_auto] justify-center gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-[auto_auto] justify-center items-center gap-10">
         {pricingCards &&
           pricingCards.map((card, index) => (
             <PricingCard
@@ -79,7 +79,7 @@ export default function PricingCardsSection() {
           ))}
       </div>
 
-      <span className="text-center text-white/60 text-lg">
+      <span className="text-center text-white/60 text-medium max-md:max-w-sm max-md:mx-auto md:text-lg">
         Nevieš, ktorý balík je pre teba? Ozvi sa nám a pomôžeme ti vybrať
         najlepšiu cestu.
       </span>

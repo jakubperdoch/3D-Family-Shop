@@ -18,8 +18,8 @@ export default function ContactBanner({
   mainText,
 }: ContactBannerProps) {
   return (
-    <motion.section className="w-full container mx-auto mb-10 bg-dark-gray flex flex-col md:flex-row justify-between items-center gap-8 md:gap-20 p-20 rounded-[3rem]">
-      <div className="flex w-full flex-col max-md:items-center">
+    <motion.section className="w-full container mx-auto mb-10 bg-dark-gray flex flex-col md:flex-row justify-between items-center gap-8 md:gap-20 p-14 px-10 md:p-20 rounded-[3rem]">
+      <div className="flex w-full flex-col max-md:items-center max-md:text-center">
         <span className="mb-0.5 text-primary text-lg font-bold uppercase">
           {subtitle}
         </span>

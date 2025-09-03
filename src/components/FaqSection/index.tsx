@@ -24,9 +24,9 @@ export default function FaqSection({
   return (
     <motion.section
       variants={itemVariants}
-      className="container mx-auto py-20 flex justify-between gap-8"
+      className="container mx-auto py-20 flex justify-between gap-8 max-lg:flex-col max-lg:items-center max-lg:gap-10"
     >
-      <div className="flex flex-col gap-2 max-w-md">
+      <div className="flex flex-col gap-2 max-w-md max-lg:text-center">
         <span className="text-primary text-lg font-bold uppercase">
           {subtitle}
         </span>
