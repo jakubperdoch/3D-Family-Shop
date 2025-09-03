@@ -1,7 +1,7 @@
 import { itemVariants } from "@/utils/animations.ts";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/image";
-import { Accordion, AccordionItem, Button } from "@heroui/react";
+import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function SettingsTab() {
   return (
@@ -25,14 +25,9 @@ export default function SettingsTab() {
             <p className="text-white/80">johndoe@gmail.com</p>
           </div>
         </div>
-
-        <Button color="primary" className="text-white">
-          Upraviť profil
-        </Button>
       </motion.div>
 
       <motion.div variants={itemVariants} className="mt-10">
-        <h2 className="text-2xl font-bold">Profil</h2>
         <Accordion className="px-0 mt-4" variant="splitted">
           <AccordionItem
             key="address"

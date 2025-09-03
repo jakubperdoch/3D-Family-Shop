@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,15 +113,7 @@
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
       <workItem from="1756840519383" duration="17751000" />
-      <workItem from="1756860337928" duration="18157000" />
-    </task>
-    <task id="LOCAL-00014" summary="add ReviewCarousel component and integrate it into the main application">
-      <option name="closed" value="true" />
-      <created>1753651137490</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1753651137490</updated>
+      <workItem from="1756860337928" duration="18288000" />
     </task>
     <task id="LOCAL-00015" summary="update ReviewCarousel component to enhance functionality and improve layout">
       <option name="closed" value="true" />
@@ -509,15 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756905653267</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component">
+      <option name="closed" value="true" />
+      <created>1756919049030</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1756919049030</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
-    <MESSAGE value="rename Trainings route to Courses and update related components" />
     <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
     <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
     <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
@@ -541,6 +537,8 @@
     <MESSAGE value="add product cards and pagination to collections route for improved display and navigation" />
     <MESSAGE value="add new badge to `Card` component, update `AlertDialog` styles, and enhance collections route with product grid and pagination" />
     <MESSAGE value="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components" />
+    <MESSAGE value="update profile routing, implement profile tabs with settings and orders, and add SettingsTab component" />
+    <MESSAGE value="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component" />
+    <option name="LAST_COMMIT_MESSAGE" value="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component" />
   </component>
 </project>
