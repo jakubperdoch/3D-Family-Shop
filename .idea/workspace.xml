@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="add new badge to `Card` component, update `AlertDialog` styles, and enhance collections route with product grid and pagination">
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/RequestCalculator/Form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/RequestCalculator/Tab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schemas/onlinePriceRequest.schema.ts" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/IndividualRequestTab.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/OnlineCalculator/Tab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FileUploader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/calculatorOptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/calculatorOptions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/priceIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/priceIndex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/products_/$product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/products_/$product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/onlineCalculator.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/onlineCalculator.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +115,7 @@
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
       <workItem from="1756840519383" duration="17751000" />
-      <workItem from="1756860337928" duration="11634000" />
-    </task>
-    <task id="LOCAL-00013" summary="update button size in CategoryCarousel and clean up commented code">
-      <option name="closed" value="true" />
-      <created>1753641171465</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1753641171465</updated>
+      <workItem from="1756860337928" duration="18157000" />
     </task>
     <task id="LOCAL-00014" summary="add ReviewCarousel component and integrate it into the main application">
       <option name="closed" value="true" />
@@ -519,14 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756865188897</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components">
+      <option name="closed" value="true" />
+      <created>1756905653267</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1756905653267</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add aria-label to NavigationSearch component and enhance search icon styling" />
     <MESSAGE value="add NavigationSearch component with improved accessibility and enhanced search functionality" />
     <MESSAGE value="rename Trainings route to Courses and update related components" />
     <MESSAGE value="rename trainings route to courses and add PricingCard and PricingCardsSection components with styled layouts and dynamic features" />
@@ -551,6 +540,7 @@
     <MESSAGE value="add ToastProvider for global toast notifications and integrate success toast in OnlineCalculator form submission" />
     <MESSAGE value="add product cards and pagination to collections route for improved display and navigation" />
     <MESSAGE value="add new badge to `Card` component, update `AlertDialog` styles, and enhance collections route with product grid and pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new badge to `Card` component, update `AlertDialog` styles, and enhance collections route with product grid and pagination" />
+    <MESSAGE value="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace `IndividualRequestTab` with `RequestCalculatorTab`, introduce `onlinePriceRequest.schema`, and enhance file upload and form components" />
   </component>
 </project>
