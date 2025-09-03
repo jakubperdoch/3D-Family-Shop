@@ -22,9 +22,9 @@ export default function Banner({ title, children }: BannerProps) {
         variants={itemVariants}
         className={cn(
           children
-            ? "text-left text-5xl md:text-[4rem] lg:text-[5rem]"
+            ? "text-left text-5xl md:text-[4rem] lg:text-[5rem] max-lg:mb-8"
             : "text-center text-5xl md:text-[4rem] lg:text-[5.25rem]",
-          "relative font-bold uppercase leading-tight max-xl:text-center max-lg:mb-8",
+          "relative font-bold uppercase leading-tight max-xl:text-center",
         )}
       >
         {title}

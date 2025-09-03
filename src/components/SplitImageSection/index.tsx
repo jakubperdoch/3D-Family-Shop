@@ -27,25 +27,32 @@ export default function SplitImageSection({
     <motion.section
       variants={itemVariants}
       className={cn(
-        align === "left" ? "flex-row" : "flex-row-reverse",
+        align === "left"
+          ? "flex-col max-lg:gap-10 lg:flex-row"
+          : "flex-col-reverse  max-lg:gap-10 lg:flex-row-reverse",
         variation === "dark" && "bg-dark-gray",
-        "flex items-center justify-between w-full container p-20 rounded-[3rem]",
+        "flex items-center justify-between w-full container pt-16 pb-10 lg:p-20 rounded-[3rem]",
       )}
     >
       <div className="flex flex-col gap-11">
-        <div className="max-w-lg">
+        <div className="max-w-lg max-md:text-center">
           <span className="text-primary font-bold text-xl">{subtitle}</span>
-          <h2 className="text-[2.6rem] mt-2 leading-tight font-bold">
+          <h2 className="text-3xl md:text-[2.6rem] mt-2 leading-tight font-bold">
             {title}
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-y-11 gap-x-6">
+        <div className="grid md:grid-cols-2 gap-y-11 gap-x-6 max-md:items-center max-md:justify-center">
           {items &&
             items.map((item, index) => (
-              <div key={index} className="flex flex-col gap-4 max-w-[16rem]">
+              <div
+                key={index}
+                className="flex flex-col gap-4 max-w-[16rem] max-md:items-center max-md:text-center"
+              >
                 {item.icon}
-                <span className="text-lg">{item.description}</span>
+                <span className="text-medium md:text-lg">
+                  {item.description}
+                </span>
               </div>
             ))}
         </div>

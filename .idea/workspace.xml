@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor typography in components for improved responsiveness and layout consistency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactBanner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SplitImageSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SplitImageSection/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +114,7 @@
       <workItem from="1756575722777" duration="13465000" />
       <workItem from="1756604868507" duration="1909000" />
       <workItem from="1756837274354" duration="2879000" />
-      <workItem from="1756840519383" duration="15933000" />
-    </task>
-    <task id="LOCAL-00006" summary="add FeaturedCarousel component and update layout styles">
-      <option name="closed" value="true" />
-      <created>1753274012115</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1753274012115</updated>
+      <workItem from="1756840519383" duration="16333000" />
     </task>
     <task id="LOCAL-00007" summary="add FeaturedCarousel placeholders">
       <option name="closed" value="true" />
@@ -506,14 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756858344373</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="refactor typography in components for improved responsiveness and layout consistency">
+      <option name="closed" value="true" />
+      <created>1756858513924</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1756858513924</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor animation speed in index.tsx and update icons and descriptions in modeling.tsx" />
     <MESSAGE value="add ContactBanner component and integrate it into modeling route" />
     <MESSAGE value="refactor $product.tsx layout and enhance Footer component with social media links" />
     <MESSAGE value="add login and register routes with corresponding components" />
@@ -538,6 +539,7 @@
     <MESSAGE value="add online calculator form and options for material, color, strength, quality, and infill" />
     <MESSAGE value="add accessibility improvements and replace background images with optimized formats" />
     <MESSAGE value="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component" />
+    <MESSAGE value="refactor typography in components for improved responsiveness and layout consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor typography in components for improved responsiveness and layout consistency" />
   </component>
 </project>
