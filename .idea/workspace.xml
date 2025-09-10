@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update SettingsTab component: remove unused button and adjust layout for streamlined profile management">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Orders/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/OrdersTab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/profile/order_/$order.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/SettingsTab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,15 +116,7 @@
       <workItem from="1756860337928" duration="26111000" />
       <workItem from="1757017634610" duration="200000" />
       <workItem from="1757269931802" duration="81000" />
-      <workItem from="1757538814256" duration="5535000" />
-    </task>
-    <task id="LOCAL-00016" summary="refactor components to use RevealOnScroll for enhanced visibility on scroll">
-      <option name="closed" value="true" />
-      <created>1753659022334</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1753659022334</updated>
+      <workItem from="1757538814256" duration="6002000" />
     </task>
     <task id="LOCAL-00017" summary="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure">
       <option name="closed" value="true" />
@@ -516,14 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756919145697</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic">
+      <option name="closed" value="true" />
+      <created>1757548156608</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1757548156608</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add FaqSection component to courses route and improve layout consistency across components" />
     <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
     <MESSAGE value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
     <MESSAGE value="update footer and hero section links to point to the contact route" />
@@ -548,6 +541,7 @@
     <MESSAGE value="update profile routing, implement profile tabs with settings and orders, and add SettingsTab component" />
     <MESSAGE value="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component" />
     <MESSAGE value="update SettingsTab component: remove unused button and adjust layout for streamlined profile management" />
-    <option name="LAST_COMMIT_MESSAGE" value="update SettingsTab component: remove unused button and adjust layout for streamlined profile management" />
+    <MESSAGE value="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic" />
   </component>
 </project>

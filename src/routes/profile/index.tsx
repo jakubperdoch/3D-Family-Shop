@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Tab, Tabs } from "@heroui/react";
-import { useState } from "react";
-import SettingsTab from "@/components/Profile/SettingsTab.tsx";
-import OrdersTab from "@/components/Profile/OrdersTab.tsx";
+import { Spinner, Tab, Tabs } from "@heroui/react";
+import { lazy, Suspense, useState } from "react";
 
 export const Route = createFileRoute("/profile/")({
   component: RouteComponent,
 });
+
+const SettingsTab = lazy(() => import("@/components/Profile/SettingsTab.tsx"));
+const OrdersTab = lazy(() => import("@/components/Profile/OrdersTab.tsx"));
 
 function RouteComponent() {
   const [selectedTab, setSelectedTab] = useState("orders");
@@ -25,10 +26,32 @@ function RouteComponent() {
         }}
       >
         <Tab title="Nastavenia Profilu" key="settings">
-          <SettingsTab />
+          <Suspense
+            fallback={
+              <div className="min-h-[calc(100vh-20rem)] flex items-center justify-center">
+                <Spinner
+                  classNames={{ label: "text-foreground mt-4" }}
+                  variant="dots"
+                />
+              </div>
+            }
+          >
+            <SettingsTab />
+          </Suspense>
         </Tab>
         <Tab title="Objednávky" key="orders">
-          <OrdersTab />
+          <Suspense
+            fallback={
+              <div className="min-h-[calc(100vh-20rem)] flex items-center justify-center">
+                <Spinner
+                  classNames={{ label: "text-foreground mt-4" }}
+                  variant="dots"
+                />
+              </div>
+            }
+          >
+            <OrdersTab />
+          </Suspense>
         </Tab>
       </Tabs>
     </section>
