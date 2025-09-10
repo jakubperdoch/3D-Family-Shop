@@ -5,7 +5,7 @@ import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function SettingsTab() {
   return (
-    <section>
+    <section className="min-h-[calc(100vh-20rem)]">
       <motion.div
         variants={itemVariants}
         className="flex justify-between items-center relative p-14 rounded-2xl overflow-hidden"

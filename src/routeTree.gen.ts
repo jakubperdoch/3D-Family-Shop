@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as RegisterRouteImport } from './routes/register'
-import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ModelingRouteImport } from './routes/modeling'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as GalleryRouteImport } from './routes/gallery'
@@ -19,17 +18,14 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CartRouteImport } from './routes/cart'
 import { Route as CalculatorRouteImport } from './routes/calculator'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProfileIndexRouteImport } from './routes/profile/index'
 import { Route as ProductsProductRouteImport } from './routes/products_/$product'
 import { Route as CollectionsCollectionRouteImport } from './routes/collections_/$collection'
+import { Route as ProfileOrderOrderRouteImport } from './routes/profile/order_/$order'
 
 const RegisterRoute = RegisterRouteImport.update({
   id: '/register',
   path: '/register',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProfileRoute = ProfileRouteImport.update({
-  id: '/profile',
-  path: '/profile',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ModelingRoute = ModelingRouteImport.update({
@@ -72,6 +68,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfileIndexRoute = ProfileIndexRouteImport.update({
+  id: '/profile/',
+  path: '/profile/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsProductRoute = ProductsProductRouteImport.update({
   id: '/products_/$product',
   path: '/products/$product',
@@ -80,6 +81,11 @@ const ProductsProductRoute = ProductsProductRouteImport.update({
 const CollectionsCollectionRoute = CollectionsCollectionRouteImport.update({
   id: '/collections_/$collection',
   path: '/collections/$collection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileOrderOrderRoute = ProfileOrderOrderRouteImport.update({
+  id: '/profile/order_/$order',
+  path: '/profile/order/$order',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -92,10 +98,11 @@ export interface FileRoutesByFullPath {
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
-  '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
   '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
+  '/profile': typeof ProfileIndexRoute
+  '/profile/order/$order': typeof ProfileOrderOrderRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -106,10 +113,11 @@ export interface FileRoutesByTo {
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
-  '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
   '/collections/$collection': typeof CollectionsCollectionRoute
   '/products/$product': typeof ProductsProductRoute
+  '/profile': typeof ProfileIndexRoute
+  '/profile/order/$order': typeof ProfileOrderOrderRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -121,10 +129,11 @@ export interface FileRoutesById {
   '/gallery': typeof GalleryRoute
   '/login': typeof LoginRoute
   '/modeling': typeof ModelingRoute
-  '/profile': typeof ProfileRoute
   '/register': typeof RegisterRoute
   '/collections_/$collection': typeof CollectionsCollectionRoute
   '/products_/$product': typeof ProductsProductRoute
+  '/profile/': typeof ProfileIndexRoute
+  '/profile/order_/$order': typeof ProfileOrderOrderRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -137,10 +146,11 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/login'
     | '/modeling'
-    | '/profile'
     | '/register'
     | '/collections/$collection'
     | '/products/$product'
+    | '/profile'
+    | '/profile/order/$order'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -151,10 +161,11 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/login'
     | '/modeling'
-    | '/profile'
     | '/register'
     | '/collections/$collection'
     | '/products/$product'
+    | '/profile'
+    | '/profile/order/$order'
   id:
     | '__root__'
     | '/'
@@ -165,10 +176,11 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/login'
     | '/modeling'
-    | '/profile'
     | '/register'
     | '/collections_/$collection'
     | '/products_/$product'
+    | '/profile/'
+    | '/profile/order_/$order'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -180,10 +192,11 @@ export interface RootRouteChildren {
   GalleryRoute: typeof GalleryRoute
   LoginRoute: typeof LoginRoute
   ModelingRoute: typeof ModelingRoute
-  ProfileRoute: typeof ProfileRoute
   RegisterRoute: typeof RegisterRoute
   CollectionsCollectionRoute: typeof CollectionsCollectionRoute
   ProductsProductRoute: typeof ProductsProductRoute
+  ProfileIndexRoute: typeof ProfileIndexRoute
+  ProfileOrderOrderRoute: typeof ProfileOrderOrderRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -193,13 +206,6 @@ declare module '@tanstack/react-router' {
       path: '/register'
       fullPath: '/register'
       preLoaderRoute: typeof RegisterRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/profile': {
-      id: '/profile'
-      path: '/profile'
-      fullPath: '/profile'
-      preLoaderRoute: typeof ProfileRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/modeling': {
@@ -258,6 +264,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profile/': {
+      id: '/profile/'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products_/$product': {
       id: '/products_/$product'
       path: '/products/$product'
@@ -272,6 +285,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CollectionsCollectionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profile/order_/$order': {
+      id: '/profile/order_/$order'
+      path: '/profile/order/$order'
+      fullPath: '/profile/order/$order'
+      preLoaderRoute: typeof ProfileOrderOrderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -284,10 +304,11 @@ const rootRouteChildren: RootRouteChildren = {
   GalleryRoute: GalleryRoute,
   LoginRoute: LoginRoute,
   ModelingRoute: ModelingRoute,
-  ProfileRoute: ProfileRoute,
   RegisterRoute: RegisterRoute,
   CollectionsCollectionRoute: CollectionsCollectionRoute,
   ProductsProductRoute: ProductsProductRoute,
+  ProfileIndexRoute: ProfileIndexRoute,
+  ProfileOrderOrderRoute: ProfileOrderOrderRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

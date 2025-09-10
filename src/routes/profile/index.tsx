@@ -2,13 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Tab, Tabs } from "@heroui/react";
 import { useState } from "react";
 import SettingsTab from "@/components/Profile/SettingsTab.tsx";
+import OrdersTab from "@/components/Profile/OrdersTab.tsx";
 
-export const Route = createFileRoute("/profile")({
+export const Route = createFileRoute("/profile/")({
   component: RouteComponent,
 });
 
 function RouteComponent() {
-  const [selectedTab, setSelectedTab] = useState("settings");
+  const [selectedTab, setSelectedTab] = useState("orders");
   return (
     <section className="container mx-auto mt-10 flex flex-col gap-5">
       <Tabs
@@ -26,7 +27,9 @@ function RouteComponent() {
         <Tab title="Nastavenia Profilu" key="settings">
           <SettingsTab />
         </Tab>
-        <Tab title="Objednávky" key="orders"></Tab>
+        <Tab title="Objednávky" key="orders">
+          <OrdersTab />
+        </Tab>
       </Tabs>
     </section>
   );
