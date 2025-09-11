@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Profile route: implement lazy loading for SettingsTab and OrdersTab components with loading spinners">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
     </list>
@@ -116,15 +116,7 @@
       <workItem from="1756860337928" duration="26111000" />
       <workItem from="1757017634610" duration="200000" />
       <workItem from="1757269931802" duration="81000" />
-      <workItem from="1757538814256" duration="6002000" />
-    </task>
-    <task id="LOCAL-00017" summary="refactor BestSellersSection, CategoryCarousel, and ReviewCarousel components to use internal data and improve structure">
-      <option name="closed" value="true" />
-      <created>1753659543427</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1753659543427</updated>
+      <workItem from="1757538814256" duration="6154000" />
     </task>
     <task id="LOCAL-00018" summary="add ProductPage component with product details and image gallery">
       <option name="closed" value="true" />
@@ -510,14 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757548156608</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="refactor Profile route: implement lazy loading for SettingsTab and OrdersTab components with loading spinners">
+      <option name="closed" value="true" />
+      <created>1757548660009</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1757548660009</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Contact route with form validation and integrate it into Courses route" />
     <MESSAGE value="refactor Contact route to use `Controller` for form control and enhance RadioGroup integration" />
     <MESSAGE value="update footer and hero section links to point to the contact route" />
     <MESSAGE value="refactor layout handling in __root and enhance calculator route with dynamic content" />
@@ -542,6 +541,7 @@
     <MESSAGE value="update NavigationBar to link to `/profile`, add Profile route with settings management via new `SettingsTab` component" />
     <MESSAGE value="update SettingsTab component: remove unused button and adjust layout for streamlined profile management" />
     <MESSAGE value="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic" />
+    <MESSAGE value="refactor Profile route: implement lazy loading for SettingsTab and OrdersTab components with loading spinners" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Profile route: implement lazy loading for SettingsTab and OrdersTab components with loading spinners" />
   </component>
 </project>
