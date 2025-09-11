@@ -11,12 +11,17 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
+  NavbarBrand,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
 } from "@heroui/react";
 import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
 
 import type { RootState } from "@/store/types.ts";
 import LogoIcon from "@/components/Icon/logo.tsx";
 import NavigationSearch from "@/components/NavigationBar/NavigationSearch.tsx";
+import { useState } from "react";
 
 const navigationItems = [
   {
@@ -44,15 +49,36 @@ export default function NavigationBar() {
   const cartCount = useSelector(
     (state: RootState) => state.cart?.totalQuantity,
   );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <motion.div variants={itemVariants} className="container mx-auto">
       <Navbar
+        onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
         maxWidth="full"
-        className="bg-[#0D0D0D] border border-[#FFFFFF33] rounded-3xl mt-6 mx-auto px-2"
+        classNames={{
+          wrapper:
+            "bg-[#0D0D0D] border border-[#FFFFFF33] mt-6 rounded-3xl mx-auto",
+
+          base: "!bg-transparent rounded-3xl backdrop-blur-none backdrop-filter-none",
+        }}
       >
-        <NavbarContent className="hidden sm:flex gap-9" justify="start">
+        <NavbarContent className="lg:hidden">
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          />
+          <NavbarBrand>
+            <Link
+              to={"/"}
+              className="[&.active]:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <LogoIcon />
+            </Link>
+          </NavbarBrand>
+        </NavbarContent>
+
+        <NavbarContent className="hidden lg:flex gap-9" justify="start">
           {navigationItems.map((item) =>
             item?.enableDropdown ? (
               <Dropdown key={item?.label}>
@@ -108,7 +134,7 @@ export default function NavigationBar() {
           )}
         </NavbarContent>
 
-        <NavbarContent justify="center">
+        <NavbarContent justify="center" className="max-lg:hidden">
           <Link
             to={"/"}
             className="[&.active]:text-primary transition-colors duration-300 ease-in-out"
@@ -133,6 +159,14 @@ export default function NavigationBar() {
             <NavigationCart count={cartCount ?? 0} />
           </NavbarItem>
         </NavbarContent>
+
+        <NavbarMenu className="mt-6 !container mx-auto">
+          <NavbarMenuItem>Ahoj</NavbarMenuItem>
+          <NavbarMenuItem>Ahoj</NavbarMenuItem>
+
+          <NavbarMenuItem>Ahoj</NavbarMenuItem>
+          <NavbarMenuItem>Ahoj</NavbarMenuItem>
+        </NavbarMenu>
       </Navbar>
     </motion.div>
   );
