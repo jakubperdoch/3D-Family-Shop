@@ -18,6 +18,12 @@
     --color-white: #ffffff;
 }
 
+@utility container {
+    padding-inline: 20px;
+    margin-inline: auto;
+
+}
+
 
 body {
   margin: 0;
