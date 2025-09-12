@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { Tab, Tabs } from "@heroui/react";
-import OnlineCalculatorTab from "@/components/Calculator/OnlineCalculator/Tab.tsx";
-import RequestCalculatorTab from "@/components/Calculator/RequestCalculator/Tab.tsx";
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
+import { Fallback } from "@/components/Fallback.tsx";
+
+const OnlineCalculatorTab = lazy(
+  () => import("@/components/Calculator/OnlineCalculator/Tab.tsx"),
+);
+const RequestCalculatorTab = lazy(
+  () => import("@/components/Calculator/RequestCalculator/Tab.tsx"),
+);
 
 export default function TabsWrapper() {
   const [selectedTab, setSelectedTab] = useState("calculator");
@@ -26,10 +32,12 @@ export default function TabsWrapper() {
         }}
       >
         <Tab title="Online kalkulácia" key="calculator" className="w-full">
-          <OnlineCalculatorTab
-            selectedTab={selectedTab}
-            setSelectedTab={setSelectedTab}
-          />
+          <Suspense fallback={<Fallback />}>
+            <OnlineCalculatorTab
+              selectedTab={selectedTab}
+              setSelectedTab={setSelectedTab}
+            />
+          </Suspense>
         </Tab>
 
         <Tab
@@ -37,7 +45,9 @@ export default function TabsWrapper() {
           key="individual-offer"
           className="w-full"
         >
-          <RequestCalculatorTab />
+          <Suspense fallback={<Fallback />}>
+            <RequestCalculatorTab />
+          </Suspense>
         </Tab>
       </Tabs>
     </motion.section>

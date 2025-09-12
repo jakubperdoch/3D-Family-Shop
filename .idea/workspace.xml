@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="refactor Profile route: extract fallback Spinner to reusable `Fallback` component for streamlined lazy loading handling">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update NavigationBar: add responsive Navbar with toggle menu, enhance styling, and integrate state management for menu behavior">
+      <change afterPath="$PROJECT_DIR$/src/components/Fallback.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/TabsWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +119,8 @@
       <workItem from="1756860337928" duration="26111000" />
       <workItem from="1757017634610" duration="200000" />
       <workItem from="1757269931802" duration="81000" />
-      <workItem from="1757538814256" duration="7450000" />
-    </task>
-    <task id="LOCAL-00019" summary="add Footer component with responsive design and reveal on scroll effect">
-      <option name="closed" value="true" />
-      <created>1753675276350</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1753675276350</updated>
+      <workItem from="1757538814256" duration="8187000" />
+      <workItem from="1757661739816" duration="858000" />
     </task>
     <task id="LOCAL-00020" summary="update image styling in Product and index components for consistency">
       <option name="closed" value="true" />
@@ -510,14 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757548831060</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="update NavigationBar: add responsive Navbar with toggle menu, enhance styling, and integrate state management for menu behavior">
+      <option name="closed" value="true" />
+      <created>1757550184528</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1757550184528</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update footer and hero section links to point to the contact route" />
     <MESSAGE value="refactor layout handling in __root and enhance calculator route with dynamic content" />
     <MESSAGE value="refactor layout rendering in root route and enhance calculator route with Tabs and dynamic content" />
     <MESSAGE value="refactor calculator route: extract tab components and integrate dynamic TabsWrapper component" />
@@ -542,6 +545,7 @@
     <MESSAGE value="refactor Profile route: replace `profile.tsx` with new tab-based structure, add `OrdersTab` and `OrdersCard` components, and update routing logic" />
     <MESSAGE value="refactor Profile route: implement lazy loading for SettingsTab and OrdersTab components with loading spinners" />
     <MESSAGE value="refactor Profile route: extract fallback Spinner to reusable `Fallback` component for streamlined lazy loading handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Profile route: extract fallback Spinner to reusable `Fallback` component for streamlined lazy loading handling" />
+    <MESSAGE value="update NavigationBar: add responsive Navbar with toggle menu, enhance styling, and integrate state management for menu behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="update NavigationBar: add responsive Navbar with toggle menu, enhance styling, and integrate state management for menu behavior" />
   </component>
 </project>

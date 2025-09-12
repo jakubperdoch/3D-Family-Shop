@@ -144,7 +144,7 @@ export default function NavigationBar() {
         </NavbarContent>
 
         <NavbarContent className="gap-7" justify="end">
-          <NavbarItem>
+          <NavbarItem className="hidden lg:flex">
             <NavigationSearch />
           </NavbarItem>
           <NavbarItem>
