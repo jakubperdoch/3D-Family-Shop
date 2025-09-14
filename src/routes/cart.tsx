@@ -25,6 +25,7 @@ function RouteComponent() {
   const dispatch = useDispatch();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const totalQuantity = useSelector(
@@ -32,7 +33,18 @@ function RouteComponent() {
   );
   const totalPrice = useSelector((state: RootState) => state.cart.totalPrice);
 
-  const handleModalOpen = (id: string, quantity: number) => {
+  const handleModalOpen = (
+    id: string,
+    quantity: number,
+    deleteItem?: boolean,
+  ) => {
+    if (deleteItem) {
+      setSelectedItemId(id);
+      setIsDeleting(true);
+      setIsModalOpen(true);
+      return;
+    }
+
     if (quantity === 1) {
       setSelectedItemId(id);
       setIsModalOpen(true);
@@ -109,7 +121,9 @@ function RouteComponent() {
 
                     <IoTrashBinOutline
                       className="h-8 w-8 opacity-80 md:col-span-2 mt-3 hover:text-red-500 transition-colors duration-150 ease-in-out cursor-pointer"
-                      onClick={() => dispatch(removeFromCart(item?.id))}
+                      onClick={() =>
+                        handleModalOpen(item.id, item.quantity, true)
+                      }
                     />
 
                     <span className="select-none row-start-2 md:row-start-1 md:col-start-2 md:justify-self-end text-2xl font-semibold text-primary">
@@ -167,8 +181,12 @@ function RouteComponent() {
         cancelText="Zrušiť"
         confirmText="Odstrániť"
         onConfirm={() => {
-          if (selectedItemId) {
-            dispatch(decreaseQuantity(selectedItemId));
+          if (!selectedItemId) return;
+          if (isDeleting) {
+            dispatch(removeFromCart(selectedItemId));
+            setIsDeleting(false);
+          } else {
+            dispatch(increaseQuantity(selectedItemId));
           }
           setIsModalOpen(false);
           setSelectedItemId(null);
