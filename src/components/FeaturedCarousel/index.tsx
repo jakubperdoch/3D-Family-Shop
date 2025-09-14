@@ -85,7 +85,7 @@ export default function FeaturedCarousel() {
 
       <div className="absolute bottom-0 z-[2] h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_31.12%,rgba(0,0,0,0.5)_66.06%)] rounded-b-xl"></div>
 
-      <div className="absolute z-[2] left-8 bottom-8 flex flex-col max-w-3xl">
+      <div className="absolute max-md:container max-md:w-auto z-[2] max-md:ps-2 md:left-12 bottom-8 flex flex-col md:max-w-3xl">
         <Link
           to={"/products/$product"}
           params={{ product: featuredProduct.id }}
@@ -120,7 +120,7 @@ export default function FeaturedCarousel() {
         </Button>
       </div>
 
-      <div className="absolute right-8 bottom-8 flex flex-col gap-2">
+      <div className="absolute max-md:top-4 max-md:left-8 md:right-8 md:bottom-8 flex md:flex-col gap-2">
         {featuredProduct.images.map(
           (image, index) =>
             index !== activeIndex && (
@@ -132,7 +132,7 @@ export default function FeaturedCarousel() {
                 <Image
                   loading="lazy"
                   alt="Featured Product Image"
-                  className="object-cover border-3 border-white"
+                  className="object-cover border-3 rounded-2xl border-white"
                   removeWrapper={true}
                   src={image}
                 />

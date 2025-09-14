@@ -174,6 +174,7 @@ function RouteComponent() {
       </motion.section>
 
       <RelatedProductsSection />
+
       <AlertDialog
         isModalOpen={isModalOpen}
         title="Odstrániť položku"

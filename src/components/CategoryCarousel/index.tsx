@@ -39,7 +39,7 @@ export default function CategoryCarousel() {
       variants={itemVariants}
       className="flex flex-col gap-16 w-full mb-10 bg-dark-gray"
     >
-      <div className="flex justify-between container mx-auto pt-20">
+      <div className="flex max-sm:flex-col max-sm:gap-5 justify-between container mx-auto pt-20">
         <h2 className="text-white font-bold text-5xl lg:text-[4.6rem] lg:leading-16">
           Kategórie
         </h2>

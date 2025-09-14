@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
 import { RevealOnScroll } from "@/components/RevealOnScroll";
 import Card from "@/components/Card.tsx";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
 
 const bestSellersCards: CardProps[] = [
   {
@@ -48,21 +52,41 @@ export default function BestSellersSection() {
         <br /> okamžite k objednaniu.
       </h2>
 
-      <motion.div
-        variants={itemVariants}
-        className="grid grid-cols-2 lg:flex max-lg:gap-8 flex-row gap-4"
-      >
-        {bestSellersCards &&
-          bestSellersCards.length > 0 &&
-          bestSellersCards.map((card) => (
-            <Card
-              key={card?.id}
-              id={card?.id}
-              image={card?.image}
-              title={card?.title}
-              price={card?.price}
-            />
-          ))}
+      <motion.div variants={itemVariants}>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+          }}
+          grabCursor={true}
+          loop={true}
+          spaceBetween={16}
+          slidesPerView={1.5}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: { slidesPerView: 4 },
+          }}
+        >
+          {bestSellersCards &&
+            bestSellersCards.length > 0 &&
+            bestSellersCards.map((card) => (
+              <SwiperSlide>
+                <Card
+                  key={card?.id}
+                  id={card?.id}
+                  image={card?.image}
+                  title={card?.title}
+                  price={card?.price}
+                />
+              </SwiperSlide>
+            ))}
+        </Swiper>
       </motion.div>
     </RevealOnScroll>
   );

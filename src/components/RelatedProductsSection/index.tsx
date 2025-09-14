@@ -4,9 +4,9 @@ import { containerVariants, itemVariants } from "@/utils/animations.ts";
 import { motion } from "framer-motion";
 import Card from "@/components/Card.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
 
 const relatedProducts: CardProps[] = [
   {
@@ -41,7 +41,7 @@ export default function RelatedProductsSection() {
       className="flex flex-col gap-10"
       variants={containerVariants}
     >
-      <h3 className="text-5xl font-bold">Mohlo by sa vám páčiť</h3>
+      <h3 className="text-4xl md:text-5xl font-bold">Mohlo by sa vám páčiť</h3>
 
       <motion.div variants={itemVariants}>
         <Swiper

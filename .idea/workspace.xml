@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update Cart route: add logging for cart state changes and enhance empty cart UI display">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update Cart route: remove redundant logging and cleanup code in cart rendering logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BestSellersSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CategoryCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedCarousel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,15 +123,7 @@
       <workItem from="1757538814256" duration="8187000" />
       <workItem from="1757661739816" duration="10913000" />
       <workItem from="1757688167616" duration="1584000" />
-      <workItem from="1757811723778" duration="1681000" />
-    </task>
-    <task id="LOCAL-00027" summary="refactor GallerySection component for improved layout and animation">
-      <option name="closed" value="true" />
-      <created>1754949519593</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1754949519593</updated>
+      <workItem from="1757811723778" duration="3048000" />
     </task>
     <task id="LOCAL-00028" summary="refactor gallery route to enhance layout and integrate motion effects">
       <option name="closed" value="true" />
@@ -513,14 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757813398353</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="update Cart route: remove redundant logging and cleanup code in cart rendering logic">
+      <option name="closed" value="true" />
+      <created>1757813415795</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1757813415795</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component" />
     <MESSAGE value="refactor typography in components for improved responsiveness and layout consistency" />
     <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
@@ -545,6 +548,7 @@
     <MESSAGE value="update Footer component: add padding-bottom, enhance responsive grid layout, and hyperlink author name" />
     <MESSAGE value="update Cart route: add delete confirmation modal functionality and enhance item removal interaction" />
     <MESSAGE value="update Cart route: add logging for cart state changes and enhance empty cart UI display" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Cart route: add logging for cart state changes and enhance empty cart UI display" />
+    <MESSAGE value="update Cart route: remove redundant logging and cleanup code in cart rendering logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Cart route: remove redundant logging and cleanup code in cart rendering logic" />
   </component>
 </project>
