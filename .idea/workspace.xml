@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="integrate Swiper into additional sections (BestSellers, CategoryCarousel, and FeaturedCarousel), adjust layouts for responsiveness, and refine Cart route rendering logic">
-      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar/NavigationDrawer.tsx" afterDir="false" />
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update NavigationBar: add NavigationDrawer for mobile menu functionality, enhance HeroSection layout for responsiveness, and refine component imports and usage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar/NavigationDrawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar/NavigationDrawer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,15 +119,7 @@
       <workItem from="1757538814256" duration="8187000" />
       <workItem from="1757661739816" duration="10913000" />
       <workItem from="1757688167616" duration="1584000" />
-      <workItem from="1757811723778" duration="6965000" />
-    </task>
-    <task id="LOCAL-00029" summary="refactor workspace configuration to update task summaries and adjust local tasks counter">
-      <option name="closed" value="true" />
-      <created>1755022300718</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1755022300718</updated>
+      <workItem from="1757811723778" duration="7373000" />
     </task>
     <task id="LOCAL-00030" summary="add HeroSection component and integrate it into the main route">
       <option name="closed" value="true" />
@@ -515,14 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757814802169</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="update NavigationBar: add NavigationDrawer for mobile menu functionality, enhance HeroSection layout for responsiveness, and refine component imports and usage">
+      <option name="closed" value="true" />
+      <created>1757818722247</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1757818722247</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography across multiple components for improved responsiveness, accessibility, and consistency" />
     <MESSAGE value="refactor layout and typography in login and register components for improved responsiveness and accessibility" />
     <MESSAGE value="refactor layout and typography in collection and root components for improved responsiveness and accessibility" />
@@ -547,6 +544,7 @@
     <MESSAGE value="update Cart route: add logging for cart state changes and enhance empty cart UI display" />
     <MESSAGE value="update Cart route: remove redundant logging and cleanup code in cart rendering logic" />
     <MESSAGE value="integrate Swiper into additional sections (BestSellers, CategoryCarousel, and FeaturedCarousel), adjust layouts for responsiveness, and refine Cart route rendering logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrate Swiper into additional sections (BestSellers, CategoryCarousel, and FeaturedCarousel), adjust layouts for responsiveness, and refine Cart route rendering logic" />
+    <MESSAGE value="update NavigationBar: add NavigationDrawer for mobile menu functionality, enhance HeroSection layout for responsiveness, and refine component imports and usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update NavigationBar: add NavigationDrawer for mobile menu functionality, enhance HeroSection layout for responsiveness, and refine component imports and usage" />
   </component>
 </project>

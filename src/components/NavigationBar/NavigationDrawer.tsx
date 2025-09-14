@@ -25,7 +25,7 @@ export default function NavigationDrawer({
       <DrawerContent className="pt-8">
         {(onClose) => (
           <>
-            <DrawerHeader className="mx-auto">
+            <DrawerHeader className="mx-auto mb-4">
               <Link
                 onClick={onClose}
                 to={"/"}
@@ -36,9 +36,10 @@ export default function NavigationDrawer({
             </DrawerHeader>
             <DrawerBody>
               {navigationItems.map((item) => (
-                <div className="flex flex-col gap-1 mb-6">
+                <div key={item.label} className="flex flex-col gap-1 mb-6">
                   {"to" in item ? (
                     <Link
+                      aria-label={`Navigate to ${item.label}`}
                       onClick={onClose}
                       to={item.to}
                       className="font-medium text-xl mb-1 transition-colors duration-300 ease-in-out [&.active]:text-primary"
@@ -55,6 +56,7 @@ export default function NavigationDrawer({
                     item.items.map((subItem) =>
                       "collection" in subItem ? (
                         <Link
+                          aria-label={`Navigate to ${subItem.label}`}
                           onClick={onClose}
                           to="/collections/$collection"
                           params={{ collection: subItem.collection }}
@@ -65,6 +67,7 @@ export default function NavigationDrawer({
                         </Link>
                       ) : (
                         <Link
+                          aria-label={`Navigate to ${subItem.label}`}
                           onClick={onClose}
                           to={subItem.to}
                           className="ms-3 transition-colors duration-300 ease-in-out [&.active]:text-primary"
