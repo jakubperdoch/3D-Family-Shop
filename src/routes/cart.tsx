@@ -15,7 +15,7 @@ import { IoTrashBinOutline } from "react-icons/io5";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { Button } from "@heroui/react";
 import AlertDialog from "@/components/AlertDialog";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Route = createFileRoute("/cart")({
   component: RouteComponent,
@@ -53,6 +53,12 @@ function RouteComponent() {
     }
   };
 
+  useEffect(() => {
+    console.log("cartItems", cartItems);
+    console.log("totalPrice", totalPrice);
+    console.log("totalQuantity", totalQuantity);
+  }, [totalPrice, totalQuantity, cartItems]);
+
   return (
     <RevealOnScroll
       variants={containerVariants}
@@ -74,7 +80,7 @@ function RouteComponent() {
               </span>
             </div>
           ) : (
-            <div>
+            <div className="text-center">
               <h4 className="font-bold text-4xl mb-2">Váš košík je prázdny</h4>
               <span className="opacity-80 text-[1rem]">
                 Pridajte položky do košíka a začnite nakupovať.
