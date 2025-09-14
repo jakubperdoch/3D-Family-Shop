@@ -15,7 +15,7 @@ import { IoTrashBinOutline } from "react-icons/io5";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { Button } from "@heroui/react";
 import AlertDialog from "@/components/AlertDialog";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Route = createFileRoute("/cart")({
   component: RouteComponent,
@@ -52,12 +52,6 @@ function RouteComponent() {
       dispatch(decreaseQuantity(id));
     }
   };
-
-  useEffect(() => {
-    console.log("cartItems", cartItems);
-    console.log("totalPrice", totalPrice);
-    console.log("totalQuantity", totalQuantity);
-  }, [totalPrice, totalQuantity, cartItems]);
 
   return (
     <RevealOnScroll

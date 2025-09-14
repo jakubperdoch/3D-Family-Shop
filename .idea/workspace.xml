@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update Cart route: add delete confirmation modal functionality and enhance item removal interaction">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update Cart route: add logging for cart state changes and enhance empty cart UI display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
     </list>
@@ -119,15 +119,7 @@
       <workItem from="1757538814256" duration="8187000" />
       <workItem from="1757661739816" duration="10913000" />
       <workItem from="1757688167616" duration="1584000" />
-      <workItem from="1757811723778" duration="1636000" />
-    </task>
-    <task id="LOCAL-00026" summary="add GallerySection component and integrate it into the gallery route">
-      <option name="closed" value="true" />
-      <created>1754166525343</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1754166525343</updated>
+      <workItem from="1757811723778" duration="1681000" />
     </task>
     <task id="LOCAL-00027" summary="refactor GallerySection component for improved layout and animation">
       <option name="closed" value="true" />
@@ -513,14 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757813308291</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="update Cart route: add logging for cart state changes and enhance empty cart UI display">
+      <option name="closed" value="true" />
+      <created>1757813398353</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1757813398353</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add accessibility improvements and replace background images with optimized formats" />
     <MESSAGE value="adjust font sizes and responsive layouts for components; remove unused ReviewCarousel component" />
     <MESSAGE value="refactor typography in components for improved responsiveness and layout consistency" />
     <MESSAGE value="refactor ContactBanner layout for improved responsiveness and accessibility" />
@@ -545,6 +544,7 @@
     <MESSAGE value="integrate Swiper in RelatedProductsSection, update swiper to 12.0.1, and enhance Cart UI with responsive grid adjustments and better layout handling" />
     <MESSAGE value="update Footer component: add padding-bottom, enhance responsive grid layout, and hyperlink author name" />
     <MESSAGE value="update Cart route: add delete confirmation modal functionality and enhance item removal interaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Cart route: add delete confirmation modal functionality and enhance item removal interaction" />
+    <MESSAGE value="update Cart route: add logging for cart state changes and enhance empty cart UI display" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Cart route: add logging for cart state changes and enhance empty cart UI display" />
   </component>
 </project>
