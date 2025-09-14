@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { FaCaretDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { itemVariants } from "@/utils/animations.ts";
-import { FaUser } from "react-icons/fa6";
+import { FaUser, FaBars } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 import {
   Button,
@@ -11,19 +11,16 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-  NavbarBrand,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarMenuToggle,
+  useDisclosure,
 } from "@heroui/react";
+import LogoIcon from "@/components/Icon/logo.tsx";
+import NavigationSearch from "@/components/NavigationBar/NavigationSearch.tsx";
+import NavigationDrawer from "@/components/NavigationBar/NavigationDrawer.tsx";
 import NavigationCart from "@/components/NavigationBar/NavigationCart.tsx";
 
 import type { RootState } from "@/store/types.ts";
-import LogoIcon from "@/components/Icon/logo.tsx";
-import NavigationSearch from "@/components/NavigationBar/NavigationSearch.tsx";
-import { useState } from "react";
 
-const navigationItems = [
+export const navigationItems = [
   {
     label: "Produkty",
     enableDropdown: true,
@@ -46,36 +43,36 @@ const navigationItems = [
 ];
 
 export default function NavigationBar() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const cartCount = useSelector(
     (state: RootState) => state.cart?.totalQuantity,
   );
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <motion.div variants={itemVariants} className="container mx-auto">
       <Navbar
-        onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
         maxWidth="full"
         classNames={{
           wrapper:
-            "bg-[#0D0D0D] border border-[#FFFFFF33] mt-6 rounded-3xl mx-auto",
+            "bg-[#0D0D0D] border border-[#FFFFFF33] mt-6 max-lg:gap-0 rounded-3xl mx-auto",
 
           base: "!bg-transparent rounded-3xl backdrop-blur-none backdrop-filter-none",
         }}
       >
-        <NavbarContent className="lg:hidden">
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          />
-          <NavbarBrand>
-            <Link
-              to={"/"}
-              className="[&.active]:text-primary transition-colors duration-300 ease-in-out"
-            >
-              <LogoIcon />
-            </Link>
-          </NavbarBrand>
+        <NavbarContent
+          className="flex lg:hidden !flex-none !grow-0"
+          justify="start"
+        >
+          <Button
+            isIconOnly={true}
+            variant="light"
+            onPress={onOpen}
+            aria-label="Menu"
+          >
+            <FaBars />
+          </Button>
         </NavbarContent>
 
         <NavbarContent className="hidden lg:flex gap-9" justify="start">
@@ -134,7 +131,7 @@ export default function NavigationBar() {
           )}
         </NavbarContent>
 
-        <NavbarContent justify="center" className="max-lg:hidden">
+        <NavbarContent justify="center" className="flex-1 justify-center">
           <Link
             to={"/"}
             className="[&.active]:text-primary transition-colors duration-300 ease-in-out"
@@ -143,8 +140,8 @@ export default function NavigationBar() {
           </Link>
         </NavbarContent>
 
-        <NavbarContent className="gap-7" justify="end">
-          <NavbarItem className="hidden lg:flex">
+        <NavbarContent className="gap-7 hidden lg:flex" justify="end">
+          <NavbarItem>
             <NavigationSearch />
           </NavbarItem>
           <NavbarItem>
@@ -159,15 +156,9 @@ export default function NavigationBar() {
             <NavigationCart count={cartCount ?? 0} />
           </NavbarItem>
         </NavbarContent>
-
-        <NavbarMenu className="mt-6 !container mx-auto">
-          <NavbarMenuItem>Ahoj</NavbarMenuItem>
-          <NavbarMenuItem>Ahoj</NavbarMenuItem>
-
-          <NavbarMenuItem>Ahoj</NavbarMenuItem>
-          <NavbarMenuItem>Ahoj</NavbarMenuItem>
-        </NavbarMenu>
       </Navbar>
+
+      <NavigationDrawer isOpen={isOpen} onOpenChange={onOpenChange} />
     </motion.div>
   );
 }

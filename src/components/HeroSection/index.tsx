@@ -63,7 +63,7 @@ export default function HeroSection() {
         Vaša vízia – náš filament.
       </motion.span>
 
-      <motion.div className="mt-10 flex flex-row gap-8">
+      <motion.div className="mt-10 flex flex-col md:flex-row gap-8">
         <Button
           aria-label="Objav nové produkty"
           size="lg"
@@ -76,7 +76,8 @@ export default function HeroSection() {
         <Link
           size="lg"
           isBlock
-          className="text-white text-medium flex gap-1 px-6"
+          aria-label="Kontaktujte nás"
+          className="text-white text-medium flex gap-1 py-3 px-6"
           showAnchorIcon
           anchorIcon={<FiArrowUpRight size="1rem" />}
           color="primary"
