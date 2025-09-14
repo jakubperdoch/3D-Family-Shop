@@ -3,6 +3,10 @@ import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { containerVariants, itemVariants } from "@/utils/animations.ts";
 import { motion } from "framer-motion";
 import Card from "@/components/Card.tsx";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const relatedProducts: CardProps[] = [
   {
@@ -39,18 +43,41 @@ export default function RelatedProductsSection() {
     >
       <h3 className="text-5xl font-bold">Mohlo by sa vám páčiť</h3>
 
-      <motion.div variants={itemVariants} className="flex flex-row gap-4">
-        {relatedProducts &&
-          relatedProducts.length > 0 &&
-          relatedProducts.map((card) => (
-            <Card
-              key={card?.id}
-              id={card?.id}
-              image={card?.image}
-              title={card?.title}
-              price={card?.price}
-            />
-          ))}
+      <motion.div variants={itemVariants}>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+          }}
+          grabCursor={true}
+          loop={true}
+          spaceBetween={16}
+          slidesPerView={1.5}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: { slidesPerView: 4 },
+          }}
+        >
+          {relatedProducts &&
+            relatedProducts.length > 0 &&
+            relatedProducts.map((card) => (
+              <SwiperSlide>
+                <Card
+                  key={card?.id}
+                  id={card?.id}
+                  image={card?.image}
+                  title={card?.title}
+                  price={card?.price}
+                />
+              </SwiperSlide>
+            ))}
+        </Swiper>
       </motion.div>
     </RevealOnScroll>
   );

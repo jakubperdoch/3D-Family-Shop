@@ -48,7 +48,7 @@ function RouteComponent() {
     >
       <motion.section
         variants={itemVariants}
-        className="grid grid-cols-[auto_auto] items-center gap-6"
+        className="grid lg:grid-cols-[auto_auto] items-center gap-6"
       >
         <div
           className={`flex flex-col gap-12 w-fit p-6 rounded-2xl ${totalQuantity > 0 ? "" : "min-h-52 col-span-2 w-full justify-center items-center"}`}
@@ -75,7 +75,7 @@ function RouteComponent() {
               {cartItems.map((item) => (
                 <motion.div
                   variants={itemVariants}
-                  className="cartItem flex gap-6"
+                  className="cartItem flex flex-col lg:flex-row gap-6"
                   key={item?.id}
                 >
                   <Image
@@ -87,7 +87,7 @@ function RouteComponent() {
                     className="max-w-[12rem] h-auto object-cover"
                   />
 
-                  <div className="grid grid-cols-[auto_auto] gap-x-20 gap-y-6">
+                  <div className="grid md:grid-cols-[auto_auto] gap-x-20 gap-y-6">
                     <div>
                       <h5 className="text-2xl font-semibold">{item?.title}</h5>
                       <p className="opacity-80 text-lg">{item?.category}</p>
@@ -108,11 +108,11 @@ function RouteComponent() {
                     </div>
 
                     <IoTrashBinOutline
-                      className="h-8 w-8 opacity-80 col-span-2 mt-3 hover:text-red-500 transition-colors duration-150 ease-in-out cursor-pointer"
+                      className="h-8 w-8 opacity-80 md:col-span-2 mt-3 hover:text-red-500 transition-colors duration-150 ease-in-out cursor-pointer"
                       onClick={() => dispatch(removeFromCart(item?.id))}
                     />
 
-                    <span className="row-start-1 select-none col-start-2 justify-self-end text-2xl font-semibold text-primary">
+                    <span className="select-none row-start-2 md:row-start-1 md:col-start-2 md:justify-self-end text-2xl font-semibold text-primary">
                       {item?.price.toFixed(2)}€
                     </span>
                   </div>
