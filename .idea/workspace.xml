@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="update styles.css: add utility container class with padding and margin adjustments for layout consistency">
+    <list default="true" id="88e525b5-dd96-46d0-9e3c-235176b98d19" name="Changes" comment="integrate Swiper in RelatedProductsSection, update swiper to 12.0.1, and enhance Cart UI with responsive grid adjustments and better layout handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RelatedProductsSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,15 +119,7 @@
       <workItem from="1757538814256" duration="8187000" />
       <workItem from="1757661739816" duration="10913000" />
       <workItem from="1757688167616" duration="1584000" />
-      <workItem from="1757811723778" duration="659000" />
-    </task>
-    <task id="LOCAL-00023" summary="add AlertDialog component and implement modal for item removal confirmation in cart">
-      <option name="closed" value="true" />
-      <created>1754051323218</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1754051323219</updated>
+      <workItem from="1757811723778" duration="1075000" />
     </task>
     <task id="LOCAL-00024" summary="add LogoIcon component and update NavigationBar to include logo and restructure dropdown items">
       <option name="closed" value="true" />
@@ -516,14 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757688529796</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="integrate Swiper in RelatedProductsSection, update swiper to 12.0.1, and enhance Cart UI with responsive grid adjustments and better layout handling">
+      <option name="closed" value="true" />
+      <created>1757812419706</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1757812419706</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add FileUploader component to OnlineCalculatorTab for 3D model uploads and integrate object volume and size calculations" />
     <MESSAGE value="enhance FileUploader component with animations and improve file upload UI" />
     <MESSAGE value="add online calculator form and options for material, color, strength, quality, and infill" />
     <MESSAGE value="add accessibility improvements and replace background images with optimized formats" />
@@ -548,6 +544,7 @@
     <MESSAGE value="refactor Calculator route: implement lazy loading for Tab components with a reusable `Fallback` wrapper to improve performance and maintainability" />
     <MESSAGE value="refactor Profile order route: implement enhanced order details view with dynamic order status, improved UI, and reusable utilities" />
     <MESSAGE value="update styles.css: add utility container class with padding and margin adjustments for layout consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="update styles.css: add utility container class with padding and margin adjustments for layout consistency" />
+    <MESSAGE value="integrate Swiper in RelatedProductsSection, update swiper to 12.0.1, and enhance Cart UI with responsive grid adjustments and better layout handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate Swiper in RelatedProductsSection, update swiper to 12.0.1, and enhance Cart UI with responsive grid adjustments and better layout handling" />
   </component>
 </project>

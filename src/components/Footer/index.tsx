@@ -9,10 +9,10 @@ export default function Footer() {
   return (
     <RevealOnScroll
       variants={containerVariants}
-      className="flex flex-col items-center"
+      className="flex flex-col items-center pb-8"
     >
       <footer className="bg-dark-gray container mx-auto rounded-[3rem] mt-10 pt-10 px-10 flex flex-col gap-20">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-10">
           <div className="text-white">
             <h3 className="text-4xl font-bold mb-4 text-[#FFD6F6]">O nás</h3>
             <p>
@@ -75,7 +75,12 @@ export default function Footer() {
       <span className="text-center mt-10 text-[#E7E7E3CC]">
         © 2025 3D-Family. Všetky práva vyhradené.
         <br />
-        Web vytvoril Jakub Perďoch.
+        <a
+          className="hover:text-primary transition-colors duration-300 ease-in-out"
+          href="https:/www.linkedin.com/in/jakub-perďoch"
+        >
+          Web vytvoril Jakub Perďoch.
+        </a>
       </span>
     </RevealOnScroll>
   );
